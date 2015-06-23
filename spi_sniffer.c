@@ -1,46 +1,55 @@
 /*************************************************************************
 
-.      Honeywell RedLINK RF module SPI Sniffer
+.          SPI Sniffer
+   for Honeywell RedLINK RF modules and other stuff
 
-This program sniffs the communications between the processor and
-the TI CC1101 RF transceiver that are inside HVAC modules like the
-Honeywell C7089R1013 Wireless Outdoor Sensor
+This program records the communication on an SPI (Serial Peripheral Interface)
+bus. (See https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus )
+We use a combination of a commercial Arduino-like microprocessor and 
+custom hardware.
 
-This is written for an Arduino Mega 2650 that is observing the SPI
-(Serial Peripheral Interface) control pins output by the processor
-as a master: SS, CLK, and MOSI. For that we use the built-in SPI
-module in the ATmega2560 chip that is in the Micro.
+We are specifically interested in the communication between the processor
+and the TI CC1101 RF transceiver that are inside HVAC modules like the
+Honeywell C7089R1013 Wireless Outdoor Sensor.
 
-On the breadboard we also have a 74HCT164 shift register connected to
-the MISO serial data signal from the slave to the master, which converts
-it to a parallel byte of data connected to an Arduino 8-bit data port.
+But there is nothing in this code or in the hardware that is specific to 
+the Honeywell devices, so it might be useful as a general SPI Sniffer.
 
-The output datastream goes in realtime over the Arduino USB serial port
-to a program on the PC called spi_decode. which decodes the stream into 
-intelligible commands.
+The output datastream goes over a USB serial port to a program on a PC. 
+Our such program, called spi_decode. decodes the stream into intelligible 
+commands for the TI RF chip, so that part *is* specific to our application.
 
-The timing here is quite critical, because Honeywell runs the chip fast.
-The data clock is 4 Mhz, which is at the limit for a 16 Mhz Arduino.
-The idle time between bytes can be as little as 1.5 usec, so the
-repetition rate of 8-bit bytes can be as fast as 2+1.5 = 3.5 usec.
-And it really does happens that fast when the processor uses burst mode
-to initialize all the C1101 control registers. So the inner loop
+This is written for a 96Mhz  Teensy 3.1 that connected to custom hardware
+that has two shift registers to record the SPI MOSI and MISO data, plus
+some control and timing logic. It has four ICs.
+
+(I initially tried using the SPI module of the Freescale MK20DX chip that
+is on the Teensy to record the SPI Master data, but there was too much
+jitter in the presentation of the data relative to the SS (slave select)
+signal, and it is important to have that timing information to decode
+the data.)
+
+The timing here is quite critical, because Honeywell runs the chip 
+really fast. The SPI data clock can be as high as 6 Mhz.
+The idle time between bytes can be as little as 1 usec, so the
+repetition rate of 8-bit bytes can be as fast as 1.3+1 = 2.3 usec.
+It really does happens that fast when the processor uses burst mode
+to initialize all the C1101 control registers, so the inner loop
 below has to be decently optimized and have no extraneous processing.
 
 The output is sent over the USB serial port whenever there has
-been a long period of inactivity. Wejust hope inactivity will continue
-long enough for us to format and send all the data we have buffered.
-We do detect when that isn't the case and data has been overrun.
-Obviously this is not a general Sniffer-like solution, but it works
-well enoough for the way Honeywell communicates with the chip.
+been a long period of inactivity, or when the buffer is full. 
+If there is lots of constant SPI bus activity, data loss is inevitable.
 
 The output data stream is in ASCII and has the following elements:
 
-[           slave select has gone high (inactive)
-]           slave select has gone low (active)
-xx/yy       master/slave data, in hex
-tnnnn.\n    long inactivity; it's now nnnn microseconds after the last report
-tnnnn!\n    same, but we lost some data due to incoming data while we're sending
+[           slave select has gone low (active)
+]           slave select has gone high (inactive)
+xxyy        master (xx) and slave (yy) data, in hex
+tnnnn.      timestamp: it's now nnnn microseconds after the last report
+\n          newline every so often, for prettiness
+
+The output is decoded and interpreted on the PC by the spi_decode program.
 
 --------------------------------------------------------------------------
 *   (C) Copyright 2015, Len Shustek
@@ -60,114 +69,156 @@ tnnnn!\n    same, but we lost some data due to incoming data while we're sending
 
 Change log
 
-27 Apr 2015,  L. Shustek,  first version
+27 Apr 2015,  L. Shustek, V1.0  First version
+19 May 2015,  L. Shustek, V2.0  Switch to Teensy 3.1 because we need more speed
+26 May 2015,  L. Shustek, V3.0  Use both SPI modules in the Teensy, so we don't
+                                need the external shift register any more.
+20 Jun 2015,  L. Shustek, V4.0  That doesn't work: the 2nd SPI module isn't really
+                                there (a Freescale documentation error!), and 
+                                anyway there's too much delay in their modules.
+                                So we switch to collecting all the SPI data with
+                                external hardware.
 
 **************************************************************************/
 
-#define DEBUG 0 // output to Arduino serial console
+#define TEST 0
 
 #include <arduino.h>
+#include <SPI.h>
 
-// SPI pins are the low four bits of Port B:
-//  MISO PB3  // SPI master in slave out (not connected)
-//  MOSI PB2  // SPI master out slave in
-//  SCK PB1   // SPI clock
-//  SS PB0    // SPI slave select
+#define DATA_IN GPIOD_PDIR  // MOSI and MISO data lines are wired to shift registers on port D
 
-#define MISO_DDR DDRL // for Arduino Mega 2560
-#define MISO_PORT PORTL
-#define MISO_PINS PINL
+#define INPUT_SELECT 9  // output: controls which shift register to read: HIGH is MOSI, LOW is MISO
+                        // when it goes low, it also resets "data ready" flipflop
+#define DATA_READY 11  // input: data is ready
+#define SSNOT 12  // input: slave not selected
 
-#define LED_ON   PORTB |= (1 << PB7) // for Arduino Mega 2560
-#define LED_OFF  PORTB &= ~(1 << PB7)
-#define LED_FLIP PORTB ^= (1 << PB7)
+#define MAX_DATA 7000  // (max 254 if the index is a byte)
+#define TIMEOUT 100000  // loops for timeout; at 96 Mhz, a few tens of milliseconds
 
-#define MAX_DATA 250  // max 256, only because index is a byte
-#define TIMEOUT 2000  // loops for timeout
-
-byte data_master [MAX_DATA];
-byte data_slave [MAX_DATA];
-byte data_flag [MAX_DATA];
+byte data_master [MAX_DATA + 2];
+byte data_slave [MAX_DATA + 2];
+byte data_flag [MAX_DATA + 2];
+unsigned long data_timestamp [MAX_DATA + 2]; // timestamp every slave select change
 
 char string [20];
 
 void setup() {
-
-#if 0 // test code for port D wiring
-  MISO_DDR = 0xff; // all bits output
-  while (1) {
-    for (byte i = 0; i < 255; ++i) MISO_PORT = i;
-    LED_FLIP;
+  Serial.begin(115200);
+#if TEST 
+  while (!Serial) ; // wait for PC serial port to start
+  Serial.print("SPI Sniffer starting.\n");
+  for (int i = 0; i < 5; ++i) {
+    Serial.println(i + 1);
+    delay(1000);
   }
 #endif
 
-  Serial.begin(115200);
-  if (DEBUG) while (!Serial); // wait for console to be started
-  Serial.print("SPI Sniffer\n");
-  LED_ON;
+  pinMode(INPUT_SELECT, OUTPUT);
+  pinMode(DATA_READY, INPUT);
+  pinMode(SSNOT, INPUT);
+  digitalWriteFast(INPUT_SELECT, HIGH);  // select master data, don't clear ready
 
-  DDRB = DDRB &= 0xf0;   // low 4 bits of Port B are inputs: SCK, SS, MOSI, MISO
-  MISO_DDR = 0;    // all bits are inputs for th output of shift register that parallizes MISO
-  SPCR = (1 << SPE); // enable SPI as slave, not master
+  pinMode(2, INPUT);    // port D bits are the outputs of the data shift registers
+  pinMode(14, INPUT);
+  pinMode(7, INPUT);
+  pinMode(8, INPUT);
+  pinMode(6, INPUT);
+  pinMode(20, INPUT);
+  pinMode(21, INPUT);
+  pinMode(5, INPUT);
 }
 
+unsigned long delta; // TEMP
+
 void loop() {
-  unsigned int timer;
+  unsigned long timer;
   unsigned long time_now, time_before;
   byte last_ss, new_ss;
-  byte numbytes, numdbytes;
+  unsigned int numbytes, numdbytes;
+
+#if 0 // scope timing loop: takes about 0.814 usec per loop at 96 Mhz, so micros() is pretty fast!
+  { byte toggle = 0;
+    pinMode(3, OUTPUT);
+    while (1) {
+      time_now = micros(); // record timestamp
+      delta = time_now - time_before;
+      time_before = time_now;
+      //toggle ^= 1;
+      //digitalWriteFast(3, toggle);
+      digitalWriteFast(3, HIGH);
+      asm("nop\n nop\n nop\n nop");  //at 96 Mhz, 50 nsec pulse every 400 nsec
+      digitalWriteFast(3, LOW);
+    }
+  }
+#endif
 
   timer = 0;
-  last_ss = (1 << PB0); // default slave select is high
+  last_ss = 1; // default slave select is high
   numbytes = 0; numdbytes = 0;
-  time_before = 0;
+  time_before = micros();
 
-  while (1) {
-    new_ss = PINB & (1 << PB0); // read slave select (SS) level
-    if (new_ss != last_ss) {    // record a slave select change
-      if (numbytes < MAX_DATA) data_flag[numbytes++] = new_ss | 0x80;
-      last_ss = new_ss;
-    }
-    if (SPSR & (1 << SPIF)) {  // received a byte
+  // We buffer up bytes and slave select changes while they happen, fast, without
+  // sending anything to the host. When there's a pause or our buffer overflows, send it all.
+
+  while (1) {  // The timing is tricky. Here be race conditions!
+
+    if (digitalReadFast(DATA_READY)) {  // transfer complete: received a byte
       if (numbytes < MAX_DATA) {
-        // read slave data quickly first, since it's not double-buffered
-        data_slave[numbytes] = MISO_PINS;  // slave data from external shift register
-        data_master[numbytes] = SPDR; // master data from SPI register
+        data_master[numbytes] = (byte) DATA_IN; // read master data from shift register
+        digitalWriteFast(INPUT_SELECT, LOW); // start switch to reading slave data, and reset ready
         data_flag[numbytes++] = 0;    // no flag means data
+        asm("nop\n nop\n nop\n nop"); // make sure we wait at least 50 ns
+        data_slave[numbytes] = (byte) DATA_IN; // now read slave data from shift register
+        digitalWriteFast(INPUT_SELECT, HIGH); // return to reading master data for next time
       }
       timer = 0;
     }
-    else if (++timer > TIMEOUT) { // nothing received after timeout
-      // dump the buffer, and hope nothing comes in the meantime
-      LED_OFF;
-      if (numbytes > 0) {
-        for (int i = 0; i < numbytes; ++i) {
-          if (data_flag[i] == 0x80) // slave select
-            Serial.print('[');
+
+    new_ss = digitalReadFast(SSNOT); // read slave select (SS) level
+    if (new_ss != last_ss) {    // if slave select changed, record it now
+      if (numbytes < MAX_DATA) {
+        if (new_ss == 0) {  // if this is "select" (low)
+          time_now = micros(); // then also record a timestamp
+          data_timestamp[numbytes] = time_now - time_before;
+          time_before = time_now;
+        }
+        data_flag[numbytes++] = new_ss | 0x80;
+      }
+      last_ss = new_ss;
+    }
+
+    if (++timer > TIMEOUT  // nothing received after timeout
+        || numbytes >= MAX_DATA) { // or our buffer is full
+      if (numbytes > 0) { // write the buffer
+        Serial.print('w'); Serial.print(numbytes); Serial.print('.');  // mark buffer write
+        for (unsigned int i = 0; i < numbytes; ++i) {
+
+          if (data_flag[i] == 0x80) { // slave select, which also has a timestamp
+            Serial.print('t'); Serial.print(data_timestamp[i]); Serial.print(".[");
+          }
           else if (data_flag[i] == 0x81) { // slave unselect
-            Serial.print("] ");
-            if (numdbytes > 16) { // extra LF every so often for prettiness
+            Serial.print(']');
+            if (numdbytes > 16) { // extra LF every so often after deselect, for prettiness
               Serial.println();
               numdbytes = 0;
             }
           }
+#if 0 // currently not implemented
+          else if (data_flag[i] == 0x82) {
+            Serial.print('!');
+          }
+#endif
           else { // data
-            sprintf(string, "%02X/%02X ", data_master[i], data_slave[i]);
+            sprintf(string, "%02X%02X", data_master[i], data_slave[i]);
             Serial.print(string);
             ++numdbytes;
           }
-        }
-        time_now = micros();
-        Serial.print('t');   Serial.print(time_now - time_before);
-        time_before = time_now;
-        // check for data arrival in the meantime, and indicate if so
-        // we're double-buffered, so this might not actually represent a data loss
-        Serial.println((SPSR & (1 << SPIF)) ? '!' : '.');
+        } // for all bytes
         numbytes = 0;
       }
       timer = 0;
-      LED_ON;
     }
   }
 }
-
+
