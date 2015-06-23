@@ -1,11 +1,12 @@
 /*********************************************************************************
 *
-*	SPI Sniffer decode
-
+*		SPI Sniffer decoder
+*
+*********************************************************************************
 
 This is a command-line program that reads a coded datastream generated
-by an Aduino Mega 2650 and associated circuitry that is acting as
-a Sniffer watching SPI communications. We decode and interprets the data
+by an Teensy 3.1 microcontroller and associated circuitry that is acting as
+a Sniffer watching SPI communications. We decode and interpret the data
 as commands to an RF tranceiver for the Honeywell RedLINK network.
 
 More specifically, we are watching the traffic between the microprocessor on a
@@ -16,23 +17,24 @@ shows the data of the packets being sent and received. We hope eventually to dec
 those packets too.
 
 The datastream generally comes in realtime directly from the USB serial port
-on the Arduino, which is mapped on the PC to a virtual COM port. For that,
-start the program like this:
-   spi_decode -cn
+on the microcontroller, which is mapped on the PC to a virtual COM port.
+For that mode, start the program like this:
+spi_decode -cn
 where "n" is the COM port number, which you can get from the Windows
 "Devices and Printers" display.
 
-The decoded output is displayed on the console, and also appended to "spi.txt".
-The input from the COM port is appended to "spi.dat".
+The detailed decoded output is displayed on the console, and also appended to "spi.cmds.txt".
+The packet traffic only is appended to "spi.pkts.txt".
+The raw input from the COM port is appended to "spi.dat".
 
-For offline testing, the datastream can also read from the prerecorded "spi.dat"
-file. For that, start the program like this:
-   spi_decode -f
+For offline testing, the datastream can also read from a prerecorded "spi.dat" file.
+For that, start the program like this:
+spi_decode -f
 
-This decoder is not robust, and will break when it encounters situations I
-haven't yet seen. I iterativelly fix problems as they occur. At the moment it is
-also dependent on the timing of the line breaks in the datastream from the
-Arduino, which could be fixed if it becomes a problem.
+This decoder is not entirely robust, and will break when it encounters situations I
+haven't yet seen. I will iterativelly fix problems as they occur.
+The major unsolvable issue is that the Sniffer will lose new data while it transmits
+a block of recorded data to the PC.
 
 *----------------------------------------------------------------------------------
 *   (C) Copyright 2015 Len Shustek
@@ -55,12 +57,21 @@ Arduino, which could be fixed if it becomes a problem.
 *
 *  1 May 2015, L. Shustek, V1.0
 *    - first version
+* 11 May 2015, L. Shustek, V1.1
+*    - add packet segregation into a separate file
+*  7 Jun 2015, L. Shustek, V1.2
+*    - implement burst write to the power table, which the thermostat does
+* 20 Jun 2015, L. Shustek, V1.3
+*    - switch to new input format, enhance error recovery
 */
 
-#define VERSION "1.0"
+#define VERSION "1.3"
 
-#define DATFILENAME "spi.dat"  // input in file mode, output in serial mode
-#define OUTFILENAME "spi.txt"  // output for decodes
+#define SHOW_RCV_ENB_AS_PACKET 1	 // useful for investigating the frequency-hopping algorithm
+
+#define DATFILENAME "spi.dat"        // input in file mode, output in serial mode
+#define OUTFILENAME "spi.cmds.txt"   // output for detailed decodes
+#define PKTFILENAME "spi.pkts.txt"   // output for packets
 
 #include <windows.h>
 #include <stdio.h>
@@ -69,8 +80,10 @@ Arduino, which could be fixed if it becomes a problem.
 #include <ctype.h>
 #include <stdbool.h>
 #include <time.h>
+#include <conio.h>
+typedef unsigned char byte;
 
-FILE  *outfile, *datfile;
+FILE  *outfile, *datfile, *pktfile=NULL;
 int comport = 5;
 bool fileread = false;
 
@@ -81,12 +94,26 @@ COMMTIMEOUTS timeouts = {
     0};
 
 
+#define MAX_PKT 100
+struct {
+    unsigned long delta_time_usec;
+    bool xmit;
+    byte length;
+    byte data[MAX_PKT];
+}
+packet;
+
+unsigned long cmd_delta_time = 0;
+
+void packet_decode(void);
+
+
 /**************  command-line processing  *******************/
 
 void SayUsage(char *programName){
     static char *usage[] = {
         " ",
-        "Decode an SPI bytestream to "OUTFILENAME" and the console",
+        "Decode an SPI bytestream to "OUTFILENAME", "PKTFILENAME", and the console",
         "Usage: spi_decode [-cn] [-f]",
         "  -cn  inputs from COM port n (default 5) and appends to " DATFILENAME,
         "  -f   inputs from file "DATFILENAME" instead",
@@ -112,7 +139,6 @@ int HandleOptions(int argc,char *argv[]) {
                 exit(1);
             case 'C':
                 if (sscanf(&argv[i][2],"%d",&comport) != 1 || comport <1 || comport > 20) goto opterror;
-                // printf("Using COM%d\n", comport);
                 break;
             case 'F':
                 fileread = true;
@@ -179,17 +205,19 @@ size_t strlcat(char *dst, const char *src, size_t siz) {
 void cleanup(void) {
     if (datfile) fclose(datfile);
     if (outfile) fclose(outfile);
-    if (handle_serial) {
+    if (pktfile) fclose(pktfile);
+    if (handle_serial != INVALID_HANDLE_VALUE) {
         fprintf(stderr, "\nClosing serial port...");
         if (CloseHandle(handle_serial) == 0)fprintf(stderr, "Error\n");
         else fprintf(stderr, "OK\n");
+        handle_serial = INVALID_HANDLE_VALUE;
     }
 }
 
 void output (char *fmt, ...) {
     va_list args;
     va_start(args,fmt);
-    vfprintf(stdout, fmt, args);
+    // vfprintf(stdout, fmt, args);
     if (outfile) vfprintf(outfile, fmt, args);
     va_end(args);
 }
@@ -197,7 +225,7 @@ void output (char *fmt, ...) {
 //**************   TI CC1101 register and command decodes  ******************
 
 
-#define MAX_LINE 2000
+#define MAX_LINE 60000
 char line[MAX_LINE]={
     0}
 , *lineptr;
@@ -278,9 +306,9 @@ void decode_IOCFG0 (void) {
 }
 
 static struct {
-    char *name;
-    char *descr;
-    void (*decode_reg)(void);
+    char *name;  // config register short name
+    char *descr; // config register description
+    void (*decode_reg)(void); // extra decoding routine
 }
 config_regs [64] = {
     {
@@ -364,8 +392,7 @@ config_regs [64] = {
     ,	{
         "BSCFG", "bit sync config"
     }
-    ,
-    {
+    ,    {
         "AGCTRL2", "AGC control 2"
     }
     ,	{
@@ -501,6 +528,9 @@ command_strobes [16] = {
         "SIDLE", "exit TX/RX"
     }
     ,	{
+        "UNUSED 0x37", ""
+    }
+    ,	{
         "SWOR", "start RX polling (wake-on-radio)"
     }
     ,	{
@@ -519,9 +549,6 @@ command_strobes [16] = {
         "SNOP", "no operation"
     }
     ,	{
-        "UNUSED 0x3D", ""
-    }
-    ,	{
         "UNUSED 0x3E", ""
     }
     ,	{
@@ -529,42 +556,118 @@ command_strobes [16] = {
     }
 };
 
-void exit_msg(const char* err) {
-    output("**** %s\n", err);
-    output(" line %d: %s\n", linecnt, line);
-    if (lineptr) output(" error start: %s\n", lineptr);
+
+void warn_msg(const char* err, byte parm) {
+    output("**** %s, %02X\n", err, parm);
+}
+
+void fatal_err(const char *err) {
+    fprintf(stderr, err);
+    cleanup();
+    exit(98);
+}
+
+void exit_msg(const char* err, byte parm) {
+    int i;
+    fprintf(stderr, "**** %s, %02X\n", err, parm);
+    output("**** %s, %02X\n", err, parm);
+    for (i=0;;++i) {
+        if (line[i] == 0) break;
+        if (lineptr == &line[i]) output (" <-- error --> ");
+        output("%c", line[i]);
+    }
+    output("\n");
     cleanup();
     exit(99);
 }
 
-void show_config_reg(char *op) {
-    output("%s %02X: %s (%s) as %02X ", op, regnum, config_regs[regnum].name, config_regs[regnum].descr, regval);
-    if (config_regs[regnum].decode_reg != NULL) (config_regs[regnum].decode_reg)();
-    else output("\n");
+void show_delta_time(void) {
+    if (cmd_delta_time) {
+        output("%3ld.%06ld ", cmd_delta_time/1000000, cmd_delta_time % 1000000);
+        cmd_delta_time = 0;
+    }
+    else output("           ");
+}
+
+
+void show_config_reg(char *op, bool burstreg) {
+    show_delta_time();
+    if (burstreg) output("burst ");
+    output("%s %02X: %s (%s) as ", op, regnum, config_regs[regnum].name, config_regs[regnum].descr);
+    if (!burstreg) {
+        output("%02X ", regval);
+        if (config_regs[regnum].decode_reg != NULL) (config_regs[regnum].decode_reg)();
+        else output("\n");
+    }
 }
 
 void command_strobe(void) {
+    show_delta_time();
     output("command %02X: %s (%s)\n", regnum, command_strobes[regnum-0x30].name, command_strobes[regnum-0x30].descr);
+    if (regnum == 0x30) {  // chip reset: mark in the packet stream
+        if (packet.length != 0) exit_msg("reset with packet length not zero", packet.length);
+        // not interesting, because it happens too often:  packet_decode();
+    }
+    if (SHOW_RCV_ENB_AS_PACKET && regnum == 0x34) { // enable RX: create pseudo-packet entry in the log
+        fprintf(pktfile, "%3ld.%06d sec ", packet.delta_time_usec/1000000, (packet.delta_time_usec%1000000));
+        fprintf(pktfile, "rcv enable on chan %02X sync %02X %02X\n",
+            current_config_regs[0x0A], current_config_regs[0x04], current_config_regs[0x05]);
+        packet.delta_time_usec = 0;
+    }
+}
+
+void recover_after_bad_data (char *msg) {
+    output ("*** %s at ", msg);
+    for (int i=0; i<32 && *(lineptr+i); ++i) output("%c",*(lineptr+i));
+    output(", skipping ");
+    // try to recover by skipping to next chip select
+    while (*lineptr && *lineptr!='[') output("%c", *(lineptr++));
+    if (*lineptr=='\0') output("<nul>");
+    output(".\n");
+}
+
+bool skip_timestamp(void) {
+    if (*lineptr == 't') {  // time delta
+        unsigned long delta_time;
+        if (sscanf(++lineptr, " %ld . %n", &delta_time, &num_chars) != 1) {
+            recover_after_bad_data("bad time format");
+            return false;
+        }
+        else {
+            lineptr += num_chars;
+            cmd_delta_time += delta_time;
+            packet.delta_time_usec += delta_time;
+        }
+    }
+    return true;
 }
 
 
-void skip_to_next_data(void) {
+
+bool skip_to_next_data(void) {
     while(1) {
-        if (*lineptr == 't') {  // timestamp
-            unsigned long delta_time;
-            if (sscanf(++lineptr, " %ld %n", &delta_time, &num_chars) != 1) exit_msg("bad time format");
-            lineptr += num_chars;
-            output("pause %ld.%03ld seconds\n", delta_time/1000000, (delta_time % 1000000)/1000);
+        if (!skip_timestamp()) return false;
+        if (*lineptr == 'w') { // buffer write marker
+            int numbytes;
+            if (sscanf(++lineptr, " %d %n", &numbytes, &num_chars) != 1) {
+                recover_after_bad_data("bad buffer write numbytes format");
+                return false;
+            }
+            else {
+                lineptr += num_chars;
+                output("received buffer with %d bytes\n", numbytes);
+            }
+
         }
-        else if (*lineptr == ']') {
+        else if (*lineptr == ']') {  // chip unselect
             chip_selected = false;
             ++lineptr;
         }
-        else if (*lineptr == '[') {
+        else if (*lineptr == '[') {  // chip select
             chip_selected = true;
             ++lineptr;
         }
-        else if (*lineptr == '.') {
+        else if (*lineptr == '.') {  // number end delimeter
             ++lineptr;
         }
         else if (*lineptr == '!') {
@@ -576,29 +679,53 @@ void skip_to_next_data(void) {
         }
         else break;  // must be master/slave data pair, or end of data
     }
+    return true;
 }
 
-void read_data_pair(void) {
-    if (sscanf(lineptr, " %2hhX/%2hhX %n", &master_data, &slave_data, &num_chars) != 2) {
-        exit_msg ("bad hex data");
+bool read_data_pair(void) {
+    if (!skip_to_next_data()) return false;
+    if (sscanf(lineptr, "%2hhX%2hhX %n", &master_data, &slave_data, &num_chars) != 2) {
+        recover_after_bad_data("bad hex data");
+        return false;
     }
     lineptr += num_chars;
-    // output ("m=%02X, s=%02X\n", master_data, slave_data);
+    return true;
 }
+
+//****************** packet processing ******************
+
+void packet_decode(void) {
+    fprintf(pktfile, "%3ld.%06d sec ", packet.delta_time_usec/1000000, (packet.delta_time_usec%1000000));
+    if (packet.length == 0) {  // not really a packet: a chip reset
+        fprintf(pktfile, "rset");
+    }
+    else {
+        fprintf (pktfile, "%s %2d bytes chan %02X sync %02X %02X data ",
+            packet.xmit ? "sent" : "rcvd", packet.length-1,
+            current_config_regs[0x0A], current_config_regs[0x04], current_config_regs[0x05]);
+        for (int i=1; i<packet.length; ++i)
+            fprintf(pktfile, "%02X ", packet.data[i]);
+    }
+    fprintf(pktfile, "\n");
+    packet.delta_time_usec = 0;
+    packet.length = 0;
+}
+
+
+//***************** main loop *************************
 
 
 int main(int argc,char *argv[]) {
-    int argno, i;
-    int bytes_bursted, bytes_changed;
+    int argno;
 
-    printf("SPI decoder, V%s\n", VERSION);
+    fprintf(stderr, "SPI decoder, V%s\n", VERSION);
 
     argno = HandleOptions(argc,argv);
 
     if (fileread) {
         if ((datfile = fopen(DATFILENAME,"r")) == NULL) // opne to read from .dat file
-            exit_msg(DATFILENAME " open for read failed");
-        printf("Reading from" DATFILENAME "\n");
+            fatal_err(DATFILENAME " open for read failed");
+        fprintf(stderr, "Reading from " DATFILENAME "\n");
     }
     else {
         char dev_name[80];
@@ -612,68 +739,105 @@ int main(int argc,char *argv[]) {
             dcbSerialParams.StopBits = ONESTOPBIT;
             dcbSerialParams.Parity = NOPARITY;
             dcbSerialParams.DCBlength = sizeof(DCB);
-            if(SetCommState(handle_serial, &dcbSerialParams) == 0) exit_msg("Error setting serial port parameters");
+            if(SetCommState(handle_serial, &dcbSerialParams) == 0) fatal_err("Error setting serial port parameters");
             timeouts.ReadIntervalTimeout =  100;  		// msec
-            timeouts.ReadTotalTimeoutConstant = 0;    // msec
+            timeouts.ReadTotalTimeoutConstant = 200;    // msec
             timeouts.ReadTotalTimeoutMultiplier = 0;  // msec
             timeouts.WriteTotalTimeoutConstant = 50;
             timeouts.WriteTotalTimeoutMultiplier = 10;
-            if(SetCommTimeouts(handle_serial, &timeouts) == 0) exit_msg("Error setting serial port timeouts");
+            if(SetCommTimeouts(handle_serial, &timeouts) == 0) fatal_err("Error setting serial port timeouts");
             fprintf(stderr,"OK\n");
         }
-        else exit_msg("Failed");
+        else fatal_err("Failed");
         if ((datfile = fopen(DATFILENAME,"a")) == NULL) // open to append to .dat file
-            exit_msg(DATFILENAME " open for append failed");
+            fatal_err(DATFILENAME " open for append failed");
     }
 
-    if ((outfile = fopen(OUTFILENAME,"a")) == NULL) exit_msg(OUTFILENAME " open failed");
+    if ((outfile = fopen(OUTFILENAME,"a")) == NULL) fatal_err(OUTFILENAME " open failed");
+    if ((pktfile = fopen(PKTFILENAME,"a")) == NULL) fatal_err(PKTFILENAME " open failed");
+    fprintf(pktfile, "\n");
 
-    atexit(cleanup);
-    printf("Starting\n");
+    // atexit(cleanup);
+    fprintf(stderr, "Starting.\n");
 
-    while(1) {
+    while(!kbhit()) {
+more_data:
         if (fileread) { // read from .dat file
             if (!fgets(line, MAX_LINE, datfile)) {
                 output("***end of file");
+                fprintf(stderr, "***end of file");
                 cleanup();
                 exit(0);
             }
             ++linecnt;
             bytes_read = strlen(line);
+            output("got %d bytes from file\n", bytes_read);
         }
         else {  // read from serial port
             // printf("reading serial port com%d...\n", comport);
             ReadFile(handle_serial, line, MAX_LINE, &bytes_read, NULL);
             line[bytes_read]='\0';
             if (bytes_read != 0) {
-                printf("Got %d bytes from serial port\n", bytes_read);
-                // printf("%s\n", line);
+                output("got %d bytes from serial port\n", bytes_read);
+                fprintf(stderr, "got %d bytes from serial port\n", bytes_read);
                 fprintf(datfile, "%s\n", line);
             }
         }
+
         if (strcmp(line, "SPI Sniffer\n") == 0) {
-            printf("\"SPI Sniffer\" header line read\n");
+            fprintf(stderr, "\"SPI Sniffer\" header line read\n");
             continue;
         }
         // output("decode %n bytes: %s\n", bytes_read, line);
         lineptr = line;
         while (*lineptr != '\0') {
             skip_to_next_data();  // process input up to next master/slave data pair
-            if (*lineptr == '\0') 				break;
-            read_data_pair();
+            if (*lineptr == '\0')break;
+next_command:
+            if (!read_data_pair()) goto more_data;
             isread = master_data & 0x80; 	// "read register" flag bit
             isburst = master_data & 0x40;	// "burst" flag bit
             regnum = master_data & 0x3f;  	// register number 0 to 63
+
             if (isread) { //  config register read
                 if (regnum >= 0x30 && regnum <= 0x3d && !isburst) { // no, is really command strobe
                     command_strobe();
                 }
                 else {
-                    if(isburst) exit_msg("implement burst read!");
-                    skip_to_next_data();
-                    read_data_pair();
-                    regval = slave_data;
-                    show_config_reg("read");
+                    if(isburst){
+                        if (regnum == 0x3f) { // read RX FIFO: receive packet
+                            if (!chip_selected) exit_msg("burst RX FIFO write without chip selected", regnum);
+                            show_config_reg("read", true);
+                            packet.xmit = false;
+                            while (1) { // show all burst read data from FIFO
+                                if (!skip_timestamp()) goto next_command;
+                                if (*lineptr == ']') break; // ends with chip unselect
+                                if (!read_data_pair()) goto next_command;
+                                output(" %02X", slave_data);
+                                if (packet.length < MAX_PKT)	{
+                                    packet.data[packet.length++] = slave_data;
+                                }
+                            }
+                            output("\n");
+                            packet_decode();
+                        }
+                        else  { // burst read of other than FIFO: consecutive config registers
+                            if (!skip_to_next_data()) goto next_command;
+                            while (1) {
+                                if (!skip_timestamp()) goto next_command;
+                                if (*lineptr == ']') break; // ends with chip unselect
+                                if (!read_data_pair()) goto next_command;
+                                regval = slave_data;
+                                show_config_reg("read", false);
+                                if (++regnum >= 0x40) exit_msg("burst read of too many config registers", regnum);
+                            }
+                        }
+                    }
+                    else { // regular single-register read
+                        if (!read_data_pair()) goto next_command;
+                        regval = slave_data;
+                        show_config_reg("read", false);
+                    }
                 }
             }
             else { // register write
@@ -681,54 +845,73 @@ int main(int argc,char *argv[]) {
                     command_strobe();
                 }
                 else if (regnum == 0x3e) { // write power table
-                    if (isburst) exit_msg("implement burst power table write");
-                    read_data_pair();
-                    regval = master_data;
-                    show_config_reg("write");
+                    if (isburst) {
+                        if (!chip_selected) exit_msg("burst power table write without chip selected", regnum);
+                        show_config_reg("write", true);
+                        while (1) { // show all burst write data to power table
+                            if (!skip_timestamp()) goto next_command;
+                            if (*lineptr == ']') break; // ends with chip unselect
+                            if (!read_data_pair()) goto next_command;
+                            output(" %02X", master_data);
+                        }
+                        output("\n");
+                    }
+                    else { // non-burst write to power table
+                        if (!read_data_pair()) goto next_command;
+                        regval = master_data;
+                        show_config_reg("write", false);
+                    }
                 }
-                else if (regnum == 0x3f) { // write TX FIFO
-                    if (!isburst) exit_msg("implement non-burst TX FIFO write");
-                    if (!chip_selected) exit_msg("burst TX FIFO write without chip selected");
-                    show_config_reg("write");
+                else if (regnum == 0x3f) { // write TX FIFO: transmit packet
+                    if (!isburst) exit_msg("implement non-burst TX FIFO write", regnum);
+                    if (!chip_selected) exit_msg("burst TX FIFO write without chip selected", regnum);
+                    show_config_reg("write", true);
+                    packet.xmit = true;
                     while (1) { // show all burst write data to FIFO
+                        if (!skip_timestamp()) goto next_command;
                         if (*lineptr == ']') break; // ends with chip unselect
-                        read_data_pair();
+                        if (!read_data_pair()) goto next_command;
                         output(" %02X", master_data);
+                        if (packet.length < MAX_PKT) {
+                            packet.data[packet.length++] = master_data;
+                        }
                     }
                     output("\n");
+                    packet_decode();
                 }
-                else {
+                else { // writing config register(s)
                     if (isburst) { // burst config register write
+                        int bytes_bursted, bytes_changed, start_reg, end_reg;
                         bytes_bursted = 0;
                         bytes_changed = 0;
+                        start_reg = regnum;
                         // output("burst config write\n");
-                        if (!chip_selected) exit_msg("burst mode without chip selected");
-                        while (1) { // read all burst write data
+                        if (!chip_selected) exit_msg("burst mode without chip selected", regnum);
+                        while (1) { // read all the burst write data
+                            if (!skip_timestamp()) goto next_command;
                             if (*lineptr == ']') break; // ends with chip unselect
-                            if (regnum > 0x2e) exit_msg("too much burst data");
-                            read_data_pair();
+                            if (regnum > 0x2e) exit_msg("too much burst data", regnum);
+                            if (!read_data_pair()) goto next_command;
                             new_config_regs[regnum++] = master_data;
                             ++bytes_bursted;
                         }
-                        for (regnum=0; regnum<48; ++regnum) {  // show what changed
-                            if (new_config_regs[regnum] != current_config_regs[regnum]) {
+                        end_reg = regnum-1;
+                        for (regnum=start_reg; regnum<end_reg; ++regnum) {  // show only those that changed
+                            if ((new_config_regs[regnum] != current_config_regs[regnum])) {
                                 regval = new_config_regs[regnum];
-                                show_config_reg(" wrote");
+                                show_config_reg(" wrote", false);
                                 current_config_regs[regnum] = new_config_regs[regnum];
                                 ++bytes_changed;
                             }
                         }
-                        output(" burst wrote %d registers; %d changed\n", bytes_bursted, bytes_changed);
+                        show_delta_time();
+                        output(" burst wrote %d registers, and %d changed\n", bytes_bursted, bytes_changed);
                     }
                     else {  // single register write
-                        // skip_to_next_data();
-                        if(*lineptr != ']') {
-                            read_data_pair();
-                            regval = master_data;
-                            show_config_reg("write");
-                            current_config_regs[regnum] = regval;
-                        }
-                        else show_config_reg("*** aborted write");
+                        if (!read_data_pair()) goto next_command;
+                        regval = master_data;
+                        show_config_reg("write", false);
+                        current_config_regs[regnum] = regval;
                     }
                 }
             }
