@@ -1,0 +1,51 @@
+command 30: SRES (reset chip)
+command 36: SIDLE (exit TX/RX)
+ wrote 00: IOCFG2 (GDO2 output pin config) as 06 sync word sent/rcvd
+ wrote 01: IOCFG1 (GD01 output pin config) as 2F hardwired to 0
+ wrote 02: IOCFG0 (GDO0 output pin config) as 0A PLL lock detected
+ wrote 03: FIFOTHR (FIFO thresholds) as 47 
+ wrote 04: SYNC1 (sync word high) as 63 
+ wrote 05: SYNC0 (sync word low) as 6B 
+ wrote 06: PKTLEN (packet length) as BC 
+ wrote 07: PKTCTRL1 (packet control 1) as 64 
+ wrote 08: PKTCTRL0 (packet control 0) as 45 
+ wrote 0B: FSCTRL1 (frequency synthesizer control 1) as 06 
+ wrote 0D: FREQ2 (frequency control word H) as 22 
+ wrote 0E: FREQ1 (frequency control word M) as B3 
+ wrote 0F: FREQ0 (frequency control word L) as 33 
+ wrote 10: MDMCFRG4 (modem config 4) as CA 
+ wrote 11: MDMCFRG3 (modem config 3) as 83 
+ wrote 12: MDMCFRG2 (modem config 2) as 12 
+ wrote 13: MDMCFRG1 (modem config 1) as 62 
+ wrote 14: MDMCFRG0 (modem config 0) as F8 
+ wrote 15: DEVIATN (modem deviation setting) as 34 
+ wrote 16: MCSM2 (main radio state machine config 2) as 07 
+ wrote 18: MCSM0 (main radio state machine config 0) as 18 
+ wrote 19: FOCCFG (frequency offset compensation config) as 16 
+ wrote 1A: BSCFG (bit sync config) as 6C 
+ wrote 1B: AGCTRL2 (AGC control 2) as 43 
+ wrote 1C: AGCTRL1 (AGC control 1) as 40 
+ wrote 1D: AGCTRL0 (AGC control 0) as 91 
+ wrote 1E: WOREVT1 (event 0 timeout H) as 87 
+ wrote 1F: WOREVT0 (event 0 timeout L) as 6B 
+ wrote 20: WORCTRL (wake on radio control) as F8 
+ wrote 21: FREND1 (front end RX config) as 56 
+ wrote 22: FREND0 (front end TX config) as 10 
+ wrote 23: FSCAL3 (frequency synthesizer calibration 3) as E9 
+ wrote 24: FSCAL2 (frequency synthesizer calibration 2) as 2A 
+ wrote 26: FSCAL0 (frequency synthesizer calibration 0) as 1F 
+ wrote 27: RCCTRL1 (RC oscillator config 1) as 41 
+ wrote 29: FSTEST (frequency synthesizer calibration control) as 59 
+ wrote 2A: PTEST (production test) as 7F 
+ wrote 2B: AGCTEST (AGC test) as 3F 
+ wrote 2C: TEST2 (test settings 2) as 81 
+ wrote 2D: TEST1 (test settings 1) as 35 
+ wrote 2E: TEST0 (test settings 0) as 09 
+ burst wrote 47 registers, and 41 changed
+write 3E: PATABLE (power amp control) as  00
+write 0D: FREQ2 (frequency control word H) as 22 
+write 0E: FREQ1 (frequency control word M) as B3 
+write 0F: FREQ0 (frequency control word L) as 0D 
+command 39: SPWD (enter power down mode)
+pause 38.073 seconds
+***end of file

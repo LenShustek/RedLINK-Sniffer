@@ -1,0 +1,9 @@
+
+   90.113 sec sent 12 bytes chan 42 sync 00 85 data 33 FF FF FF FE 43 FC F0 00 00 81 11 
+    0.227 sec sent 12 bytes chan 36 sync 00 80 data 33 FF FF FF FE 43 FC F0 00 00 81 11 
+    0.265 sec sent 12 bytes chan 73 sync 00 99 data 33 FF FF FF FE 43 FC F0 00 00 81 11 
+    0.241 sec sent 12 bytes chan 5F sync 00 93 data 33 FF FF FF FE 43 FC F0 00 00 81 11 
+   69.950 sec sent 12 bytes chan 4F sync 00 8B data 33 FF FF FF FE 2D 02 F0 00 00 81 11 
+    0.196 sec sent 12 bytes chan 14 sync 00 73 data 33 FF FF FF FE 2D 02 F0 00 00 81 11 
+    0.265 sec sent 12 bytes chan 51 sync 00 8C data 33 FF FF FF FE 2D 02 F0 00 00 81 11 
+    0.265 sec sent 12 bytes chan 34 sync 00 7F data 33 FF FF FF FE 2D 02 F0 00 00 81 11 

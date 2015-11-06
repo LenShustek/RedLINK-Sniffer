@@ -1,0 +1,282 @@
+read 35: MARCSTATE (control machine state) as 01 
+write 2E: TEST0 (test settings 0) as 09 
+command 36: SIDLE (exit TX/RX)
+command 36: SIDLE (exit TX/RX)
+write 02: IOCFG0 (GDO0 output pin config) as 02 TX FIFO filled
+pause 90.113 seconds
+write 0A: CHANNR (channel number) as 42 
+ wrote 23: FSCAL3 (frequency synthesizer calibration 3) as CF 
+ burst wrote 2 registers, and 1 changed
+write 05: SYNC0 (sync word low) as 85 
+command 3B: SFTX (flush TX FIFO)
+command 35: STX (enable TX)
+burst write 3F: FIFO (data) as  0C 33 FF FF FF FE 43 FC F0 00 00 81 11
+read 35: MARCSTATE (control machine state) as 01 
+command 36: SIDLE (exit TX/RX)
+command 36: SIDLE (exit TX/RX)
+write 02: IOCFG0 (GDO0 output pin config) as 00 RX FIFO filled
+pause 0.144 seconds
+write 0A: CHANNR (channel number) as 42 
+ burst wrote 2 registers, and 0 changed
+write 05: SYNC0 (sync word low) as 85 
+command 3A: SFRX (flush RX FIFO)
+command 34: SRX (enable RX)
+read 34: RSSI (received signal strength) as AD 
+read 34: RSSI (received signal strength) as AD 
+read 38: PKTSTATUS (GDOx and packet status) as 10 
+read 34: RSSI (received signal strength) as A7 
+read 34: RSSI (received signal strength) as A7 
+read 38: PKTSTATUS (GDOx and packet status) as 10 
+command 36: SIDLE (exit TX/RX)
+command 36: SIDLE (exit TX/RX)
+command 39: SPWD (enter power down mode)
+read 35: MARCSTATE (control machine state) as 01 
+write 2E: TEST0 (test settings 0) as 09 
+command 36: SIDLE (exit TX/RX)
+command 36: SIDLE (exit TX/RX)
+write 02: IOCFG0 (GDO0 output pin config) as 02 TX FIFO filled
+pause 0.083 seconds
+write 0A: CHANNR (channel number) as 36 
+ burst wrote 2 registers, and 0 changed
+write 05: SYNC0 (sync word low) as 80 
+command 3B: SFTX (flush TX FIFO)
+command 35: STX (enable TX)
+burst write 3F: FIFO (data) as  0C 33 FF FF FF FE 43 FC F0 00 00 81 11
+read 35: MARCSTATE (control machine state) as 01 
+command 36: SIDLE (exit TX/RX)
+command 36: SIDLE (exit TX/RX)
+write 02: IOCFG0 (GDO0 output pin config) as 00 RX FIFO filled
+pause 0.144 seconds
+write 0A: CHANNR (channel number) as 36 
+ burst wrote 2 registers, and 0 changed
+write 05: SYNC0 (sync word low) as 80 
+command 3A: SFRX (flush RX FIFO)
+command 34: SRX (enable RX)
+read 34: RSSI (received signal strength) as AC 
+read 34: RSSI (received signal strength) as B3 
+read 34: RSSI (received signal strength) as B3 
+read 38: PKTSTATUS (GDOx and packet status) as 10 
+read 34: RSSI (received signal strength) as AB 
+read 34: RSSI (received signal strength) as AB 
+read 38: PKTSTATUS (GDOx and packet status) as 10 
+command 3A: SFRX (flush RX FIFO)
+command 36: SIDLE (exit TX/RX)
+command 36: SIDLE (exit TX/RX)
+command 39: SPWD (enter power down mode)
+read 35: MARCSTATE (control machine state) as 01 
+write 2E: TEST0 (test settings 0) as 09 
+command 36: SIDLE (exit TX/RX)
+command 36: SIDLE (exit TX/RX)
+write 02: IOCFG0 (GDO0 output pin config) as 02 TX FIFO filled
+pause 0.121 seconds
+write 0A: CHANNR (channel number) as 73 
+ burst wrote 2 registers, and 0 changed
+write 05: SYNC0 (sync word low) as 99 
+command 3B: SFTX (flush TX FIFO)
+command 35: STX (enable TX)
+burst write 3F: FIFO (data) as  0C 33 FF FF FF FE 43 FC F0 00 00 81 11
+read 35: MARCSTATE (control machine state) as 01 
+command 36: SIDLE (exit TX/RX)
+command 36: SIDLE (exit TX/RX)
+write 02: IOCFG0 (GDO0 output pin config) as 00 RX FIFO filled
+pause 0.144 seconds
+write 0A: CHANNR (channel number) as 73 
+ burst wrote 2 registers, and 0 changed
+write 05: SYNC0 (sync word low) as 99 
+command 3A: SFRX (flush RX FIFO)
+command 34: SRX (enable RX)
+read 34: RSSI (received signal strength) as B2 
+read 34: RSSI (received signal strength) as AC 
+read 34: RSSI (received signal strength) as AC 
+read 38: PKTSTATUS (GDOx and packet status) as 10 
+read 34: RSSI (received signal strength) as AB 
+read 34: RSSI (received signal strength) as AB 
+read 38: PKTSTATUS (GDOx and packet status) as 10 
+command 3A: SFRX (flush RX FIFO)
+command 36: SIDLE (exit TX/RX)
+command 36: SIDLE (exit TX/RX)
+command 39: SPWD (enter power down mode)
+read 35: MARCSTATE (control machine state) as 01 
+write 2E: TEST0 (test settings 0) as 09 
+command 36: SIDLE (exit TX/RX)
+command 36: SIDLE (exit TX/RX)
+write 02: IOCFG0 (GDO0 output pin config) as 02 TX FIFO filled
+pause 0.097 seconds
+write 0A: CHANNR (channel number) as 5F 
+ burst wrote 2 registers, and 0 changed
+write 05: SYNC0 (sync word low) as 93 
+command 3B: SFTX (flush TX FIFO)
+command 35: STX (enable TX)
+burst write 3F: FIFO (data) as  0C 33 FF FF FF FE 43 FC F0 00 00 81 11
+read 35: MARCSTATE (control machine state) as 01 
+command 36: SIDLE (exit TX/RX)
+command 36: SIDLE (exit TX/RX)
+write 02: IOCFG0 (GDO0 output pin config) as 00 RX FIFO filled
+pause 0.144 seconds
+write 0A: CHANNR (channel number) as 5F 
+ burst wrote 2 registers, and 0 changed
+write 05: SYNC0 (sync word low) as 93 
+command 3A: SFRX (flush RX FIFO)
+command 34: SRX (enable RX)
+read 34: RSSI (received signal strength) as AD 
+read 34: RSSI (received signal strength) as B3 
+read 34: RSSI (received signal strength) as B3 
+read 38: PKTSTATUS (GDOx and packet status) as 10 
+read 34: RSSI (received signal strength) as AB 
+read 34: RSSI (received signal strength) as AB 
+read 38: PKTSTATUS (GDOx and packet status) as 10 
+command 3A: SFRX (flush RX FIFO)
+command 36: SIDLE (exit TX/RX)
+command 36: SIDLE (exit TX/RX)
+command 39: SPWD (enter power down mode)
+read 35: MARCSTATE (control machine state) as 01 
+write 2E: TEST0 (test settings 0) as 09 
+command 36: SIDLE (exit TX/RX)
+command 36: SIDLE (exit TX/RX)
+command 39: SPWD (enter power down mode)
+read 35: MARCSTATE (control machine state) as 01 
+write 2E: TEST0 (test settings 0) as 09 
+command 36: SIDLE (exit TX/RX)
+command 36: SIDLE (exit TX/RX)
+command 39: SPWD (enter power down mode)
+read 35: MARCSTATE (control machine state) as 01 
+write 2E: TEST0 (test settings 0) as 09 
+command 36: SIDLE (exit TX/RX)
+command 36: SIDLE (exit TX/RX)
+command 39: SPWD (enter power down mode)
+read 35: MARCSTATE (control machine state) as 01 
+write 2E: TEST0 (test settings 0) as 09 
+command 36: SIDLE (exit TX/RX)
+command 36: SIDLE (exit TX/RX)
+command 39: SPWD (enter power down mode)
+read 35: MARCSTATE (control machine state) as 01 
+write 2E: TEST0 (test settings 0) as 09 
+command 36: SIDLE (exit TX/RX)
+command 36: SIDLE (exit TX/RX)
+write 02: IOCFG0 (GDO0 output pin config) as 02 TX FIFO filled
+pause 69.806 seconds
+write 0A: CHANNR (channel number) as 4F 
+ burst wrote 2 registers, and 0 changed
+write 05: SYNC0 (sync word low) as 8B 
+command 3B: SFTX (flush TX FIFO)
+command 35: STX (enable TX)
+burst write 3F: FIFO (data) as  0C 33 FF FF FF FE 2D 02 F0 00 00 81 11
+read 35: MARCSTATE (control machine state) as 01 
+command 36: SIDLE (exit TX/RX)
+command 36: SIDLE (exit TX/RX)
+write 02: IOCFG0 (GDO0 output pin config) as 00 RX FIFO filled
+pause 0.144 seconds
+write 0A: CHANNR (channel number) as 4F 
+ burst wrote 2 registers, and 0 changed
+write 05: SYNC0 (sync word low) as 8B 
+command 3A: SFRX (flush RX FIFO)
+command 34: SRX (enable RX)
+read 34: RSSI (received signal strength) as B4 
+read 34: RSSI (received signal strength) as B4 
+read 38: PKTSTATUS (GDOx and packet status) as 10 
+read 34: RSSI (received signal strength) as AF 
+read 34: RSSI (received signal strength) as AF 
+read 38: PKTSTATUS (GDOx and packet status) as 10 
+command 3A: SFRX (flush RX FIFO)
+command 36: SIDLE (exit TX/RX)
+command 36: SIDLE (exit TX/RX)
+command 39: SPWD (enter power down mode)
+read 35: MARCSTATE (control machine state) as 01 
+write 2E: TEST0 (test settings 0) as 09 
+command 36: SIDLE (exit TX/RX)
+command 36: SIDLE (exit TX/RX)
+write 02: IOCFG0 (GDO0 output pin config) as 02 TX FIFO filled
+pause 0.051 seconds
+write 0A: CHANNR (channel number) as 14 
+ burst wrote 2 registers, and 0 changed
+write 05: SYNC0 (sync word low) as 73 
+command 3B: SFTX (flush TX FIFO)
+command 35: STX (enable TX)
+burst write 3F: FIFO (data) as  0C 33 FF FF FF FE 2D 02 F0 00 00 81 11
+read 35: MARCSTATE (control machine state) as 01 
+command 36: SIDLE (exit TX/RX)
+command 36: SIDLE (exit TX/RX)
+write 02: IOCFG0 (GDO0 output pin config) as 00 RX FIFO filled
+pause 0.144 seconds
+write 0A: CHANNR (channel number) as 14 
+ burst wrote 2 registers, and 0 changed
+write 05: SYNC0 (sync word low) as 73 
+command 3A: SFRX (flush RX FIFO)
+command 34: SRX (enable RX)
+read 34: RSSI (received signal strength) as AE 
+read 34: RSSI (received signal strength) as B4 
+read 34: RSSI (received signal strength) as B4 
+read 38: PKTSTATUS (GDOx and packet status) as 10 
+read 34: RSSI (received signal strength) as AD 
+read 34: RSSI (received signal strength) as AD 
+read 38: PKTSTATUS (GDOx and packet status) as 10 
+command 3A: SFRX (flush RX FIFO)
+command 36: SIDLE (exit TX/RX)
+command 36: SIDLE (exit TX/RX)
+command 39: SPWD (enter power down mode)
+read 35: MARCSTATE (control machine state) as 01 
+write 2E: TEST0 (test settings 0) as 09 
+command 36: SIDLE (exit TX/RX)
+command 36: SIDLE (exit TX/RX)
+write 02: IOCFG0 (GDO0 output pin config) as 02 TX FIFO filled
+pause 0.121 seconds
+write 0A: CHANNR (channel number) as 51 
+ burst wrote 2 registers, and 0 changed
+write 05: SYNC0 (sync word low) as 8C 
+command 3B: SFTX (flush TX FIFO)
+command 35: STX (enable TX)
+burst write 3F: FIFO (data) as  0C 33 FF FF FF FE 2D 02 F0 00 00 81 11
+read 35: MARCSTATE (control machine state) as 01 
+command 36: SIDLE (exit TX/RX)
+command 36: SIDLE (exit TX/RX)
+write 02: IOCFG0 (GDO0 output pin config) as 00 RX FIFO filled
+pause 0.144 seconds
+write 0A: CHANNR (channel number) as 51 
+ burst wrote 2 registers, and 0 changed
+write 05: SYNC0 (sync word low) as 8C 
+command 3A: SFRX (flush RX FIFO)
+command 34: SRX (enable RX)
+read 34: RSSI (received signal strength) as B2 
+read 34: RSSI (received signal strength) as B7 
+read 34: RSSI (received signal strength) as B7 
+read 38: PKTSTATUS (GDOx and packet status) as 10 
+read 34: RSSI (received signal strength) as AD 
+read 34: RSSI (received signal strength) as AD 
+read 38: PKTSTATUS (GDOx and packet status) as 10 
+command 3A: SFRX (flush RX FIFO)
+command 36: SIDLE (exit TX/RX)
+command 36: SIDLE (exit TX/RX)
+command 39: SPWD (enter power down mode)
+read 35: MARCSTATE (control machine state) as 01 
+write 2E: TEST0 (test settings 0) as 09 
+command 36: SIDLE (exit TX/RX)
+command 36: SIDLE (exit TX/RX)
+write 02: IOCFG0 (GDO0 output pin config) as 02 TX FIFO filled
+pause 0.121 seconds
+write 0A: CHANNR (channel number) as 34 
+ burst wrote 2 registers, and 0 changed
+write 05: SYNC0 (sync word low) as 7F 
+command 3B: SFTX (flush TX FIFO)
+command 35: STX (enable TX)
+burst write 3F: FIFO (data) as  0C 33 FF FF FF FE 2D 02 F0 00 00 81 11
+read 35: MARCSTATE (control machine state) as 01 
+command 36: SIDLE (exit TX/RX)
+command 36: SIDLE (exit TX/RX)
+write 02: IOCFG0 (GDO0 output pin config) as 00 RX FIFO filled
+pause 0.144 seconds
+write 0A: CHANNR (channel number) as 34 
+ burst wrote 2 registers, and 0 changed
+write 05: SYNC0 (sync word low) as 7F 
+command 3A: SFRX (flush RX FIFO)
+command 34: SRX (enable RX)
+read 34: RSSI (received signal strength) as B8 
+read 34: RSSI (received signal strength) as B8 
+read 38: PKTSTATUS (GDOx and packet status) as 10 
+read 34: RSSI (received signal strength) as B3 
+read 34: RSSI (received signal strength) as B3 
+read 38: PKTSTATUS (GDOx and packet status) as 10 
+command 3A: SFRX (flush RX FIFO)
+command 36: SIDLE (exit TX/RX)
+command 36: SIDLE (exit TX/RX)
+command 39: SPWD (enter power down mode)
+***end of file

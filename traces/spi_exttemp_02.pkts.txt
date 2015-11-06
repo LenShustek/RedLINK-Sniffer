@@ -1,0 +1,15 @@
+
+   69.252 sec sent 18 bytes chan 2E sync 63 7C data 23 4B 30 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81 
+    0.575 sec sent 18 bytes chan 63 sync 63 95 data 23 4B 30 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81 
+    0.577 sec sent 18 bytes chan 36 sync 63 80 data 23 4B 30 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81 
+    0.497 sec sent 18 bytes chan 73 sync 63 99 data 23 4B 30 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81 
+    0.626 sec sent 21 bytes chan 08 sync 63 6D data 03 4B 20 AE 36 AE 36 F0 01 00 0A 12 80 00 46 2F 09 5E 7F FF 06 
+    0.571 sec sent 21 bytes chan 44 sync 63 86 data 03 4B 20 AE 36 AE 36 F0 01 00 0A 12 80 00 46 2F 09 5E 7F FF 06 
+    0.547 sec sent 21 bytes chan 77 sync 63 9B data 03 4B 20 AE 36 AE 36 F0 01 00 0A 12 80 00 46 2F 09 5E 7F FF 06 
+    0.478 sec sent 21 bytes chan 3A sync 63 82 data 03 4B 20 AE 36 AE 36 F0 01 00 0A 12 80 00 46 2F 09 5E 7F FF 06 
+  222.286 sec sent 21 bytes chan 0E sync 63 70 data 03 F7 E6 AE 36 AE 36 F0 01 00 0A 12 80 00 46 2F 09 73 7F FF 00 
+  236.126 sec sent 21 bytes chan 4B sync 63 89 data 03 96 39 AE 36 AE 36 F0 01 00 0A 12 80 00 46 2E 09 7E 7F FF 00 
+  237.138 sec sent 21 bytes chan 59 sync 63 90 data 03 3A C1 AE 36 AE 36 F0 01 00 0A 12 80 00 46 1A 08 3B 7F FF 00 
+  237.526 sec sent 21 bytes chan 1C sync 63 77 data 03 AF B2 AE 36 AE 36 F0 01 00 0A 12 80 00 46 26 06 D5 7F FF 00 
+  237.799 sec sent 21 bytes chan 04 sync 63 6B data 03 1D F7 AE 36 AE 36 F0 01 00 0A 12 80 00 46 30 06 18 7F FF 00 
+  237.033 sec sent 21 bytes chan 3E sync 63 84 data 03 02 22 AE 36 AE 36 F0 01 00 0A 12 80 00 46 39 05 BF 7F FF 00 

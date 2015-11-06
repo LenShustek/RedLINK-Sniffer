@@ -1,0 +1,2029 @@
+got 15 bytes from serial port
+got 327 bytes from serial port
+ 16.081927 command 30: SRES (reset chip)
+  0.000499 command 36: SIDLE (exit TX/RX)
+  0.000036  wrote 00: IOCFG2 (GDO2 output pin config) as 06 sync word sent/rcvd
+            wrote 01: IOCFG1 (GD01 output pin config) as 2F hardwired to 0
+            wrote 02: IOCFG0 (GDO0 output pin config) as 0A PLL lock detected
+            wrote 03: FIFOTHR (FIFO thresholds) as 47 
+            wrote 04: SYNC1 (sync word high) as 63 
+            wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 06: PKTLEN (packet length) as BC 
+            wrote 07: PKTCTRL1 (packet control 1) as 64 
+            wrote 08: PKTCTRL0 (packet control 0) as 45 
+            wrote 0B: FSCTRL1 (frequency synthesizer control 1) as 06 
+            wrote 0D: FREQ2 (frequency control word H) as 22 
+            wrote 0E: FREQ1 (frequency control word M) as B3 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            wrote 10: MDMCFRG4 (modem config 4) as CA 
+            wrote 11: MDMCFRG3 (modem config 3) as 83 
+            wrote 12: MDMCFRG2 (modem config 2) as 12 
+            wrote 13: MDMCFRG1 (modem config 1) as 62 
+            wrote 14: MDMCFRG0 (modem config 0) as F8 
+            wrote 15: DEVIATN (modem deviation setting) as 34 
+            wrote 16: MCSM2 (main radio state machine config 2) as 07 
+            wrote 18: MCSM0 (main radio state machine config 0) as 18 
+            wrote 19: FOCCFG (frequency offset compensation config) as 16 
+            wrote 1A: BSCFG (bit sync config) as 6C 
+            wrote 1B: AGCTRL2 (AGC control 2) as 43 
+            wrote 1C: AGCTRL1 (AGC control 1) as 40 
+            wrote 1D: AGCTRL0 (AGC control 0) as 91 
+            wrote 1E: WOREVT1 (event 0 timeout H) as 87 
+            wrote 1F: WOREVT0 (event 0 timeout L) as 6B 
+            wrote 20: WORCTRL (wake on radio control) as F8 
+            wrote 21: FREND1 (front end RX config) as 56 
+            wrote 22: FREND0 (front end TX config) as 10 
+            wrote 23: FSCAL3 (frequency synthesizer calibration 3) as E9 
+            wrote 24: FSCAL2 (frequency synthesizer calibration 2) as 2A 
+            wrote 26: FSCAL0 (frequency synthesizer calibration 0) as 1F 
+            wrote 27: RCCTRL1 (RC oscillator config 1) as 41 
+            wrote 29: FSTEST (frequency synthesizer calibration control) as 59 
+            wrote 2A: PTEST (production test) as 7F 
+            wrote 2B: AGCTEST (AGC test) as 3F 
+            wrote 2C: TEST2 (test settings 2) as 81 
+            wrote 2D: TEST1 (test settings 1) as 35 
+            burst wrote 47 registers, and 40 changed
+  0.000111 burst write 3E: PATABLE (power amp control) as  00
+  0.000009 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000009 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000008 write 0F: FREQ0 (frequency control word L) as 29 
+  0.000009 command 39: SPWD (enter power down mode)
+got 29675 bytes from serial port
+  0.089532 read 35: MARCSTATE (control machine state) as 01 
+  0.000440 write 2E: TEST0 (test settings 0) as 09 
+  0.000024 command 36: SIDLE (exit TX/RX)
+  0.000134 command 36: SIDLE (exit TX/RX)
+  0.000006  wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 1 changed
+  0.000110 burst write 3E: PATABLE (power amp control) as  C0
+  0.000010 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000008 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000009 write 0F: FREQ0 (frequency control word L) as 29 
+  0.000009 write 0A: CHANNR (channel number) as 3E 
+  0.000013 command 33: SCAL (calibrate synthesizer)
+  0.000894 read 35: MARCSTATE (control machine state) as 01 
+  0.000009 read 23: FSCAL3 (frequency synthesizer calibration 3) as EF 
+           read 24: FSCAL2 (frequency synthesizer calibration 2) as 2B 
+  0.000024 command 36: SIDLE (exit TX/RX)
+  0.006534 command 36: SIDLE (exit TX/RX)
+  0.000014 write 02: IOCFG0 (GDO0 output pin config) as 00 RX FIFO filled
+  0.000010 write 0A: CHANNR (channel number) as 4F 
+  0.000008  wrote 23: FSCAL3 (frequency synthesizer calibration 3) as CF 
+            burst wrote 2 registers, and 1 changed
+  0.000010 write 05: SYNC0 (sync word low) as 8B 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001183 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B4 
+  0.000011 read 34: RSSI (received signal strength) as B2 
+  0.000012 read 34: RSSI (received signal strength) as B2 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000427 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 12 
+  0.000008 write 05: SYNC0 (sync word low) as 72 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B4 
+  0.000012 read 34: RSSI (received signal strength) as B4 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 44 
+  0.000010 write 05: SYNC0 (sync word low) as 86 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as A4 
+  0.000011 read 34: RSSI (received signal strength) as A4 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 34: RSSI (received signal strength) as AA 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 08 
+  0.000009 write 05: SYNC0 (sync word low) as 6D 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as A7 
+  0.000011 read 34: RSSI (received signal strength) as A7 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 6D 
+  0.000009 write 05: SYNC0 (sync word low) as 96 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001208 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as BE 
+  0.000011 read 34: RSSI (received signal strength) as BE 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000439 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 30 
+  0.000009 write 05: SYNC0 (sync word low) as 7D 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001208 read 34: RSSI (received signal strength) as B8 
+  0.000011 read 34: RSSI (received signal strength) as B8 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as C0 
+  0.000012 read 34: RSSI (received signal strength) as C0 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 4D 
+  0.000009 write 05: SYNC0 (sync word low) as 8A 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000439 command 36: SIDLE (exit TX/RX)
+  0.000012 write 0A: CHANNR (channel number) as 10 
+  0.000009 write 05: SYNC0 (sync word low) as 71 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B4 
+  0.000011 read 34: RSSI (received signal strength) as B4 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 18 
+  0.000009 write 05: SYNC0 (sync word low) as 75 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 55 
+  0.000009 write 05: SYNC0 (sync word low) as 8E 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 34: RSSI (received signal strength) as AE 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000435 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 36 
+  0.000009 write 05: SYNC0 (sync word low) as 80 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001211 read 34: RSSI (received signal strength) as A8 
+  0.000011 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 34: RSSI (received signal strength) as AF 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000944 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000436 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 73 
+  0.000009 write 05: SYNC0 (sync word low) as 99 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001212 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 34: RSSI (received signal strength) as AE 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000943 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 0E 
+  0.000008 write 05: SYNC0 (sync word low) as 70 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as A8 
+  0.000011 read 34: RSSI (received signal strength) as A8 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as B0 
+  0.000010 read 34: RSSI (received signal strength) as B0 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 4B 
+  0.000009 write 05: SYNC0 (sync word low) as 89 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as B3 
+  0.000011 read 34: RSSI (received signal strength) as B3 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as A7 
+  0.000011 read 34: RSSI (received signal strength) as A7 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 34 
+  0.000009 write 05: SYNC0 (sync word low) as 7F 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001208 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as BA 
+  0.000012 read 34: RSSI (received signal strength) as BA 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 71 
+  0.000009 write 05: SYNC0 (sync word low) as 98 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001208 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 34: RSSI (received signal strength) as AB 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 38 
+  0.000009 write 05: SYNC0 (sync word low) as 81 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 75 
+  0.000009 write 05: SYNC0 (sync word low) as 9A 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001208 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 34: RSSI (received signal strength) as AF 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000439 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 49 
+  0.000009 write 05: SYNC0 (sync word low) as 88 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001208 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B1 
+  0.000012 read 34: RSSI (received signal strength) as B1 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 0C 
+  0.000009 write 05: SYNC0 (sync word low) as 6F 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001208 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 34: RSSI (received signal strength) as A9 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000439 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 51 
+  0.000009 write 05: SYNC0 (sync word low) as 8C 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001207 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 34: RSSI (received signal strength) as AB 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 14 
+  0.000009 write 05: SYNC0 (sync word low) as 73 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 06 
+  0.000009 write 05: SYNC0 (sync word low) as 6C 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as B3 
+  0.000011 read 34: RSSI (received signal strength) as B3 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AE 
+  0.000012 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 42 
+  0.000009 write 05: SYNC0 (sync word low) as 85 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 20 
+  0.000009 write 05: SYNC0 (sync word low) as 79 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as BC 
+  0.000010 read 34: RSSI (received signal strength) as BC 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 34: RSSI (received signal strength) as B0 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 5D 
+  0.000009 write 05: SYNC0 (sync word low) as 92 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 34: RSSI (received signal strength) as AE 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000442 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 04 
+  0.000009 write 05: SYNC0 (sync word low) as 6B 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001204 read 34: RSSI (received signal strength) as A2 
+  0.000011 read 34: RSSI (received signal strength) as A2 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B1 
+  0.000011 read 34: RSSI (received signal strength) as B1 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 3E 
+  0.000009 write 05: SYNC0 (sync word low) as 84 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as B2 
+  0.000011 read 34: RSSI (received signal strength) as B2 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000436 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 1A 
+  0.000009 write 05: SYNC0 (sync word low) as 76 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 34: RSSI (received signal strength) as B0 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 57 
+  0.000009 write 05: SYNC0 (sync word low) as 8F 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as B1 
+  0.000011 read 34: RSSI (received signal strength) as B1 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000439 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 1C 
+  0.000008 write 05: SYNC0 (sync word low) as 77 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001207 read 34: RSSI (received signal strength) as C6 
+  0.000011 read 34: RSSI (received signal strength) as C6 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as C5 
+  0.000011 read 34: RSSI (received signal strength) as C5 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000439 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 59 
+  0.000009 write 05: SYNC0 (sync word low) as 90 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001207 read 34: RSSI (received signal strength) as AB 
+  0.000012 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 34: RSSI (received signal strength) as AF 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000012 write 0A: CHANNR (channel number) as 79 
+  0.000009 write 05: SYNC0 (sync word low) as 9C 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as A7 
+  0.000011 read 34: RSSI (received signal strength) as A7 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000954 read 34: RSSI (received signal strength) as A9 
+  0.000012 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 3C 
+  0.000009 write 05: SYNC0 (sync word low) as 83 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 34: RSSI (received signal strength) as AC 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000436 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 1E 
+  0.000009 write 05: SYNC0 (sync word low) as 78 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as B4 
+  0.000011 read 34: RSSI (received signal strength) as BB 
+  0.000011 read 34: RSSI (received signal strength) as BB 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000944 read 34: RSSI (received signal strength) as BF 
+  0.000011 read 34: RSSI (received signal strength) as BF 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 5B 
+  0.000008 write 05: SYNC0 (sync word low) as 91 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as A8 
+  0.000011 read 34: RSSI (received signal strength) as A8 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as A8 
+  0.000012 read 34: RSSI (received signal strength) as A8 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000436 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 5F 
+  0.000009 write 05: SYNC0 (sync word low) as 93 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as A8 
+  0.000011 read 34: RSSI (received signal strength) as A8 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 34: RSSI (received signal strength) as AB 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000436 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 22 
+  0.000009 write 05: SYNC0 (sync word low) as 7A 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as B1 
+  0.000011 read 34: RSSI (received signal strength) as B1 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 63 
+  0.000009 write 05: SYNC0 (sync word low) as 95 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 34: RSSI (received signal strength) as B0 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000436 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 2E 
+  0.000009 write 05: SYNC0 (sync word low) as 7C 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 34: RSSI (received signal strength) as AA 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 46 
+  0.000009 write 05: SYNC0 (sync word low) as 87 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as B2 
+  0.000011 read 34: RSSI (received signal strength) as B2 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 34: RSSI (received signal strength) as AB 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000436 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 0A 
+  0.000009 write 05: SYNC0 (sync word low) as 6E 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 34: RSSI (received signal strength) as A7 
+  0.000012 read 34: RSSI (received signal strength) as A7 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000944 read 34: RSSI (received signal strength) as B7 
+  0.000011 read 34: RSSI (received signal strength) as B7 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 61 
+  0.000009 write 05: SYNC0 (sync word low) as 94 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as A7 
+  0.000011 read 34: RSSI (received signal strength) as A7 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 34: RSSI (received signal strength) as AA 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 2C 
+  0.000009 write 05: SYNC0 (sync word low) as 7B 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as A4 
+  0.000011 read 34: RSSI (received signal strength) as A4 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 53 
+  0.000009 write 05: SYNC0 (sync word low) as 8D 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001211 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 34: RSSI (received signal strength) as A9 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000436 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 16 
+  0.000009 write 05: SYNC0 (sync word low) as 74 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 32 
+  0.000008 write 05: SYNC0 (sync word low) as 7E 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as A7 
+  0.000011 read 34: RSSI (received signal strength) as A7 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B6 
+  0.000012 read 34: RSSI (received signal strength) as B6 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 6F 
+  0.000009 write 05: SYNC0 (sync word low) as 97 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 3A 
+  0.000009 write 05: SYNC0 (sync word low) as 82 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 34: RSSI (received signal strength) as AC 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 77 
+  0.000009 write 05: SYNC0 (sync word low) as 9B 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AA 
+  0.000012 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 4F 
+  0.000009 write 05: SYNC0 (sync word low) as 8B 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001208 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 34: RSSI (received signal strength) as AF 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 12 
+  0.000009 write 05: SYNC0 (sync word low) as 72 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as B4 
+  0.000011 read 34: RSSI (received signal strength) as B4 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as A6 
+  0.000012 read 34: RSSI (received signal strength) as A6 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 44 
+  0.000009 write 05: SYNC0 (sync word low) as 86 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 08 
+  0.000009 write 05: SYNC0 (sync word low) as 6D 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001208 read 34: RSSI (received signal strength) as A9 
+  0.000012 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AE 
+  0.000012 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 6D 
+  0.000009 write 05: SYNC0 (sync word low) as 96 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001208 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as C1 
+  0.000011 read 34: RSSI (received signal strength) as C1 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 30 
+  0.000009 write 05: SYNC0 (sync word low) as 7D 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as C3 
+  0.000011 read 34: RSSI (received signal strength) as C3 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 4D 
+  0.000008 write 05: SYNC0 (sync word low) as 8A 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 34: RSSI (received signal strength) as AC 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 10 
+  0.000009 write 05: SYNC0 (sync word low) as 71 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AB 
+  0.000012 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000436 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 18 
+  0.000009 write 05: SYNC0 (sync word low) as 75 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as B4 
+  0.000011 read 34: RSSI (received signal strength) as B4 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 55 
+  0.000008 write 05: SYNC0 (sync word low) as 8E 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as A7 
+  0.000011 read 34: RSSI (received signal strength) as A7 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000435 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 36 
+  0.000009 write 05: SYNC0 (sync word low) as 80 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001211 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B8 
+  0.000012 read 34: RSSI (received signal strength) as B8 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000436 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 73 
+  0.000009 write 05: SYNC0 (sync word low) as 99 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001211 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 34: RSSI (received signal strength) as AC 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 34: RSSI (received signal strength) as A9 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 0E 
+  0.000009 write 05: SYNC0 (sync word low) as 70 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B2 
+  0.000012 read 34: RSSI (received signal strength) as B2 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 4B 
+  0.000009 write 05: SYNC0 (sync word low) as 89 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 34: RSSI (received signal strength) as AE 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000439 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 34 
+  0.000009 write 05: SYNC0 (sync word low) as 7F 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001208 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B7 
+  0.000011 read 34: RSSI (received signal strength) as B7 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 71 
+  0.000009 write 05: SYNC0 (sync word low) as 98 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001208 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 38 
+  0.000009 write 05: SYNC0 (sync word low) as 81 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as B1 
+  0.000011 read 34: RSSI (received signal strength) as B1 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 34: RSSI (received signal strength) as B0 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 75 
+  0.000009 write 05: SYNC0 (sync word low) as 9A 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000440 command 36: SIDLE (exit TX/RX)
+  0.000012 write 0A: CHANNR (channel number) as 49 
+  0.000009 write 05: SYNC0 (sync word low) as 88 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001208 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 34: RSSI (received signal strength) as B0 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 34: RSSI (received signal strength) as AF 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 0C 
+  0.000009 write 05: SYNC0 (sync word low) as 6F 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001208 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 51 
+  0.000009 write 05: SYNC0 (sync word low) as 8C 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AE 
+  0.000010 read 34: RSSI (received signal strength) as AE 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000439 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 14 
+  0.000009 write 05: SYNC0 (sync word low) as 73 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as A8 
+  0.000011 read 34: RSSI (received signal strength) as A8 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as B3 
+  0.000011 read 34: RSSI (received signal strength) as B3 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 06 
+  0.000009 write 05: SYNC0 (sync word low) as 6C 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as A6 
+  0.000013 read 34: RSSI (received signal strength) as A6 
+  0.000010 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 42 
+  0.000009 write 05: SYNC0 (sync word low) as 85 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as B2 
+  0.000011 read 34: RSSI (received signal strength) as B2 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 20 
+  0.000009 write 05: SYNC0 (sync word low) as 79 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 34: RSSI (received signal strength) as B0 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B5 
+  0.000011 read 34: RSSI (received signal strength) as B5 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000439 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 5D 
+  0.000009 write 05: SYNC0 (sync word low) as 92 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001208 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 34: RSSI (received signal strength) as AA 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000442 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 04 
+  0.000009 write 05: SYNC0 (sync word low) as 6B 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001204 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 34: RSSI (received signal strength) as AF 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as A8 
+  0.000011 read 34: RSSI (received signal strength) as A8 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 3E 
+  0.000009 write 05: SYNC0 (sync word low) as 84 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as A8 
+  0.000011 read 34: RSSI (received signal strength) as A8 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B1 
+  0.000011 read 34: RSSI (received signal strength) as B1 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000436 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 1A 
+  0.000009 write 05: SYNC0 (sync word low) as 76 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as B1 
+  0.000011 read 34: RSSI (received signal strength) as B1 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000436 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 57 
+  0.000009 write 05: SYNC0 (sync word low) as 8F 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 34: RSSI (received signal strength) as AA 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as A8 
+  0.000011 read 34: RSSI (received signal strength) as A8 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 1C 
+  0.000009 write 05: SYNC0 (sync word low) as 77 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001208 read 34: RSSI (received signal strength) as C1 
+  0.000011 read 34: RSSI (received signal strength) as C1 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as BD 
+  0.000011 read 34: RSSI (received signal strength) as BD 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000439 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 59 
+  0.000008 write 05: SYNC0 (sync word low) as 90 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001207 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 34: RSSI (received signal strength) as AB 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 34: RSSI (received signal strength) as AB 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 79 
+  0.000009 write 05: SYNC0 (sync word low) as 9C 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as A4 
+  0.000011 read 34: RSSI (received signal strength) as A4 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 3C 
+  0.000009 write 05: SYNC0 (sync word low) as 83 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as A8 
+  0.000011 read 34: RSSI (received signal strength) as A8 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 1E 
+  0.000008 write 05: SYNC0 (sync word low) as 78 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as B7 
+  0.000011 read 34: RSSI (received signal strength) as B7 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as A9 
+  0.000012 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 5B 
+  0.000009 write 05: SYNC0 (sync word low) as 91 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as B3 
+  0.000011 read 34: RSSI (received signal strength) as B3 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 5F 
+  0.000009 write 05: SYNC0 (sync word low) as 93 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 34: RSSI (received signal strength) as AA 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000436 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 22 
+  0.000009 write 05: SYNC0 (sync word low) as 7A 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 34: RSSI (received signal strength) as AF 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B3 
+  0.000011 read 34: RSSI (received signal strength) as B3 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 63 
+  0.000009 write 05: SYNC0 (sync word low) as 95 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 34: RSSI (received signal strength) as AA 
+  0.000012 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000943 read 34: RSSI (received signal strength) as A7 
+  0.000011 read 34: RSSI (received signal strength) as A7 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000436 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 2E 
+  0.000009 write 05: SYNC0 (sync word low) as 7C 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as B4 
+  0.000011 read 34: RSSI (received signal strength) as B4 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000436 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 46 
+  0.000009 write 05: SYNC0 (sync word low) as 87 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001211 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000436 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 0A 
+  0.000009 write 05: SYNC0 (sync word low) as 6E 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as B5 
+  0.000011 read 34: RSSI (received signal strength) as B5 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 61 
+  0.000010 write 05: SYNC0 (sync word low) as 94 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 34: RSSI (received signal strength) as AE 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as A8 
+  0.000011 read 34: RSSI (received signal strength) as A8 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 2C 
+  0.000009 write 05: SYNC0 (sync word low) as 7B 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as A8 
+  0.000011 read 34: RSSI (received signal strength) as A8 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as B2 
+  0.000011 read 34: RSSI (received signal strength) as B2 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000436 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 53 
+  0.000009 write 05: SYNC0 (sync word low) as 8D 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001211 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 16 
+  0.000009 write 05: SYNC0 (sync word low) as 74 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 34: RSSI (received signal strength) as A9 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000944 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 32 
+  0.000009 write 05: SYNC0 (sync word low) as 7E 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 34: RSSI (received signal strength) as AF 
+  0.000012 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000944 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000439 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 6F 
+  0.000009 write 05: SYNC0 (sync word low) as 97 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001208 read 34: RSSI (received signal strength) as B1 
+  0.000011 read 34: RSSI (received signal strength) as B1 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as AF 
+  0.000010 read 34: RSSI (received signal strength) as AF 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 3A 
+  0.000009 write 05: SYNC0 (sync word low) as 82 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as B1 
+  0.000011 read 34: RSSI (received signal strength) as B1 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B1 
+  0.000011 read 34: RSSI (received signal strength) as B1 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000436 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 77 
+  0.000009 write 05: SYNC0 (sync word low) as 9B 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as A6 
+  0.000011 read 34: RSSI (received signal strength) as A6 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000439 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 4F 
+  0.000009 write 05: SYNC0 (sync word low) as 8B 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001207 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B2 
+  0.000011 read 34: RSSI (received signal strength) as B2 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 12 
+  0.000009 write 05: SYNC0 (sync word low) as 72 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as B3 
+  0.000011 read 34: RSSI (received signal strength) as B3 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 44 
+  0.000010 write 05: SYNC0 (sync word low) as 86 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 34: RSSI (received signal strength) as AF 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 08 
+  0.000009 write 05: SYNC0 (sync word low) as 6D 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as A7 
+  0.000011 read 34: RSSI (received signal strength) as A7 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 34: RSSI (received signal strength) as AF 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 6D 
+  0.000009 write 05: SYNC0 (sync word low) as 96 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001208 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as C1 
+  0.000011 read 34: RSSI (received signal strength) as C1 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 30 
+  0.000009 write 05: SYNC0 (sync word low) as 7D 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as B2 
+  0.000011 read 34: RSSI (received signal strength) as B2 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as BB 
+  0.000011 read 34: RSSI (received signal strength) as BB 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 4D 
+  0.000008 write 05: SYNC0 (sync word low) as 8A 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as B3 
+  0.000011 read 34: RSSI (received signal strength) as B3 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000012 write 0A: CHANNR (channel number) as 10 
+  0.000009 write 05: SYNC0 (sync word low) as 71 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 34: RSSI (received signal strength) as AA 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 34: RSSI (received signal strength) as AB 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 18 
+  0.000009 write 05: SYNC0 (sync word low) as 75 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as A8 
+  0.000011 read 34: RSSI (received signal strength) as A8 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B3 
+  0.000012 read 34: RSSI (received signal strength) as B3 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 55 
+  0.000009 write 05: SYNC0 (sync word low) as 8E 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as A8 
+  0.000011 read 34: RSSI (received signal strength) as A8 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 34: RSSI (received signal strength) as AC 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000435 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 36 
+  0.000009 write 05: SYNC0 (sync word low) as 80 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001211 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as B1 
+  0.000012 read 34: RSSI (received signal strength) as B1 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000944 read 34: RSSI (received signal strength) as B6 
+  0.000011 read 34: RSSI (received signal strength) as B6 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000435 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 73 
+  0.000009 write 05: SYNC0 (sync word low) as 99 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001211 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000012 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000944 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 0E 
+  0.000009 write 05: SYNC0 (sync word low) as 70 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as A6 
+  0.000011 read 34: RSSI (received signal strength) as A6 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B2 
+  0.000012 read 34: RSSI (received signal strength) as B2 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 4B 
+  0.000009 write 05: SYNC0 (sync word low) as 89 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 34: RSSI (received signal strength) as B0 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 34 
+  0.000008 write 05: SYNC0 (sync word low) as 7F 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B8 
+  0.000011 read 34: RSSI (received signal strength) as B8 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000439 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 71 
+  0.000009 write 05: SYNC0 (sync word low) as 98 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001208 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 34: RSSI (received signal strength) as AE 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 38 
+  0.000009 write 05: SYNC0 (sync word low) as 81 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 34: RSSI (received signal strength) as AC 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 75 
+  0.000009 write 05: SYNC0 (sync word low) as 9A 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 34: RSSI (received signal strength) as A9 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 49 
+  0.000009 write 05: SYNC0 (sync word low) as 88 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001208 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 34: RSSI (received signal strength) as AA 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B5 
+  0.000011 read 34: RSSI (received signal strength) as B5 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 0C 
+  0.000009 write 05: SYNC0 (sync word low) as 6F 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001208 read 34: RSSI (received signal strength) as A8 
+  0.000011 read 34: RSSI (received signal strength) as A8 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as B2 
+  0.000011 read 34: RSSI (received signal strength) as B2 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 51 
+  0.000009 write 05: SYNC0 (sync word low) as 8C 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001208 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 34: RSSI (received signal strength) as AA 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 14 
+  0.000009 write 05: SYNC0 (sync word low) as 73 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as A8 
+  0.000011 read 34: RSSI (received signal strength) as A8 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 06 
+  0.000009 write 05: SYNC0 (sync word low) as 6C 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as A8 
+  0.000011 read 34: RSSI (received signal strength) as A8 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as A7 
+  0.000011 read 34: RSSI (received signal strength) as A7 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000436 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 42 
+  0.000009 write 05: SYNC0 (sync word low) as 85 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 20 
+  0.000009 write 05: SYNC0 (sync word low) as 79 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 34: RSSI (received signal strength) as AB 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as BA 
+  0.000011 read 34: RSSI (received signal strength) as BA 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 5D 
+  0.000009 write 05: SYNC0 (sync word low) as 92 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 34: RSSI (received signal strength) as B0 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000442 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 04 
+  0.000009 write 05: SYNC0 (sync word low) as 6B 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001204 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 34: RSSI (received signal strength) as AC 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 3E 
+  0.000008 write 05: SYNC0 (sync word low) as 84 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 34: RSSI (received signal strength) as B0 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000436 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 1A 
+  0.000009 write 05: SYNC0 (sync word low) as 76 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 57 
+  0.000009 write 05: SYNC0 (sync word low) as 8F 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as AA 
+  0.000012 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000439 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 1C 
+  0.000009 write 05: SYNC0 (sync word low) as 77 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001207 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 34: RSSI (received signal strength) as AF 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as C0 
+  0.000011 read 34: RSSI (received signal strength) as C0 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000439 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 59 
+  0.000009 write 05: SYNC0 (sync word low) as 90 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001207 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 34: RSSI (received signal strength) as AA 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 34: RSSI (received signal strength) as AC 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 79 
+  0.000009 write 05: SYNC0 (sync word low) as 9C 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as A5 
+  0.000011 read 34: RSSI (received signal strength) as A5 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000954 read 34: RSSI (received signal strength) as A8 
+  0.000011 read 34: RSSI (received signal strength) as A8 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 3C 
+  0.000009 write 05: SYNC0 (sync word low) as 83 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as A7 
+  0.000011 read 34: RSSI (received signal strength) as A7 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B3 
+  0.000011 read 34: RSSI (received signal strength) as B3 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000436 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 1E 
+  0.000010 write 05: SYNC0 (sync word low) as 78 
+  0.000007 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as B1 
+  0.000011 read 34: RSSI (received signal strength) as B1 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as B7 
+  0.000011 read 34: RSSI (received signal strength) as B7 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 5B 
+  0.000008 write 05: SYNC0 (sync word low) as 91 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 34: RSSI (received signal strength) as AB 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 5F 
+  0.000009 write 05: SYNC0 (sync word low) as 93 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as A4 
+  0.000011 read 34: RSSI (received signal strength) as A4 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B4 
+  0.000011 read 34: RSSI (received signal strength) as B4 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 22 
+  0.000009 write 05: SYNC0 (sync word low) as 7A 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as B3 
+  0.000011 read 34: RSSI (received signal strength) as B3 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B7 
+  0.000011 read 34: RSSI (received signal strength) as B7 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 63 
+  0.000009 write 05: SYNC0 (sync word low) as 95 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000436 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 2E 
+  0.000009 write 05: SYNC0 (sync word low) as 7C 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as A8 
+  0.000011 read 34: RSSI (received signal strength) as A8 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B6 
+  0.000011 read 34: RSSI (received signal strength) as B6 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000436 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 46 
+  0.000009 write 05: SYNC0 (sync word low) as 87 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001211 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000944 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 0A 
+  0.000009 write 05: SYNC0 (sync word low) as 6E 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as A7 
+  0.000011 read 34: RSSI (received signal strength) as A4 
+  0.000012 read 34: RSSI (received signal strength) as A4 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000944 read 34: RSSI (received signal strength) as B2 
+  0.000011 read 34: RSSI (received signal strength) as B2 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 61 
+  0.000009 write 05: SYNC0 (sync word low) as 94 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 34: RSSI (received signal strength) as B0 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B4 
+  0.000011 read 34: RSSI (received signal strength) as B4 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 2C 
+  0.000009 write 05: SYNC0 (sync word low) as 7B 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 34: RSSI (received signal strength) as AC 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000954 read 34: RSSI (received signal strength) as B3 
+  0.000012 read 34: RSSI (received signal strength) as B3 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 53 
+  0.000009 write 05: SYNC0 (sync word low) as 8D 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001211 read 34: RSSI (received signal strength) as A6 
+  0.000011 read 34: RSSI (received signal strength) as A6 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 16 
+  0.000009 write 05: SYNC0 (sync word low) as 74 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 32 
+  0.000009 write 05: SYNC0 (sync word low) as 7E 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 34: RSSI (received signal strength) as AE 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B8 
+  0.000011 read 34: RSSI (received signal strength) as B8 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 6F 
+  0.000009 write 05: SYNC0 (sync word low) as 97 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B1 
+  0.000011 read 34: RSSI (received signal strength) as B1 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 3A 
+  0.000009 write 05: SYNC0 (sync word low) as 82 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 34: RSSI (received signal strength) as AC 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 77 
+  0.000009 write 05: SYNC0 (sync word low) as 9B 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as A3 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000943 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 34: RSSI (received signal strength) as AB 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 4F 
+  0.000009 write 05: SYNC0 (sync word low) as 8B 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001207 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 34: RSSI (received signal strength) as A9 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B4 
+  0.000011 read 34: RSSI (received signal strength) as B4 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 12 
+  0.000009 write 05: SYNC0 (sync word low) as 72 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001208 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 34: RSSI (received signal strength) as AC 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B1 
+  0.000011 read 34: RSSI (received signal strength) as B1 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 44 
+  0.000009 write 05: SYNC0 (sync word low) as 86 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 34: RSSI (received signal strength) as A9 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 08 
+  0.000009 write 05: SYNC0 (sync word low) as 6D 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 34: RSSI (received signal strength) as AB 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 6D 
+  0.000009 write 05: SYNC0 (sync word low) as 96 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 34: RSSI (received signal strength) as AB 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as BE 
+  0.000011 read 34: RSSI (received signal strength) as BE 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 30 
+  0.000009 write 05: SYNC0 (sync word low) as 7D 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001208 read 34: RSSI (received signal strength) as A9 
+  0.000011 read 34: RSSI (received signal strength) as A9 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B9 
+  0.000011 read 34: RSSI (received signal strength) as B9 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 4D 
+  0.000009 write 05: SYNC0 (sync word low) as 8A 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 10 
+  0.000009 write 05: SYNC0 (sync word low) as 71 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 34: RSSI (received signal strength) as AC 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B3 
+  0.000011 read 34: RSSI (received signal strength) as B3 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000436 command 36: SIDLE (exit TX/RX)
+  0.000014 write 0A: CHANNR (channel number) as 18 
+  0.000008 write 05: SYNC0 (sync word low) as 75 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 55 
+  0.000009 write 05: SYNC0 (sync word low) as 8E 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001208 read 34: RSSI (received signal strength) as AC 
+  0.000011 read 34: RSSI (received signal strength) as AC 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B1 
+  0.000011 read 34: RSSI (received signal strength) as B1 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000436 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 36 
+  0.000009 write 05: SYNC0 (sync word low) as 80 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001211 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B2 
+  0.000011 read 34: RSSI (received signal strength) as B2 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000436 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 73 
+  0.000008 write 05: SYNC0 (sync word low) as 99 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001211 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000956 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 34: RSSI (received signal strength) as AD 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 0E 
+  0.000009 write 05: SYNC0 (sync word low) as 70 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001210 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 34: RSSI (received signal strength) as AB 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 34: RSSI (received signal strength) as AF 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 4B 
+  0.000009 write 05: SYNC0 (sync word low) as 89 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as AA 
+  0.000011 read 34: RSSI (received signal strength) as AA 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B5 
+  0.000011 read 34: RSSI (received signal strength) as B5 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000439 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 34 
+  0.000009 write 05: SYNC0 (sync word low) as 7F 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001208 read 34: RSSI (received signal strength) as AF 
+  0.000011 read 34: RSSI (received signal strength) as AF 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B2 
+  0.000011 read 34: RSSI (received signal strength) as B2 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000438 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 71 
+  0.000009 write 05: SYNC0 (sync word low) as 98 
+  0.000009 command 3A: SFRX (flush RX FIFO)
+  0.000008 command 34: SRX (enable RX)
+  0.001208 read 34: RSSI (received signal strength) as A7 
+  0.000011 read 34: RSSI (received signal strength) as A7 
+  0.000012 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000954 read 34: RSSI (received signal strength) as AE 
+  0.000012 read 34: RSSI (received signal strength) as AE 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000437 command 36: SIDLE (exit TX/RX)
+  0.000013 write 0A: CHANNR (channel number) as 38 
+  0.000009 write 05: SYNC0 (sync word low) as 81 
+  0.000008 command 3A: SFRX (flush RX FIFO)
+  0.000009 command 34: SRX (enable RX)
+  0.001209 read 34: RSSI (received signal strength) as B0 
+  0.000012 read 34: RSSI (received signal strength) as B0 
+  0.000011 read 38: PKTSTATUS (GDOx and packet status) as 10 
+  0.000955 read 34: RSSI (received signal strength) as B1 
+got 16384 bytes from serial port
+  0.099216 read 34: RSSI (received signal strength) as 10 
+           read 35: MARCSTATE (control machine state) as 10 
+           read 36: WORTIME1 (WOR timer H) as 10 
+           read 37: WORTIME0 (WOR timer L) as 10 
+**** bad hex data, 36
+]t99205.F4100010F81000103610 <-- error --> [t146.F41000B2]t7.[t4.F41000B2]t7.[t5.F8100010]t6.[t431.361F]t4.[t10.0A0F6D0F]t5.[t4.050F960F]t5.[t3.3A0F]t3.
+[t5.340F]t4.[t1205.F41000AD]t6.[t5.F41000AD]t6.[t5.F8100010]t7.[t948.F41000C0]t7.[t4.F41000C0]t7.[t5.F8100010]t6.[t433.361F]t4.[t9.0A0F300F]t6.[t3.050F7D0F]t6.
+[t2.3A0F]t4.[t5.340F]t4.[t1203.F41000AB]t7.[t4.F41000AB]t7.[t5.F8100010]t6.[t949.F41000BA]t7.[t4.F41000BA]t7.[t5.F8100010]t6.[t431.361F]t3.[t10.0A0F4D0F]t5.
+[t4.050F8A0F]t5.[t3.3A0F]t4.[t5.340F]t3.[t1206.F41000B3]t6.[t5.F41000B3]t6.[t5.F8100010]t7.[t949.F41000B0]t6.[t5.F41000B0]t6.[t5.F8100010]t7.[t431.361F]t3.
+[t10.0A0F100F]t5.[t4.050F710F]t5.[t3.3A0F]t3.[t5.340F]t4.[t1205.F41000B2]t7.[t4.F41000B2]t7.[t5.F8100010]t6.[t949.F41000AD]t6.[t5.F41000AD]t7.[t4.F8100010]t7.
+[t430.361F]t4.[t10.0A0F180F]t5.[t4.050F750F]t5.[t3.3A0F]t5.[t3.340F]t4.[t1206.F41000AA]t6.[t5.F41000AA]t7.[t4.F8100010]t7.[t949.F41000B6]t6.[t5.F41000B6]t6.
+[t5.F8100010]t7.[t430.361F]t3.[t10.0A0F550F]t5.[t4.050F8E0F]t6.[t2.3A0F]t4.[t5.340F]t3.[t1207.F41000A6]t6.[t5.F41000A6]t6.[t5.F8100010]t7.[t948.F41000A9]t6.
+[t5.F41000A9]t7.[t4.F8100010]t7.[t429.361F]t3.[t10.0A0F360F]t5.[t4.050F800F]t5.[t3.3A0F]t3.[t6.340F]t3.[t1208.F41000AC]t6.[t5.F41000A9]t6.[t5.F41000A9]t7.
+[t5.F8100010]t6.[t937.F41000AC]t7.[t4.F41000AC]t7.[t5.F8100010]t7.[t428.361F]t4.[t9.0A0F730F]t6.[t3.050F990F]t6.[t3.3A0F]t3.[t5.340F]t4.[t1207.F41000AD]t7.
+[t4.F41000AD]t7.[t5.F8100010]t6.[t949.F41000B2]t7.[t4.F41000B2]t7.[t5.F8100010]t6.[t430.361F]t4.[t9.0A0F0E0F]t5.[t4.050F700F]t5.[t3.3A0F]t4.[t5.340F]t3.
+[t1206.F41000A8]t7.[t4.F41000A8]t7.[t5.F8100010]t6.[t949.F41000B1]t7.[t4.F41000B1]t7.[t5.F8100010]t6.[t431.361F]t3.[t10.0A0F4B0F]t5.[t4.050F890F]t5.
+[t3.3A0F]t4.[t4.340F]t4.[t1206.F41000AF]t7.[t4.F41000AF]t7.[t5.F8100010]t6.[t949.F41000AB]t6.[t5.F41000AB]t6.[t5.F8100010]t7.[t432.361F]t3.[t10.0A0F340F]t5.
+[t4.050F7F0F]t5.[t3.3A0F]t4.[t5.340F]t3.[t1204.F41000A8]t7.[t4.F41000A8]t7.[t5.F8100010]t6.[t949.F41000B5]t7.[t4.F41000B5]t7.[t4.F8100010]t7.[t433.361F]t3.
+[t10.0A0F710F]t5.[t4.050F980F]t5.[t3.3A0F]t4.[t4.340F]t4.[t1204.F41000A6]t6.[t5.F41000A6]t7.[t4.F8100010]t7.[t949.F41000AA]t6.[t5.F41000AA]t6.[t5.F8100010]t7.
+[t431.361F]t3.[t10.0A0F380F]t5.[t4.050F810F]t5.[t3.3A0F]t4.[t5.340F]t3.[t1205.F41000A9]t7.[t5.F41000A9]t6.[t5.F8100010]t7.[t948.F41000AB]t7.[t4.F41000AB]t7.
+[t4.F8100010]t7.[t431.361F]t4.[t9.0A0F750F]t6.[t3.050F9A0F]t6.[t3.3A0F]t3.[t5.340F]t4.[t1205.F41000AE]t6.[t5.F41000AE]t7.[t4.F8100010]t7.[t948.F41000AB]t7.
+[t5.F41000AB]t6.[t5.F8100010]t7.[t432.361F]t3.[t10.0A0F490F]t5.[t4.050F880F]t5.[t3.3A0F]t3.[t6.340F]t3.[t1204.F41000AC]t7.[t4.F41000AC]t7.[t5.F8100010]t6.
+[t949.F41000AA]t7.[t4.F41000AA]t7.[t5.F8100010]t6.[t431.361F]t4.[t10.0A0F0C0F]t5.[t4.050F6F0F]t5.[t3.3A0F]t3.[t5.340F]t4.[t1205.F41000A8]t6.[t5.F41000A8]t7.
+[t4.F8100010]t7.[t949.F41000AC]t6.[t5.F41000AC]t6.[t5.F8100010]t7.[t431.361F]t3.[t10.0A0F510F]t5.[t4.050F8C0F]t5.[t3.3A0F]t3.[t5.340F]t4.[t1205.F41000AC]t7.
+[t4.F41000AC]t7.[t5.F8100010]t7.[t948.F41000B4]t7.[t4.F41000B4]t7.[t5.F8100010]t6.[t431.361F]t3.[t10.0A0F140F]t5.[t4.050F730F]t5.[t3.3A0F]t4.[t4.340F]t4.
+[t1206.F41000AC]t6.[t5.F41000AC]t6.[t5.F8100010]t7.[t948.F41000B2]t7.[t5.F41000B2]t6.[t5.F8100010]t7.[t429.361F]t4.[t10.0A0F060F]t5.[t4.050F6C0F]t5.
+[t3.3A0F]t3.[t5.340F]t4.[t1206.F41000AF]t7.[t4.F41000AF]t7.[t4.F8100010]t7.[t949.F41000B0]t6.[t5.F41000B0]t7.[t4.F8100010]t7.[t431.361F]t3.[t9.0A0F420F]t6.
+[t3.050F850F]t6.[t2.3A0F]t4.[t5.340F]t4.[t1205.F41000B5]t7.[t4.F41000B5]t7.[t5.F8100010]t6.[t949.F41000AB]t7.[t5.F41000AB]t6.[t5.F8100010]t7.[t430.361F]t4.
+[t10.0A0F200F]t5.[t4.050F790F]t5.[t3.3A0F]t3.[t5.340F]t4.[t1205.F41000AD]t7.[t4.F41000AD]t7.[t5.F8100010]t6.[t949.F41000B1]t6.[t5.F41000B1]t7.[t4.F8100010]t7.
+[t431.361F]t4.[t10.0A0F5D0F]t5.[t4.050F920F]t5.[t3.3A0F]t3.[t5.340F]t4.[t1205.F41000AA]t6.[t5.F41000AA]t6.[t5.F8100010]t7.[t948.F41000B5]t6.[t5.F41000B5]t7.
+[t5.F8100010]t6.[t436.361F]t3.[t10.0A0F040F]t5.[t4.050F6B0F]t5.[t3.3A0F]t4.[t5.340F]t3.[t1201.F41000A9]t6.[t5.F41000A9]t7.[t4.F8100010]t7.[t949.F41000AE]t6.
+[t5.F41000AE]t7.[t4.F8100010]t7.[t431.361F]t3.[t10.0A0F3E0F]t5.[t4.050F840F]t5.[t3.3A0F]t3.[t6.340F]t3.[t1205.F41000AB]t7.[t5.F41000AB]t6.[t5.F8100010]t7.
+[t948.F41000AE]t7.[t4.F41000AE]t7.[t5.F8100010]t6.[t430.361F]t3.[t10.0A0F1A0F]t5.[t4.050F760F]t5.[t3.3A0F]t3.[t6.340F]t3.[t1207.F41000B3]t6.[t5.F41000B3]t6.
+[t5.F8100010]t7.[t949.F41000B3]t6.[t5.F41000B3]t7.[t4.F8100010]t7.[t430.361F]t4.[t9.0A0F570F]t5.[t4.050F8F0F]t5.[t3.3A0F]t4.[t5.340F]t3.[t1206.F41000A6]t7.
+[t4.F41000A6]t7.[t5.F8100010]t6.[t949.F41000A9]t7.[t4.F41000A9]t7.[t5.F8100010]t6.[t432.361F]t4.[t9.0A0F1C0F]t6.[t3.050F770F]t6.[t3.3A0F]t3.[t5.340F]t4.
+[t1204.F41000B0]t6.[t5.F41000B0]t7.[t4.F8100010]t7.[t948.F41000C5]t7.[t5.F41000C5]t6.[t5.F8100010]t7.[t432.361F]t3.[t10.0A0F590F]t5.[t4.050F900F]t5.
+[t3.3A0F]t4.[t5.340F]t3.[t1205.F41000AE]t6.[t5.F41000AE]t6.[t5.F8100010]t7.[t948.F41000AD]t7.[t4.F41000AD]t7.[t4.F8100010]t7.[t431.361F]t3.[t10.0A0F790F]t5.
+[t4.050F9C0F]t5.[t3.3A0F]t4.[t5.340F]t3.[t1206.F41000AC]t6.[t5.F41000AC]t6.[t5.F8100010]t7.[t948.F41000AA]t7.[t4.F41000AA]t7.[t5.F8100010]t7.[t430.361F]t4.
+[t10.0A0F3C0F]t5.[t4.050F830F]t5.[t3.3A0F]t3.[t5.340F]t4.[t1205.F41000A9]t7.[t4.F41000A9]t7.[t5.F8100010]t6.[t949.F41000B3]t7.[t4.F41000B3]t7.[t5.F8100010]t6.
+[t430.361F]t4.[t10.0A0F1E0F]t5.[t4.050F780F]t5.[t3.3A0F]t3.[t5.340F]t4.[t1206.F41000B2]t6.[t5.F41000B2]t6.[t5.F8100010]t7.[t948.F41000C0]t7.[t4.F41000C0]t7.
+[t5.F8100010]t6.[t431.361F]t4.[t9.0A0F5B0F]t6.[t3.050F910F]t6.[t3.3A0F]t3.[t5.340F]t4.[t1205.F41000A9]t7.[t4.F41000A9]t7.[t5.F8100010]t6.[t949.F41000AD]t6.
+[t5.F41000AD]t7.[t4.F8100010]t7.[t430.361F]t3.[t10.0A0F5F0F]t5.[t4.050F930F]t5.[t3.3A0F]t4.[t5.340F]t3.[t1206.F41000A7]t7.[t4.F41000A7]t7.[t5.F8100010]t7.
+[t948.F41000A7]t7.[t4.F41000A7]t7.[t5.F8100010]t7.[t429.361F]t3.[t10.0A0F220F]t5.[t4.050F7A0F]t5.[t3.3A0F]t4.[t5.340F]t3.[t1207.F41000B0]t6.[t5.F41000B0]t7.
+[t5.F8100010]t6.[t949.F41000B1]t6.[t5.F41000B1]t7.[t4.F8100010]t7.[t430.361F]t3.[t10.0A0F630F]t5.[t4.050F950F]t5.[t3.3A0F]t4.[t5.340F]t3.[t1206.F41000AB]t7.
+[t4.F41000AB]t7.[t5.F8100010]t6.[t949.F41000A9]t7.[t4.F41000A9]t7.[t5.F8100010]t6.[t430.361F]t4.[t9.0A0F2E0F]t6.[t3.050F7C0F]t6.[t3.3A0F]t3.[t5.340F]t4.
+[t1206.F41000AF]t6.[t5.F41000AF]t6.[t5.F8100010]t7.[t949.F41000AE]t6.[t5.F41000AE]t6.[t5.F8100010]t7.[t429.361F]t4.[t10.0A0F460F]t5.[t3.050F870F]t6.
+[t3.3A0F]t3.[t5.340F]t4.[t1206.F41000A7]t7.[t4.F41000AC]t7.[t5.F41000AC]t6.[t5.F8100010]t7.[t937.F41000B1]t7.[t4.F41000B1]t7.[t5.F8100010]t6.[t429.361F]t4.
+[t9.0A0F0A0F]t6.[t3.050F6E0F]t6.[t3.3A0F]t3.[t5.340F]t4.[t1207.F41000AE]t6.[t5.F41000AE]t6.[t5.F8100010]t7.[t948.F41000AE]t7.[t5.F41000AE]t6.[t5.F8100010]t7.
+[t430.361F]t3.[t10.0A0F610F]t5.[t4.050F940F]t5.[t3.3A0F]t4.[t5.340F]t3.[t1206.F41000AC]t7.[t5.F41000AC]t6.[t5.F8100010]t7.[t948.F41000B1]t6.[t5.F41000B1]t7.
+[t4.F8100010]t7.[t431.361F]t3.[t10.0A0F2C0F]t5.[t4.050F7B0F]t5.[t3.3A0F]t3.[t5.340F]t5.[t1205.F41000B0]t6.[t5.F41000B0]t6.[t5.F8100010]t7.[t948.F41000AD]t7.
+[t5.F41000AD]t6.[t5.F8100010]t7.[t429.361F]t4.[t10.0A0F530F]t5.[t4.050F8D0F]t5.[t3.3A0F]t3.[t5.340F]t4.[t1206.F41000A7]t7.[t4.F41000A7]t7.[t5.F8100010]t6.
+[t949.F41000A9]t7.[t5.F41000A9]t6.[t5.F8100010]t7.[t429.361F]t3.[t10.0A0F160F]t5.[t4.050F740F]t5.[t3.3A0F]t3.[t5.340F]t4.[t1207.F41000B2]t6.[t5.F41000B2]t6.
+[t5.F8100010]t7.[t948.F41000B6]t7.[t5.F41000B6]t6.[t5.F8100010]t7.[t430.361F]t3.[t10.0A0F320F]t5.[t4.050F7E0F]t5.[t3.3A0F]t4.[t4.340F]t4.[t1206.F41000B0]t6.
+[t5.F41000B0]t7.[t4.F8100010]t7.[t949.F41000B7]t6.[t5.F41000B7]t7.[t5.F8100010]t6.[t431.361F]t3.[t10.0A0F6F0F]t5.[t4.050F970F]t5.[t3.3A0F]t4.[t5.340F]t3.
+[t1206.F41000AB]t6.[t5.F41000AB]t7.[t4.F8100010]t7.[t948.F41000B1]t7.[t4.F41000B1]t7.[t5.F8100010]t6.[t431.361F]t3.[t10.0A0F3A0F]t5.[t4.050F820F]t5.
+[t3.3A0F]t4.[t5.340F]t3.[t1206.F41000AE]t7.[t4.F41000AE]t7.[t5.F8100010]t6.[t949.F41000AA]t6.[t5.F41000AA]t6.[t5.F8100010]t7.[t431.361F]t3.[t10.0A0F770F]t5.
+[t4.050F9B0F]t5.[t3.3A0F]t4.[t5.340F]t3.[t1206.F41000AE]t6.[t5.F41000AE]t6.[t5.F8100010]t7.[t948.F41000AF]t7.[t4.F41000AF]t7.[t4.F8100010]t7.[t432.361F]t3.
+[t10.0A0F4F0F]t5.[t4.050F8B0F]t5.[t3.3A0F]t4.[t5.340F]t3.[t1205.F41000AD]t6.[t5.F41000AD]t7.[t4.F8100010]t7.[t949.F41000AE]t6.[t5.F41000AE]t8.[t3.F8100010]t7.
+[t431.361F]t4.[t10.0A0F120F]t5.[t3.050F720F]t6.[t3.3A0F]t3.[t5.340F]t4.[t1204.F41000AA]t7.[t4.F41000AA]t7.[t5.F8100010]t7.[t948.F41000A4]t6.[t5.F41000A4]t7.
+[t4.F8100010]t7.[t431.361F]t4.[t9.0A0F440F]t6.[t3.050F860F]t6.[t2.3A0F]t4.[t5.340F]t4.[t1205.F41000AC]t6.[t5.F41000AC]t7.[t4.F8100010]t7.[t949.F41000AD]t6.
+[t5.F41000AD]t6.[t5.F8100010]t7.[t430.361F]t4.[t10.0A0F080F]t5.[t4.050F6D0F]t5.[t3.3A0F]t3.[t5.340F]t4.[t1206.F41000A2]t6.[t5.F41000A2]t6.[t5.F8100010]t7.
+[t948.F41000B2]t7.[t4.F41000B2]t7.[t5.F8100010]t6.[t431.361F]t4.[t9.0A0F6D0F]t6.[t3.050F960F]t6.[t3.3A0F]t3.[t5.340F]t4.[t1205.F41000A6]t6.[t5.F41000A6]t6.
+[t5.F8100010]t7.[t949.F41000C0]t6.[t5.F41000C0]t6.[t5.F8100010]t7.[t431.361F]t3.[t10.0A0F300F]t5.[t4.050F7D0F]t5.[t3.3A0F]t3.[t6.340F]t3.[t1205.F41000AE]t7.
+[t4.F41000AE]t7.[t5.F8100010]t6.[t949.F41000B6]t7.[t4.F41000B6]t7.[t5.F8100010]t6.[t430.361F]t4.[t10.0A0F4D0F]t5.[t4.050F8A0F]t5.[t3.3A0F]t3.[t6.340F]t3.
+[t1206.F41000AE]t6.[t5.F41000AB]t7.[t4.F41000AB]t7.[t4.F8100010]t7.[t937.F41000AC]t7.[t5.F41000AC]t6.[t5.F8100010]t7.[t430.361F]t4.[t10.0A0F100F]t5.
+[t3.050F710F]t6.[t3.3A0F]t3.[t5.340F]t4.[t1205.F41000A6]t7.[t4.F41000A6]t7.[t4.F8100010]t7.[t949.F41000B4]t6.[t5.F41000B4]t7.[t4.F8100010]t7.[t431.361F]t3.
+[t10.0A0F180F]t5.[t4.050F750F]t5.[t3.3A0F]t3.[t6.340F]t3.[t1205.F41000A8]t7.[t4.F41000A8]t7.[t5.F8100010]t7.[t948.F41000A9]t7.[t4.F41000A9]t7.[t5.F8100010]t6.
+[t431.361F]t4.[t9.0A0F550F]t6.[t3.050F8E0F]t6.[t2.3A0F]t4.[t5.340F]t4.[t1205.F41000AB]t6.[t5.F41000AB]t7.[t4.F8100010]t7.[t949.F41000AE]t7.[t4.F41000AE]t7.
+[t5.F8100010]t6.[t429.361F]t3.[t10.0A0F360F]t5.[t4.050F800F]t5.[t3.3A0F]t4.[t5.340F]t3.[t1207.F41000AC]t7.[t4.F41000AC]t7.[t5.F8100010]t7.[t948.F41000B1]t7.
+[t4.F41000B1]t7.[t5.F8100010]t6.[t429.361F]t4.[t9.0A0F730F]t6.[t3.050F990F]t5.[t3.3A0F]t4.[t5.340F]t3.[t1208.F41000AF]t7.[t4.F41000AE]t7.[t5.F41000AE]t6.
+[t5.F8100010]t6.[t938.F41000B4]t6.[t5.F41000B4]t6.[t5.F8100010]t7.[t430.361F]t4.[t9.0A0F]t7.0E0F[t3.050F700F]t5.[t3.3A0F]t3.[t5.340F]t4.[t1205.F41000AE]t7.
+[t4.F41000AE]t7.[t5.F8100010]t6.[t949.F41000AC]t7.[t4.F41000AC]t7.[t5.F8100010]t6.[t430.361F]t4.[t10.0A0F4B0F]t5.[t4.050F890F]t5.[t3.3A0F]t3.[t5.340F]t4.
+[t1206.F41000A9]t6.[t5.F41000AF]t7.[t4.F41000AF]t7.[t5.F8100010]t7.[t937.F41000A9]t6.[t5.F41000A9]t6.[t5.F8100010]t7.[t432.361F]t3.[t10.0A0F340F]t5.
+[t4.050F7F0F]t5.[t3.3A0F]t4.[t4.340F]t4.[t1205.F41000AC]t6.[t5.F41000AC]t6.[t5.F8100010]t7.[t948.F41000B7]t7.[t4.F41000B7]t7.[t5.F8100010]t6.[t432.361F]t3.
+[t10.0A0F710F]t5.[t4.050F980F]t5.[t3.3A0F]t4.[t5.340F]t3.[t1205.F41000AF]t6.[t5.F41000AF]t7.[t4.F8100010]t7.[t948.F41000AE]t7.[t4.F41000AE]t7.[t5.F8100010]t7.
+[t430.361F]t3.[t10.0A0F380F]t5.[t4.050F810F]t5.[t3.3A0F]t4.[t5.340F]t3.[t1206.F41000A8]t7.[t4.F41000A8]t7.[t5.F810]t6.0010[t949.F41000AD]t7.[t4.F41000AD]t7.
+[t5.F8100010]t6.[t431.361F]t3.[t10.0A0F750F]t5.[t4.050F9A0F]t5.[t3.3A0F]t4.[t5.340F]t3.[t1206.F41000AC]t6.[t5.F41000AC]t7.[t4.F8100010]t7.[t949.F41000A9]t6.
+[t5.F41000A9]t6.[t5.F8100010]t7.[t431.361F]t4.[t9.0A0F490F]t6.[t3.050F880F]t6.[t3.3A0F]t3.[t5.340F]t4.[t1204.F41000B2]t7.[t4.F41000B2]t7.[t5.F8100010]t6.
+[t949.F41000B4]t6.[t5.F41000B4]t7.[t4.F8100010]t7.[t432.361F]t3.[t10.0A0F0C0F]t5.[t4.050F6F0F]t5.[t3.3A0F]t4.[t5.340F]t3.[t1205.F41000AB]t6.[t5.F41000AB]t6.
+[t5.F8100010]t7.[t949.F41000AD]t6.[t5.F41000AD]t6.[t5.F8100010]t7.[t431.361F]t4.[t10.0A0F510F]t5.[t4.050F8C0F]t5.[t3.3A0F]t3.[t5.340F]t4.[t1204.F41000A9]t7.
+[t4.F41000A9]t7.[t5.F8100010]t7.[t948.F41000AF]t6.[t5.F41000AF]t7.[t4.F8100010]t7.[t431.361F]t4.[t9.0A0F140F]t6.[t3.050F730F]t6.[t2.3A0F]t4.[t5.340F]t4.
+[t1205.F41000AF]t6.[t5.F41000AF]t6.[t5.F8100010]t7.[t948.F41000AC]t7.[t5.F41000AC]t6.[t5.F8100010]t7.[t430.361F]t3.[t10.0A0F060F]t5.[t3.050F6C0F]t6.
+[t3.3A0F]t3.[t5.340F]t4.[t1206.F41000AB]t6.[t5.F41000AB]t7.[t4.F8100010]t7.[t949.F41000AC]t6.[t5.F41000AC]t6.[t5.F8100010]t7.[t431.361F]t3.[t10.0A0F420F]t5.
+[t4.050F850F]t5.[t3.3A0F]t4.[t4.340F]t4.[t1206.F41000B3]t6.[t5.F41000B3]t6.[t5.F8100010]t7.[t948.F41000A8]t6.[t5.F41000A8]t7.[t4.F8100010]t7.[t431.361F]t3.
+[t10.0A0F200F]t5.[t4.050F790F]t6.[t2.3A0F]t4.[t5.340F]t4.[t1205.F41000B6]t6.[t5.F41000B6]t7.[t4.F8100010]t7.[t949.F41000AD]t7.[t4.F41000AD]t7.[t4.F8100010]t7.
+[t431.361F]t3.[t10.0A0F5D0F]t5.[t4.050F920F]t5.[t3.3A0F]t3.[t6.340F]t3.[t1206.F41000AB]t6.[t5.F41000AB]t7.[t4.F8100010]t7.[t948.F41000AB]t6.[t5.F41000AB]t7.
+[t4.F8100010]t7.[t436.361F]t3.[t10.0A0F040F]t5.[t4.050F6B0F]t5.[t3.3A0F]t4.[t5.340F]t3.[t1201.F41000AE]t6.[t5.F41000AE]t6.[t5.F8100010]t7.[t949.F41000AE]t6.
+[t5.F41000AE]t7.[t4.F8100010]t7.[t430.361F]t3.[t10.0A0F3E0F]t6.[t3.050F840F]t5.[t3.3A0F]t4.[t5.340F]t3.[t1206.F41000A9]t7.[t4.F41000A9]t7.[t5.F8100010]t7.
+[t948.F41000B2]t7.[t4.F41000B2]t7.[t5.F8100010]t7.[t429.361F]t3.[t10.0A0F1A0F]t5.[t4.050F760F]t5.[t3.3A0F]t3.[t6.340F]t3.[t1207.F41000AD]t7.[t4.F41000AF]t7.
+[t5.F41000AF]t6.[t5.F8100010]t7.[t936.F41000B0]t7.[t5.F41000B0]t6.[t5.F8100010]t7.[t429.361F]t4.[t9.0A0F570F]t6.[t3.050F8F0F]t6.[t3.3A0F]t3.[t5.340F]t4.
+[t1206.F41000A9]t7.[t4.F41000A9]t7.[t5.F8100010]t6.[t949.F41000A9]t6.[t5.F41000A9]t7.[t4.F8100010]t7.[t433.361F]t3.[t9.0A0F1C0F]t6.[t4.050F770F]t5.
+[t3.3A0F]t3.[t5.340F]t4.[t1204.F41000B4]t6.[t5.F41000B4]t6.[t5.F8100010]t7.[t948.F41000C0]t7.[t4.F41000C0]t7.[t5.F8100010]t7.[t432.361F]t4.[t9.0A0F590F]t5.
+[t4.050F900F]t5.[t3.3A0F]t4.[t5.340F]t3.[t1204.F41000AB]t7.[t4.F41000AB]t7.[t4.F8100010]t7.[t949.F41000AA]t7.[t4.F41000AA]t7.[t4.F8100010]t7.[t431.361F]t3.
+[t10.0A0F790F]t6.[t3.050F9C0F]t6.[t3.3A0F]t3.[t5.340F]t4.[t1205.F41000A8]t6.[t5.F41000A8]t6.[t5.F8100010]t7.[t948.F41000A6]t7.[t4.F41000A6]t7.[t5.F8100010]t7.
+[t430.361F]t4.[t9.0A0F3C0F]t6.[t3.050F830F]t6.[t3.3A0F]t3.[t5.340F]t4.[t1205.F41000B2]t7.[t4.F41000B2]t7.[t5.F8100010]t6.[t949.F41000AE]t7.[t4.F41000AE]t7.
+[t4.F8100010]t7.[t431.361F]t3.[t10.0A0F1E0F]t5.[t4.050F780F]t5.[t3.3A0F]t4.[t5.340F]t3.[t1205.F41000B8]t7.[t5.F41000B8]t6.[t5.F8100010]t7.[t948.F41000BC]t7.
+[t4.F41000BC]t7.[t5.F8100010]t7.[t430.361F]t4.[t9.0A0F5B0F]t5.[t4.050F910F]t6.[t2.3A0F]t4.[t5.340F]t4.[t1205.F41000AB]t6.[t5.F41000AB]t7.[t4.F8100010]t7.
+[t949.F41000A9]t6.[t5.F41000A9]t7.[t4.F8800010]t7.[t429.361F]t4.[t10.0A0F5F0F]t5.[t3.050F930F]t6.[t3.3A0F]t3.[t5.340F]t4.[t1207.F41000A6]t6.[t5.F41000A6]t6.
+[t5.F8100010]t7.[t948.F41000B1]t7.[t4.F41000B1]t7.[t5.F8100010]t6.[t430.361F]t3.[t10.0A0F220F]t5.[t4.050F7A0F]t5.[t3.3A0F]t4.[t5.340F]t3.[t1207.F41000AB]t6.
+[t5.F41000AB]t7.[t4.F8100010]t7.[t949.F41000B9]t6.[t5.F41000B9]t6.[t5.F8100010]t7.[t429.361F]t4.[t9.0A0F630F]t6.[t3.050F950F]t6.[t3.3A0F]t3.[t5.340F]t4.
+[t1207.F41000AB]t6.[t5.F41000AB]t6.[t5.F8100010]t7.[t948.F41000AB]t7.[t4.F41000AB]t7.[t5.F8100010]t6.[t430.361F]t3.[t10.0A0F2E0F]t6.[t3.050F7C0F]t5.
+[t3.3A0F]t4.[t5.340F]t3.[t1207.F41000B4]t6.[t5.F41000B4]t6.[t5.F8100010]t7.[t948.F41000B3]t7.[t5.F41000B3]t6.[t5.F8100010]t7.[t430.361F]t4.[t9.0A0F460F]t6.
+[t3.050F870F]t5.[t3.3A0F]t4.[t5.340F]t3.[t1206.F41000AE]t7.[t5.F41000AE]t6.[t5.F8100010]t7.[t948.F41000AE]t7.[t4.F41000AE]t7.[t5.F8100010]t6.[t430.361F]t3.
+[t10.0A0F0A0F]t5.[t4.050F6E0F]t5.[t3.3A0F]t3.[t6.340F]t3.[t1207.F41000B0]t6.[t5.F41000B0]t6.[t5.F8100010]t7.[t949.F41000A9]t6.[t5.F41000A9]t6.[t5.F8100010]t7.
+[t430.361F]t4.[t9.0A0F610F]t5.[t4.050F940F]t6.[t2.3A0F]t4.[t5.340F]t4.[t1205.F41000AB]t7.[t4.F41000AB]t7.[t5.F8100010]t6.[t949.F41000B1]t7.[t4.F41000B1]t7.
+[t4.F8100010]t7.[t431.361F]t4.[t9.0A0F2C0F]t5.[t4.050F7B0F]t6.[t2.3A0F]t4.[t5.340F]t4.[t1205.F41000A8]t6.[t5.F41000A8]t6.[t5.F8100010]t7.[t948.F41000B1]t7.
+[t4.F41000B1]t7.[t5.F8100010]t6.[t430.361F]t4.[t9.0A0F530F]t5.[t4.050F8D0F]t6.[t2.3A0F]t4.[t5.340F]t3.[t1207.F41000AD]t7.[t4.F41000AD]t7.[t5.F8100010]t6.
+[t949.F41000A9]t7.[t4.F41000A9]t7.[t5.F8100010]t6.[t430.361F]t3.[t10.0A0F160F]t5.[t4.050F740F]t5.[t3.3A0F]t4.[t5.340F]t3.[t1206.F41000A6]t7.[t4.F41000A6]t7.
+[t5.F8100010]t6.[t949.F41000AC]t7.[t4.F41000AC]t7.[t5.F8100010]t6.[t431.361F]t3.[t10.0A0F320F]t5.[t4.050F7E0F]t5.[t3.3A0F]t4.[t5.340F]t3.[t1206.F41000B1]t7.
+[t4.F41000B1]t7.[t4.F8100010]t7.[t949.F41000BB]t6.[t5.F41000BB]t7.[t4.F8100010]t7.[t430.361F]t4.[t10.0A0F6F0F]t5.[t

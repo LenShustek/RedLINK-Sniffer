@@ -1,0 +1,20 @@
+
+   22.764 sec xmit 18 bytes chan 38 sync 63 81 data 23 FA AC FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81 
+    0.524 sec xmit 18 bytes chan 32 sync 63 7E data 23 FA AC FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81 
+    0.575 sec xmit 18 bytes chan 6F sync 63 97 data 23 FA AC FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81 
+    0.536 sec xmit 18 bytes chan 51 sync 63 8C data 23 FA AC FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81 
+    0.595 sec xmit 21 bytes chan 14 sync 63 73 data 03 A0 4D AE 36 AE 36 F0 01 00 0A 12 80 00 46 2D 09 89 7F FF 06 
+    0.520 sec xmit 21 bytes chan 71 sync 63 98 data 03 A0 4D AE 36 AE 36 F0 01 00 0A 12 80 00 46 2D 09 89 7F FF 06 
+    0.476 sec xmit 21 bytes chan 34 sync 63 7F data 03 A0 4D AE 36 AE 36 F0 01 00 0A 12 80 00 46 2D 09 89 7F FF 06 
+    0.526 sec xmit 21 bytes chan 42 sync 63 85 data 03 A0 4D AE 36 AE 36 F0 01 00 0A 12 80 00 46 2D 09 89 7F FF 06 
+  223.269 sec xmit 21 bytes chan 06 sync 63 6C data 03 0B 9A AE 36 AE 36 F0 01 00 0A 12 80 00 46 1D 09 1D 7F FF 00 
+   82.438 sec xmit 18 bytes chan 5B sync 63 91 data 23 1C 66 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81 
+    0.588 sec xmit 18 bytes chan 1E sync 63 78 data 23 1C 66 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81 
+    0.499 sec xmit 18 bytes chan 5F sync 63 93 data 23 1C 66 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81 
+    0.559 sec xmit 18 bytes chan 22 sync 63 7A data 23 1C 66 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81 
+    0.608 sec xmit 21 bytes chan 20 sync 63 79 data 03 14 C3 AE 36 AE 36 F0 01 00 0A 12 80 00 46 25 08 71 7F FF 06 
+    0.553 sec xmit 21 bytes chan 5D sync 63 92 data 03 14 C3 AE 36 AE 36 F0 01 00 0A 12 80 00 46 25 08 71 7F FF 06 
+    0.579 sec xmit 21 bytes chan 18 sync 63 75 data 03 14 C3 AE 36 AE 36 F0 01 00 0A 12 80 00 46 25 08 71 7F FF 06 
+    0.519 sec xmit 21 bytes chan 55 sync 63 8E data 03 14 C3 AE 36 AE 36 F0 01 00 0A 12 80 00 46 25 08 71 7F FF 06 
+  210.923 sec xmit 21 bytes chan 79 sync 63 9C data 03 3B C0 AE 36 AE 36 F0 01 00 0A 12 80 00 46 23 06 9A 7F FF 00 
+  236.609 sec xmit 21 bytes cha

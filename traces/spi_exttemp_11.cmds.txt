@@ -1,0 +1,1967 @@
+got 425 bytes from serial port
+received a buffer with 108 events
+140.329195 command 30: SRES (reset chip)
+  0.000050  wrote 00: IOCFG2 (GDO2 output pin config) as 06 sync word sent/rcvd
+            wrote 01: IOCFG1 (GD01 output pin config) as 0D serial data out
+            wrote 02: IOCFG0 (GDO0 output pin config) as 2F hardwired to 0
+            wrote 03: FIFOTHR (FIFO thresholds) as 47 
+            wrote 04: SYNC1 (sync word high) as 63 
+            wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 06: PKTLEN (packet length) as 3F 
+            wrote 07: PKTCTRL1 (packet control 1) as 44 
+            wrote 08: PKTCTRL0 (packet control 0) as 45 
+            wrote 0B: FSCTRL1 (frequency synthesizer control 1) as 06 
+            wrote 0D: FREQ2 (frequency control word H) as 22 
+            wrote 0E: FREQ1 (frequency control word M) as B3 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            wrote 10: MDMCFRG4 (modem config 4) as CA 
+            wrote 11: MDMCFRG3 (modem config 3) as 83 
+            wrote 12: MDMCFRG2 (modem config 2) as 12 
+            wrote 13: MDMCFRG1 (modem config 1) as 62 
+            wrote 14: MDMCFRG0 (modem config 0) as F8 
+            wrote 15: DEVIATN (modem deviation setting) as 34 
+            wrote 16: MCSM2 (main radio state machine config 2) as 07 
+            wrote 18: MCSM0 (main radio state machine config 0) as 18 
+            wrote 19: FOCCFG (frequency offset compensation config) as 16 
+            wrote 1A: BSCFG (bit sync config) as 6C 
+            wrote 1B: AGCTRL2 (AGC control 2) as 43 
+            wrote 1C: AGCTRL1 (AGC control 1) as 40 
+            wrote 1D: AGCTRL0 (AGC control 0) as 91 
+            wrote 1E: WOREVT1 (event 0 timeout H) as 87 
+            wrote 1F: WOREVT0 (event 0 timeout L) as 6B 
+            wrote 20: WORCTRL (wake on radio control) as F8 
+            wrote 21: FREND1 (front end RX config) as 56 
+            wrote 22: FREND0 (front end TX config) as 10 
+            wrote 23: FSCAL3 (frequency synthesizer calibration 3) as E9 
+            wrote 24: FSCAL2 (frequency synthesizer calibration 2) as 2A 
+            wrote 26: FSCAL0 (frequency synthesizer calibration 0) as 1F 
+            wrote 27: RCCTRL1 (RC oscillator config 1) as 41 
+            wrote 29: FSTEST (frequency synthesizer calibration control) as 59 
+            wrote 2A: PTEST (production test) as 7F 
+            wrote 2B: AGCTEST (AGC test) as 3F 
+            wrote 2C: TEST2 (test settings 2) as 81 
+            wrote 2D: TEST1 (test settings 1) as 35 
+            burst wrote 47 registers, and 40 changed
+  0.000184 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 6F 
+  0.000014 write 05: SYNC0 (sync word low) as 97 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.144145 burst write 3F: FIFO (data) as  0F 03 FF FF AE 36 AE 36 F0 00 00 84 53 02 04 00
+got 448 bytes from serial port
+received a buffer with 113 events
+  0.405649 command 30: SRES (reset chip)
+  0.000009 write 02: IOCFG0 (GDO0 output pin config) as 38 CLK_XOSC/16
+  0.035732  wrote 02: IOCFG0 (GDO0 output pin config) as 2F hardwired to 0
+            wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 4 changed
+  0.000173 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 51 
+  0.000014 write 05: SYNC0 (sync word low) as 8C 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.134554 burst write 3F: FIFO (data) as  15 03 0F B0 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 D9 7F FF 00
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.360114 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 14 
+  0.000013 write 05: SYNC0 (sync word low) as 73 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140287 burst write 3F: FIFO (data) as  15 03 0F B0 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 D9 7F FF 00
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.440151 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 71 
+  0.000013 write 05: SYNC0 (sync word low) as 98 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140304 burst write 3F: FIFO (data) as  15 03 0F B0 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 D9 7F FF 00
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.410155 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 34 
+  0.000014 write 05: SYNC0 (sync word low) as 7F 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140347 burst write 3F: FIFO (data) as  15 03 0F B0 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 D9 7F FF 00
+got 12 bytes from serial port
+received a buffer with 1 events
+got 434 bytes from serial port
+received a buffer with 111 events
+  4.737281 command 30: SRES (reset chip)
+  0.000048  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 42 
+  0.000013 write 05: SYNC0 (sync word low) as 85 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000012 command 35: STX (enable TX)
+  0.138922 burst write 3F: FIFO (data) as  12 23 B1 90 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.440222 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 06 
+  0.000013 write 05: SYNC0 (sync word low) as 6C 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140313 burst write 3F: FIFO (data) as  12 23 B1 90 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.450233 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 5B 
+  0.000014 write 05: SYNC0 (sync word low) as 91 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140330 burst write 3F: FIFO (data) as  12 23 B1 90 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.410154 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 1E 
+  0.000014 write 05: SYNC0 (sync word low) as 78 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140342 burst write 3F: FIFO (data) as  12 23 B1 90 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 470 bytes from serial port
+received a buffer with 119 events
+  0.463670 command 30: SRES (reset chip)
+  0.000038 write 02: IOCFG0 (GDO0 output pin config) as 38 CLK_XOSC/16
+  0.035687  wrote 02: IOCFG0 (GDO0 output pin config) as 2F hardwired to 0
+            wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 4 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 5F 
+  0.000014 write 05: SYNC0 (sync word low) as 93 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.134526 burst write 3F: FIFO (data) as  15 03 70 54 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.450329 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 22 
+  0.000014 write 05: SYNC0 (sync word low) as 7A 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140398 burst write 3F: FIFO (data) as  15 03 70 54 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.350239 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000175 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 20 
+  0.000014 write 05: SYNC0 (sync word low) as 79 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140392 burst write 3F: FIFO (data) as  15 03 70 54 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.380295 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 5D 
+  0.000014 write 05: SYNC0 (sync word low) as 92 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140399 burst write 3F: FIFO (data) as  15 03 70 54 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 12 bytes from serial port
+received a buffer with 1 events
+got 434 bytes from serial port
+received a buffer with 111 events
+  3.554471 command 30: SRES (reset chip)
+  0.000048  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 18 
+  0.000013 write 05: SYNC0 (sync word low) as 75 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.138983 burst write 3F: FIFO (data) as  12 23 43 10 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.350217 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 55 
+  0.000014 write 05: SYNC0 (sync word low) as 8E 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140448 burst write 3F: FIFO (data) as  12 23 43 10 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.350202 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 79 
+  0.000014 write 05: SYNC0 (sync word low) as 9C 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140397 burst write 3F: FIFO (data) as  12 23 43 10 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.380297 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 3C 
+  0.000014 write 05: SYNC0 (sync word low) as 83 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140442 burst write 3F: FIFO (data) as  12 23 43 10 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 470 bytes from serial port
+received a buffer with 119 events
+  0.443639 command 30: SRES (reset chip)
+  0.000037 write 02: IOCFG0 (GDO0 output pin config) as 38 CLK_XOSC/16
+  0.035548  wrote 02: IOCFG0 (GDO0 output pin config) as 2F hardwired to 0
+            wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 4 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 2C 
+  0.000014 write 05: SYNC0 (sync word low) as 7B 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000012 command 35: STX (enable TX)
+  0.134705 burst write 3F: FIFO (data) as  15 03 72 43 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DC 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.450222 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 61 
+  0.000014 write 05: SYNC0 (sync word low) as 94 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000012 command 35: STX (enable TX)
+  0.140441 burst write 3F: FIFO (data) as  15 03 72 43 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DC 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.380215 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 12 
+  0.000014 write 05: SYNC0 (sync word low) as 72 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140414 burst write 3F: FIFO (data) as  15 03 72 43 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DC 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.380050 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 4F 
+  0.000014 write 05: SYNC0 (sync word low) as 8B 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140379 burst write 3F: FIFO (data) as  15 03 72 43 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DC 7F FF 06
+got 12 bytes from serial port
+received a buffer with 1 events
+got 434 bytes from serial port
+received a buffer with 111 events
+  3.049389 command 30: SRES (reset chip)
+  0.000049  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 16 
+  0.000013 write 05: SYNC0 (sync word low) as 74 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.138943 burst write 3F: FIFO (data) as  12 23 02 CF FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.440131 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 53 
+  0.000014 write 05: SYNC0 (sync word low) as 8D 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140384 burst write 3F: FIFO (data) as  12 23 02 CF FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.340172 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 2E 
+  0.000014 write 05: SYNC0 (sync word low) as 7C 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140295 burst write 3F: FIFO (data) as  12 23 02 CF FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.430113 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 63 
+  0.000013 write 05: SYNC0 (sync word low) as 95 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000012 command 35: STX (enable TX)
+  0.140376 burst write 3F: FIFO (data) as  12 23 02 CF FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 470 bytes from serial port
+received a buffer with 119 events
+  0.413608 command 30: SRES (reset chip)
+  0.000038 write 02: IOCFG0 (GDO0 output pin config) as 38 CLK_XOSC/16
+  0.035694  wrote 02: IOCFG0 (GDO0 output pin config) as 2F hardwired to 0
+            wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 4 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 36 
+  0.000014 write 05: SYNC0 (sync word low) as 80 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000012 command 35: STX (enable TX)
+  0.134506 burst write 3F: FIFO (data) as  15 03 A6 4C AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.340131 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 73 
+  0.000013 write 05: SYNC0 (sync word low) as 99 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140405 burst write 3F: FIFO (data) as  15 03 A6 4C AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.350247 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 08 
+  0.000014 write 05: SYNC0 (sync word low) as 6D 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140365 burst write 3F: FIFO (data) as  15 03 A6 4C AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.350256 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 44 
+  0.000013 write 05: SYNC0 (sync word low) as 86 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140413 burst write 3F: FIFO (data) as  15 03 A6 4C AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 12 bytes from serial port
+received a buffer with 1 events
+got 434 bytes from serial port
+received a buffer with 111 events
+  2.775224 command 30: SRES (reset chip)
+  0.000048  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 77 
+  0.000013 write 05: SYNC0 (sync word low) as 9B 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.139014 burst write 3F: FIFO (data) as  12 23 94 5E FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.370062 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 3A 
+  0.000014 write 05: SYNC0 (sync word low) as 82 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140380 burst write 3F: FIFO (data) as  12 23 94 5E FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.450048 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 0E 
+  0.000014 write 05: SYNC0 (sync word low) as 70 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000012 command 35: STX (enable TX)
+  0.140358 burst write 3F: FIFO (data) as  12 23 94 5E FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.360119 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000173 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 4B 
+  0.000014 write 05: SYNC0 (sync word low) as 89 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140443 burst write 3F: FIFO (data) as  12 23 94 5E FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 470 bytes from serial port
+received a buffer with 119 events
+  0.443276 command 30: SRES (reset chip)
+  0.000037 write 02: IOCFG0 (GDO0 output pin config) as 38 CLK_XOSC/16
+  0.035413  wrote 02: IOCFG0 (GDO0 output pin config) as 2F hardwired to 0
+            wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 4 changed
+  0.000173 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 59 
+  0.000014 write 05: SYNC0 (sync word low) as 90 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.133249 burst write 3F: FIFO (data) as  15 03 28 60 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.425980 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 1C 
+  0.000014 write 05: SYNC0 (sync word low) as 77 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.139053 burst write 3F: FIFO (data) as  15 03 28 60 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.416120 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 04 
+  0.000014 write 05: SYNC0 (sync word low) as 6B 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000014 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.139080 burst write 3F: FIFO (data) as  15 03 28 60 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.445815 command 30: SRES (reset chip)
+  0.000060  wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 2 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 3E 
+  0.000014 write 05: SYNC0 (sync word low) as 84 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.139013 burst write 3F: FIFO (data) as  15 03 28 60 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 12 bytes from serial port
+received a buffer with 1 events
+got 434 bytes from serial port
+received a buffer with 111 events
+  3.016757 command 30: SRES (reset chip)
+  0.000048  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 46 
+  0.000014 write 05: SYNC0 (sync word low) as 87 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.137631 burst write 3F: FIFO (data) as  12 23 74 92 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.376552 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 0A 
+  0.000014 write 05: SYNC0 (sync word low) as 6E 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.139053 burst write 3F: FIFO (data) as  12 23 74 92 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.366664 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 4D 
+  0.000013 write 05: SYNC0 (sync word low) as 8A 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.139091 burst write 3F: FIFO (data) as  12 23 74 92 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.396341 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 10 
+  0.000014 write 05: SYNC0 (sync word low) as 71 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.139057 burst write 3F: FIFO (data) as  12 23 74 92 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 470 bytes from serial port
+received a buffer with 119 events
+  0.360244 command 30: SRES (reset chip)
+  0.000037 write 02: IOCFG0 (GDO0 output pin config) as 38 CLK_XOSC/16
+  0.035682  wrote 02: IOCFG0 (GDO0 output pin config) as 2F hardwired to 0
+            wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 4 changed
+  0.000173 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 6D 
+  0.000014 write 05: SYNC0 (sync word low) as 96 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.134508 burst write 3F: FIFO (data) as  15 03 CA BC AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.349969 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 30 
+  0.000014 write 05: SYNC0 (sync word low) as 7D 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000014 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140381 burst write 3F: FIFO (data) as  15 03 CA BC AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.429927 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 0C 
+  0.000014 write 05: SYNC0 (sync word low) as 6F 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140350 burst write 3F: FIFO (data) as  15 03 CA BC AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.420051 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 49 
+  0.000014 write 05: SYNC0 (sync word low) as 88 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140296 burst write 3F: FIFO (data) as  15 03 CA BC AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 12 bytes from serial port
+received a buffer with 1 events
+got 434 bytes from serial port
+received a buffer with 111 events
+  3.076796 command 30: SRES (reset chip)
+  0.000049  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 57 
+  0.000014 write 05: SYNC0 (sync word low) as 8F 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000012 command 35: STX (enable TX)
+  0.138939 burst write 3F: FIFO (data) as  12 23 12 C1 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.389966 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 1A 
+  0.000014 write 05: SYNC0 (sync word low) as 76 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140348 burst write 3F: FIFO (data) as  12 23 12 C1 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.399987 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000175 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 75 
+  0.000014 write 05: SYNC0 (sync word low) as 9A 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140388 burst write 3F: FIFO (data) as  12 23 12 C1 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.439994 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 38 
+  0.000014 write 05: SYNC0 (sync word low) as 81 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140424 burst write 3F: FIFO (data) as  12 23 12 C1 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 470 bytes from serial port
+received a buffer with 119 events
+  0.433314 command 30: SRES (reset chip)
+  0.000038 write 02: IOCFG0 (GDO0 output pin config) as 38 CLK_XOSC/16
+  0.035544  wrote 02: IOCFG0 (GDO0 output pin config) as 2F hardwired to 0
+            wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 4 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 32 
+  0.000014 write 05: SYNC0 (sync word low) as 7E 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.134587 burst write 3F: FIFO (data) as  15 03 A7 58 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DC 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.359984 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 6F 
+  0.000014 write 05: SYNC0 (sync word low) as 97 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140420 burst write 3F: FIFO (data) as  15 03 A7 58 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DC 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.409945 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 51 
+  0.000013 write 05: SYNC0 (sync word low) as 8C 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000012 command 35: STX (enable TX)
+  0.140416 burst write 3F: FIFO (data) as  15 03 A7 58 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DC 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.369998 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 14 
+  0.000014 write 05: SYNC0 (sync word low) as 73 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140363 burst write 3F: FIFO (data) as  15 03 A7 58 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DC 7F FF 06
+got 12 bytes from serial port
+received a buffer with 1 events
+got 434 bytes from serial port
+received a buffer with 111 events
+  2.811248 command 30: SRES (reset chip)
+  0.000048  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 71 
+  0.000014 write 05: SYNC0 (sync word low) as 98 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.138943 burst write 3F: FIFO (data) as  12 23 D2 94 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.369910 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 34 
+  0.000014 write 05: SYNC0 (sync word low) as 7F 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140370 burst write 3F: FIFO (data) as  12 23 D2 94 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.339835 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 42 
+  0.000014 write 05: SYNC0 (sync word low) as 85 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140299 burst write 3F: FIFO (data) as  12 23 D2 94 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.399979 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 06 
+  0.000014 write 05: SYNC0 (sync word low) as 6C 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000012 command 35: STX (enable TX)
+  0.140368 burst write 3F: FIFO (data) as  12 23 D2 94 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 470 bytes from serial port
+received a buffer with 119 events
+  0.373408 command 30: SRES (reset chip)
+  0.000038 write 02: IOCFG0 (GDO0 output pin config) as 38 CLK_XOSC/16
+  0.035531  wrote 02: IOCFG0 (GDO0 output pin config) as 2F hardwired to 0
+            wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 4 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 5B 
+  0.000013 write 05: SYNC0 (sync word low) as 91 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.134626 burst write 3F: FIFO (data) as  15 03 37 99 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.439914 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 1E 
+  0.000013 write 05: SYNC0 (sync word low) as 78 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140383 burst write 3F: FIFO (data) as  15 03 37 99 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.389833 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 5F 
+  0.000013 write 05: SYNC0 (sync word low) as 93 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000012 command 35: STX (enable TX)
+  0.140350 burst write 3F: FIFO (data) as  15 03 37 99 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.389880 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 22 
+  0.000014 write 05: SYNC0 (sync word low) as 7A 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140384 burst write 3F: FIFO (data) as  15 03 37 99 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 12 bytes from serial port
+received a buffer with 1 events
+got 434 bytes from serial port
+received a buffer with 111 events
+  3.874872 command 30: SRES (reset chip)
+  0.000048  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 20 
+  0.000013 write 05: SYNC0 (sync word low) as 79 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.138925 burst write 3F: FIFO (data) as  12 23 F7 E3 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.369833 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000173 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 5D 
+  0.000014 write 05: SYNC0 (sync word low) as 92 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140314 burst write 3F: FIFO (data) as  12 23 F7 E3 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.379779 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 18 
+  0.000014 write 05: SYNC0 (sync word low) as 75 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140307 burst write 3F: FIFO (data) as  12 23 F7 E3 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.399832 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 55 
+  0.000014 write 05: SYNC0 (sync word low) as 8E 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000012 command 35: STX (enable TX)
+  0.140360 burst write 3F: FIFO (data) as  12 23 F7 E3 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 470 bytes from serial port
+received a buffer with 119 events
+  0.472958 command 30: SRES (reset chip)
+  0.000037 write 02: IOCFG0 (GDO0 output pin config) as 38 CLK_XOSC/16
+  0.035409  wrote 02: IOCFG0 (GDO0 output pin config) as 2F hardwired to 0
+            wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 4 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 79 
+  0.000014 write 05: SYNC0 (sync word low) as 9C 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.133203 burst write 3F: FIFO (data) as  15 03 78 28 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.435753 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000016 write 0A: CHANNR (channel number) as 3C 
+  0.000012 write 05: SYNC0 (sync word low) as 83 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.139043 burst write 3F: FIFO (data) as  15 03 78 28 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.445561 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 2C 
+  0.000014 write 05: SYNC0 (sync word low) as 7B 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.139056 burst write 3F: FIFO (data) as  15 03 78 28 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.356501 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 61 
+  0.000014 write 05: SYNC0 (sync word low) as 94 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.139073 burst write 3F: FIFO (data) as  15 03 78 28 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 12 bytes from serial port
+received a buffer with 1 events
+got 434 bytes from serial port
+received a buffer with 111 events
+  3.894218 command 30: SRES (reset chip)
+  0.000049  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 12 
+  0.000014 write 05: SYNC0 (sync word low) as 72 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.137536 burst write 3F: FIFO (data) as  12 23 99 CE FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.356411 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 4F 
+  0.000013 write 05: SYNC0 (sync word low) as 8B 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.139009 burst write 3F: FIFO (data) as  12 23 99 CE FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.396050 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 16 
+  0.000014 write 05: SYNC0 (sync word low) as 74 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.139031 burst write 3F: FIFO (data) as  12 23 99 CE FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.366242 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 53 
+  0.000014 write 05: SYNC0 (sync word low) as 8D 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.139001 burst write 3F: FIFO (data) as  12 23 99 CE FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 470 bytes from serial port
+received a buffer with 119 events
+  0.399388 command 30: SRES (reset chip)
+  0.000037 write 02: IOCFG0 (GDO0 output pin config) as 38 CLK_XOSC/16
+  0.035681  wrote 02: IOCFG0 (GDO0 output pin config) as 2F hardwired to 0
+            wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 4 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 2E 
+  0.000014 write 05: SYNC0 (sync word low) as 7C 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.134461 burst write 3F: FIFO (data) as  15 03 D0 54 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.389604 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 63 
+  0.000013 write 05: SYNC0 (sync word low) as 95 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140331 burst write 3F: FIFO (data) as  15 03 D0 54 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.359533 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 36 
+  0.000014 write 05: SYNC0 (sync word low) as 80 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140307 burst write 3F: FIFO (data) as  15 03 D0 54 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.419540 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 73 
+  0.000014 write 05: SYNC0 (sync word low) as 99 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000014 command 35: STX (enable TX)
+  0.140297 burst write 3F: FIFO (data) as  15 03 D0 54 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 12 bytes from serial port
+received a buffer with 1 events
+got 434 bytes from serial port
+received a buffer with 111 events
+  2.692713 command 30: SRES (reset chip)
+  0.000049  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 08 
+  0.000014 write 05: SYNC0 (sync word low) as 6D 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.138921 burst write 3F: FIFO (data) as  12 23 D1 76 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.439342 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 44 
+  0.000014 write 05: SYNC0 (sync word low) as 86 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000012 command 35: STX (enable TX)
+  0.140252 burst write 3F: FIFO (data) as  12 23 D1 76 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.439350 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 77 
+  0.000014 write 05: SYNC0 (sync word low) as 9B 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000014 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140293 burst write 3F: FIFO (data) as  12 23 D1 76 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.409472 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 3A 
+  0.000014 write 05: SYNC0 (sync word low) as 82 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000012 command 35: STX (enable TX)
+  0.140274 burst write 3F: FIFO (data) as  12 23 D1 76 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 470 bytes from serial port
+received a buffer with 119 events
+  0.432767 command 30: SRES (reset chip)
+  0.000038 write 02: IOCFG0 (GDO0 output pin config) as 38 CLK_XOSC/16
+  0.035544  wrote 02: IOCFG0 (GDO0 output pin config) as 2F hardwired to 0
+            wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 4 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 0E 
+  0.000014 write 05: SYNC0 (sync word low) as 70 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.134533 burst write 3F: FIFO (data) as  15 03 01 08 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.359589 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 4B 
+  0.000013 write 05: SYNC0 (sync word low) as 89 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140279 burst write 3F: FIFO (data) as  15 03 01 08 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.439377 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 59 
+  0.000013 write 05: SYNC0 (sync word low) as 90 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140312 burst write 3F: FIFO (data) as  15 03 01 08 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.379379 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 1C 
+  0.000014 write 05: SYNC0 (sync word low) as 77 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140222 burst write 3F: FIFO (data) as  15 03 01 08 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 12 bytes from serial port
+received a buffer with 1 events
+got 434 bytes from serial port
+received a buffer with 111 events
+  3.200255 command 30: SRES (reset chip)
+  0.000049  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 04 
+  0.000014 write 05: SYNC0 (sync word low) as 6B 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.138873 burst write 3F: FIFO (data) as  12 23 D1 61 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.379454 command 30: SRES (reset chip)
+  0.000059  wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 2 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 3E 
+  0.000013 write 05: SYNC0 (sync word low) as 84 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140290 burst write 3F: FIFO (data) as  12 23 D1 61 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.359478 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 46 
+  0.000013 write 05: SYNC0 (sync word low) as 87 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140300 burst write 3F: FIFO (data) as  12 23 D1 61 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.399344 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 0A 
+  0.000014 write 05: SYNC0 (sync word low) as 6E 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140260 burst write 3F: FIFO (data) as  12 23 D1 61 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 470 bytes from serial port
+received a buffer with 119 events
+  0.432776 command 30: SRES (reset chip)
+  0.000037 write 02: IOCFG0 (GDO0 output pin config) as 38 CLK_XOSC/16
+  0.035524  wrote 02: IOCFG0 (GDO0 output pin config) as 2F hardwired to 0
+            wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 4 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 4D 
+  0.000014 write 05: SYNC0 (sync word low) as 8A 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000016 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000012 command 35: STX (enable TX)
+  0.134501 burst write 3F: FIFO (data) as  15 03 45 59 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.419410 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 10 
+  0.000014 write 05: SYNC0 (sync word low) as 71 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140349 burst write 3F: FIFO (data) as  15 03 45 59 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.429359 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 6D 
+  0.000014 write 05: SYNC0 (sync word low) as 96 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140254 burst write 3F: FIFO (data) as  15 03 45 59 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.429316 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 30 
+  0.000014 write 05: SYNC0 (sync word low) as 7D 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000012 command 35: STX (enable TX)
+  0.140312 burst write 3F: FIFO (data) as  15 03 45 59 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 12 bytes from serial port
+received a buffer with 1 events
+got 434 bytes from serial port
+received a buffer with 111 events
+  3.365506 command 30: SRES (reset chip)
+  0.000048  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 0C 
+  0.000014 write 05: SYNC0 (sync word low) as 6F 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.138854 burst write 3F: FIFO (data) as  12 23 53 03 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.359407 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000175 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 49 
+  0.000014 write 05: SYNC0 (sync word low) as 88 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140295 burst write 3F: FIFO (data) as  12 23 53 03 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.379249 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 57 
+  0.000014 write 05: SYNC0 (sync word low) as 8F 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000012 command 35: STX (enable TX)
+  0.140264 burst write 3F: FIFO (data) as  12 23 53 03 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.379299 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 1A 
+  0.000014 write 05: SYNC0 (sync word low) as 76 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140213 burst write 3F: FIFO (data) as  12 23 53 03 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 470 bytes from serial port
+received a buffer with 119 events
+  0.372768 command 30: SRES (reset chip)
+  0.000038 write 02: IOCFG0 (GDO0 output pin config) as 38 CLK_XOSC/16
+  0.035539  wrote 02: IOCFG0 (GDO0 output pin config) as 2F hardwired to 0
+            wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 4 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 75 
+  0.000014 write 05: SYNC0 (sync word low) as 9A 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.134412 burst write 3F: FIFO (data) as  15 03 BC E2 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.379117 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 38 
+  0.000014 write 05: SYNC0 (sync word low) as 81 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140207 burst write 3F: FIFO (data) as  15 03 BC E2 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.399145 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 32 
+  0.000014 write 05: SYNC0 (sync word low) as 7E 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140226 burst write 3F: FIFO (data) as  15 03 BC E2 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.429184 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 6F 
+  0.000014 write 05: SYNC0 (sync word low) as 97 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140308 burst write 3F: FIFO (data) as  15 03 BC E2 AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 DF 7F FF 06
+got 12 bytes from serial port
+received a buffer with 1 events
+got 434 bytes from serial port
+received a buffer with 111 events
+  3.431441 command 30: SRES (reset chip)
+  0.000049  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 51 
+  0.000014 write 05: SYNC0 (sync word low) as 8C 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000012 command 35: STX (enable TX)
+  0.138857 burst write 3F: FIFO (data) as  12 23 39 66 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.339219 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 14 
+  0.000013 write 05: SYNC0 (sync word low) as 73 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140254 burst write 3F: FIFO (data) as  12 23 39 66 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.429061 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 71 
+  0.000014 write 05: SYNC0 (sync word low) as 98 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140243 burst write 3F: FIFO (data) as  12 23 39 66 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.449035 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 34 
+  0.000014 write 05: SYNC0 (sync word low) as 7F 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140290 burst write 3F: FIFO (data) as  12 23 39 66 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 470 bytes from serial port
+received a buffer with 119 events
+  0.362704 command 30: SRES (reset chip)
+  0.000038 write 02: IOCFG0 (GDO0 output pin config) as 38 CLK_XOSC/16
+  0.035532  wrote 02: IOCFG0 (GDO0 output pin config) as 2F hardwired to 0
+            wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 4 changed
+  0.000173 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 42 
+  0.000014 write 05: SYNC0 (sync word low) as 85 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.134540 burst write 3F: FIFO (data) as  15 03 65 BF AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 E2 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.409218 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 06 
+  0.000014 write 05: SYNC0 (sync word low) as 6C 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000012 command 35: STX (enable TX)
+  0.140321 burst write 3F: FIFO (data) as  15 03 65 BF AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 E2 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.419136 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 5B 
+  0.000014 write 05: SYNC0 (sync word low) as 91 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140324 burst write 3F: FIFO (data) as  15 03 65 BF AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 E2 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.359297 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 1E 
+  0.000014 write 05: SYNC0 (sync word low) as 78 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140251 burst write 3F: FIFO (data) as  15 03 65 BF AE 36 AE 36 F0 01 00 0A 12 80 00 46 31 09 E2 7F FF 06
+got 12 bytes from serial port
+received a buffer with 1 events
+got 434 bytes from serial port
+received a buffer with 111 events
+  3.296889 command 30: SRES (reset chip)
+  0.000049  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 5F 
+  0.000014 write 05: SYNC0 (sync word low) as 93 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000012 command 35: STX (enable TX)
+  0.138876 burst write 3F: FIFO (data) as  12 23 C3 89 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.389244 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000173 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 22 
+  0.000014 write 05: SYNC0 (sync word low) as 7A 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140302 burst write 3F: FIFO (data) as  12 23 C3 89 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.359140 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 20 
+  0.000014 write 05: SYNC0 (sync word low) as 79 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140232 burst write 3F: FIFO (data) as  12 23 C3 89 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 420 bytes from serial port
+received a buffer with 106 events
+  0.389050 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 5D 
+  0.000014 write 05: SYNC0 (sync word low) as 92 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000012 command 35: STX (enable TX)
+  0.140273 burst write 3F: FIFO (data) as  12 23 C3 89 FF FE AE 36 F0 00 00 87 82 12 00 AE 36 FF 81
+got 470 bytes from serial port
+received a buffer with 119 events
+  0.392678 command 30: SRES (reset chip)
+  0.000038 write 02: IOCFG0 (GDO0 output pin config) as 38 CLK_XOSC/16
+  0.035528  wrote 02: IOCFG0 (GDO0 output pin config) as 2F hardwired to 0
+            wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 4 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000013 write 0A: CHANNR (channel number) as 18 
+  0.000014 write 05: SYNC0 (sync word low) as 75 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000012 command 35: STX (enable TX)
+  0.134553 burst write 3F: FIFO (data) as  15 03 48 31 AE 36 AE 36 F0 01 00 0A 12 80 00 46 30 09 DC 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.419139 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 55 
+  0.000013 write 05: SYNC0 (sync word low) as 8E 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140275 burst write 3F: FIFO (data) as  15 03 48 31 AE 36 AE 36 F0 01 00 0A 12 80 00 46 30 09 DC 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.439022 command 30: SRES (reset chip)
+  0.000060  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 79 
+  0.000013 write 05: SYNC0 (sync word low) as 9C 
+  0.000014 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000013 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000014 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000012 command 35: STX (enable TX)
+  0.140180 burst write 3F: FIFO (data) as  15 03 48 31 AE 36 AE 36 F0 01 00 0A 12 80 00 46 30 09 DC 7F FF 06
+got 432 bytes from serial port
+received a buffer with 109 events
+  0.429136 command 30: SRES (reset chip)
+  0.000059  wrote 05: SYNC0 (sync word low) as 6B 
+            wrote 0A: CHANNR (channel number) as 00 
+            wrote 0F: FREQ0 (frequency control word L) as 33 
+            burst wrote 47 registers, and 3 changed
+  0.000174 write 3E: PATABLE (power amp control) as C0 
+  0.000014 write 0A: CHANNR (channel number) as 3C 
+  0.000014 write 05: SYNC0 (sync word low) as 83 
+  0.000013 write 0D: FREQ2 (frequency control word H) as 22 
+  0.000014 write 0E: FREQ1 (frequency control word M) as B3 
+  0.000013 write 0F: FREQ0 (frequency control word L) as 42 
+  0.000015 write 08: PKTCTRL0 (packet control 0) as 45 
+  0.000013 command 35: STX (enable TX)
+  0.140313 burst write 3F: FIFO (data) as  15 03 48 31 AE 36 AE 36 F0 01 00 0A 12 80 00 46 30 09 DC 7F FF 06
+got 12 bytes from serial port
+received a buffer with 1 events

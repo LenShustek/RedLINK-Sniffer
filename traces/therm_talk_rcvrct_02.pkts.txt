@@ -1,0 +1,381 @@
+
+ 52.941641 sec sent 13 bytes chan 38 sync 63 81 data    0C 33 FF FF 31 FD 31 FD 08 00 00 81 11 
+  0.004583 sec rcv enable on chan 38 sync 63 81
+  0.006735 sec rcvd 10 bytes chan 38 sync 63 81 data 1B 15 2A FF FF 31 FD 31 FD 00 
+  0.002747 sec rcvd 14 bytes chan 38 sync 63 81 data 0E 08 8A 51 00 00 14 FF 88 40 FF FF CA 29 
+  0.201018 sec sent 64 bytes chan 30 sync 63 7D data    7B 10 FF FF 31 FD 31 FD 08 00 00 04 31 20 00 00 00 04 01 FE 40 00 00 15 01 FE 00 51 00 00 34 00 00 00 00 00 00 00 00 01 02 09 36 01 01 00 04 12 80 00 00 00 04 01 F4 00 00 00 1D 01 FF 00 59 80 
+  0.006696 sec sent 32 bytes chan 30 sync 63 7D data    80 46 4B 50 00 00 00 28 5A 32 63 00 00 01 03 80 80 00 80 00 10 00 07 00 00 04 10 D0 00 00 00 07 
+  0.006669 sec sent 28 bytes chan 30 sync 63 7D data    30 C9 00 43 7F FF 02 00 04 11 F9 00 00 00 0D 71 3F 00 89 00 7F FF FF FF FF FF FF 00 
+  0.014538 sec rcv enable on chan 30 sync 63 7D
+  0.006851 sec rcvd 11 bytes chan 30 sync 63 7D data 1C 0D 22 FF FF 31 FD 31 FD 00 00 
+  0.000841 sec rcvd  5 bytes chan 30 sync 63 7D data 05 82 52 32 29 
+  0.087053 sec rcv enable on chan 30 sync 63 7D
+  0.134273 sec rcv enable on chan 4D sync 63 8A
+  0.006342 sec rcvd 10 bytes chan 4D sync 63 8A data 1B 35 28 FF FF 31 FD 31 FD 00 
+  0.006482 sec rcvd 31 bytes chan 4D sync 63 8A data 1F 08 0A 31 20 00 46 74 00 00 00 00 F1 08 15 01 FE 40 51 B7 3F E7 87 49 77 87 90 00 00 00 01 
+  0.002933 sec rcvd 15 bytes chan 4D sync 63 8A data 0F 12 12 FF FF 08 07 01 F4 00 43 F1 F0 12 23 
+  0.001266 sec sent 14 bytes chan 4D sync 63 8A data    0D 22 FF FF 31 FD 31 FD 08 00 00 82 52 23 
+  2.140298 sec sent 28 bytes chan 6D sync 63 96 data    1B 10 FF FF 31 FD 31 FD 08 00 00 04 12 80 00 00 00 04 10 D0 00 00 00 04 11 F9 00 00 
+  0.007703 sec rcv enable on chan 6D sync 63 96
+  0.007032 sec rcvd 11 bytes chan 6D sync 63 96 data 1C 0D 22 FF FF 31 FD 31 FD 00 00 
+  0.000847 sec rcvd  5 bytes chan 6D sync 63 96 data 05 82 52 1E 18 
+  0.107066 sec rcv enable on chan 6D sync 63 96
+  0.134273 sec rcv enable on chan 30 sync 63 7D
+  0.134274 sec rcv enable on chan 4D sync 63 8A
+  0.134274 sec rcv enable on chan 10 sync 63 71
+  0.134273 sec rcv enable on chan 18 sync 63 75
+  0.134274 sec rcv enable on chan 55 sync 63 8E
+  0.134272 sec rcv enable on chan 36 sync 63 80
+  0.134274 sec rcv enable on chan 73 sync 63 99
+  0.134275 sec rcv enable on chan 0E sync 63 70
+  0.134274 sec rcv enable on chan 4B sync 63 89
+  0.744761 sec sent 41 bytes chan 3E sync 63 84 data    28 00 FF FF 31 FD 31 FD 08 00 00 1D 01 FF 00 59 80 48 46 4B 50 00 00 00 28 5A 32 63 00 00 01 03 81 80 00 48 00 10 00 07 00 
+  0.010414 sec rcv enable on chan 3E sync 63 84
+  0.121174 sec sent 41 bytes chan 04 sync 63 6B data    28 00 FF FF 31 FD 31 FD 08 00 00 1D 01 FF 00 59 80 48 46 4B 50 00 00 00 28 5A 32 63 00 00 01 03 81 80 00 48 00 10 00 07 00 
+  0.010415 sec rcv enable on chan 04 sync 63 6B
+  0.007006 sec rcvd 11 bytes chan 04 sync 63 6B data 1C 0D 22 FF FF 31 FD 31 FD 00 00 
+  0.000906 sec rcvd  5 bytes chan 04 sync 63 6B data 05 82 52 2F 25 
+  0.755090 sec sent 28 bytes chan 34 sync 63 7F data    1B 10 FF FF 31 FD 31 FD 08 00 00 04 12 80 00 00 00 04 10 D0 00 00 00 04 11 F9 00 00 
+  0.007705 sec rcv enable on chan 34 sync 63 7F
+  0.129254 sec sent 28 bytes chan 71 sync 63 98 data    1B 10 FF FF 31 FD 31 FD 08 00 00 04 12 80 00 00 00 04 10 D0 00 00 00 04 11 F9 00 00 
+  0.007705 sec rcv enable on chan 71 sync 63 98
+  0.007031 sec rcvd 11 bytes chan 71 sync 63 98 data 1C 0D 22 FF FF 31 FD 31 FD 00 00 
+  0.000849 sec rcvd  5 bytes chan 71 sync 63 98 data 05 82 52 20 1C 
+  0.107064 sec rcv enable on chan 71 sync 63 98
+  0.134272 sec rcv enable on chan 38 sync 63 81
+  0.134274 sec rcv enable on chan 75 sync 63 9A
+  0.134275 sec rcv enable on chan 49 sync 63 88
+  0.134274 sec rcv enable on chan 0C sync 63 6F
+  0.134273 sec rcv enable on chan 51 sync 63 8C
+  0.134274 sec rcv enable on chan 14 sync 63 73
+  0.134272 sec rcv enable on chan 06 sync 63 6C
+  0.134274 sec rcv enable on chan 42 sync 63 85
+  0.134274 sec rcv enable on chan 20 sync 63 79
+  0.162014 sec sent 25 bytes chan 14 sync 63 73 data    18 00 FF FF 31 FD 31 FD 08 00 00 0D 31 3F 00 49 18 00 00 0D FF FF FF FF 01 
+  0.007122 sec rcv enable on chan 14 sync 63 73
+  0.006636 sec rcvd 10 bytes chan 14 sync 63 73 data 1B 0D 22 FF FF 31 FD 31 FD 00 
+  0.001063 sec rcvd  6 bytes chan 14 sync 63 73 data 06 08 82 52 2E 26 
+  0.298396 sec rcv enable on chan 16 sync 63 74
+  0.014742 sec rcvd 11 bytes chan 16 sync 63 74 data 1C 5A 02 FF FF 31 FD 31 FD 00 00 
+  0.006444 sec rcvd 31 bytes chan 16 sync 63 74 data 1F 8A 51 00 78 FD 00 78 EB 00 78 1A FF 15 01 FE 00 51 00 00 34 00 00 00 00 00 00 00 00 01 02 
+  0.006461 sec rcvd 31 bytes chan 16 sync 63 74 data 1F 36 01 01 FF 1D 01 FF 00 59 80 48 46 4B 50 00 00 00 28 5A 32 63 00 00 01 03 81 80 00 48 00 
+  0.003976 sec rcvd 20 bytes chan 16 sync 63 74 data 0F 00 07 00 FF 0D B1 3F 00 89 00 7F FF FF FF FF FF FF 00 25 
+  0.323843 sec sent 25 bytes chan 51 sync 63 8C data    18 00 FF FF 31 FD 31 FD 08 00 00 0D B1 3F 00 49 18 00 00 0D FF FF FF FF 02 
+  0.007122 sec rcv enable on chan 51 sync 63 8C
+  0.006637 sec rcvd 10 bytes chan 51 sync 63 8C data 1B 0D 22 FF FF 31 FD 31 FD 00 
+  0.001063 sec rcvd  6 bytes chan 51 sync 63 8C data 06 08 82 52 25 1E 
+  4.800234 sec sent 41 bytes chan 4B sync 63 89 data    28 00 FF FF 31 FD 31 FD 08 00 00 1D 01 FF 00 59 81 48 46 4B 06 00 58 58 28 5A 32 63 46 4B 11 03 81 80 00 48 00 10 00 07 00 
+  0.010413 sec rcv enable on chan 4B sync 63 89
+  0.007008 sec rcvd 11 bytes chan 4B sync 63 89 data 1C 0D 22 FF FF 31 FD 31 FD 00 00 
+  0.000906 sec rcvd  5 bytes chan 4B sync 63 89 data 05 82 52 21 1A 
+  9.852497 sec rcv enable on chan 32 sync 63 7E
+  0.014497 sec rcvd 10 bytes chan 32 sync 63 7E data 1B 43 02 FF FF 31 FD 31 FD 00 
+  0.006382 sec rcvd 31 bytes chan 32 sync 63 7E data 1F FF 8A 51 01 69 A8 01 69 96 01 68 BA FF 1D 01 FF 00 59 81 48 46 4B 06 00 58 58 28 5A 32 63 
+  0.005852 sec rcvd 29 bytes chan 32 sync 63 7E data 0F 4B 11 03 81 80 00 48 00 10 00 07 00 FF 0D 71 3F 00 49 18 00 00 0D FF FF FF FF 02 13 
+ 15.014126 sec rcv enable on chan 6F sync 63 97
+  0.014985 sec rcvd 11 bytes chan 6F sync 63 97 data 1C 15 02 FF FF 31 FD 31 FD 00 00 
+  0.002546 sec rcvd 13 bytes chan 6F sync 63 97 data 0D 8A 51 02 5A 53 02 5A 41 02 59 5A 01 
+ 15.032357 sec rcv enable on chan 3A sync 63 82
+  0.006197 sec rcvd 10 bytes chan 3A sync 63 82 data 1B 15 02 FF FF 31 FD 31 FD 00 
+  0.002689 sec rcvd 14 bytes chan 3A sync 63 82 data 0E FF 8A 51 03 4A FE 03 4A EC 03 49 FA 18 
+  7.010834 sec sent 19 bytes chan 0E sync 63 70 data    12 00 FF FF 31 FD 31 FD 08 00 00 07 30 C9 00 43 08 9B 02 
+  0.009044 sec rcv enable on chan 0E sync 63 70
+  0.006786 sec rcvd 10 bytes chan 0E sync 63 70 data 1B 0D 22 FF FF 31 FD 31 FD 00 
+  0.000941 sec rcvd  6 bytes chan 0E sync 63 70 data 06 08 82 52 2C 23 
+  7.937629 sec sent 16 bytes chan 20 sync 63 79 data    0F 10 FF FF 31 FD 31 FD 08 00 00 04 11 F9 00 00 
+  0.008438 sec rcv enable on chan 20 sync 63 79
+  0.006891 sec rcvd 11 bytes chan 20 sync 63 79 data 1C 0D 22 FF FF 31 FD 31 FD 00 00 
+  0.000912 sec rcvd  5 bytes chan 20 sync 63 79 data 05 82 52 27 1E 
+  0.050745 sec rcv enable on chan 77 sync 63 9B
+  0.006452 sec rcvd 11 bytes chan 77 sync 63 9B data 1C 15 02 FF FF 31 FD 31 FD 00 00 
+  0.002595 sec rcvd 13 bytes chan 77 sync 63 9B data 0D 8A 51 04 3B A9 04 3B 97 04 3A 9A 07 
+  0.326486 sec rcv enable on chan 04 sync 63 6B
+  0.134274 sec rcv enable on chan 3E sync 63 84
+  0.134273 sec rcv enable on chan 1A sync 63 76
+  0.134274 sec rcv enable on chan 57 sync 63 8F
+  0.134276 sec rcv enable on chan 1C sync 63 77
+  0.134275 sec rcv enable on chan 59 sync 63 90
+  0.134272 sec rcv enable on chan 79 sync 63 9C
+  0.134274 sec rcv enable on chan 3C sync 63 83
+  1.614247 sec sent 16 bytes chan 5D sync 63 92 data    0F 10 FF FF 31 FD 31 FD 08 00 00 04 11 F9 00 00 
+  0.008462 sec rcv enable on chan 5D sync 63 92
+  0.006891 sec rcvd 11 bytes chan 5D sync 63 92 data 1C 0D 22 FF FF 31 FD 31 FD 00 00 
+  0.000911 sec rcvd  5 bytes chan 5D sync 63 92 data 05 82 52 23 1D 
+  0.117732 sec rcv enable on chan 5D sync 63 92
+  0.134274 sec rcv enable on chan 04 sync 63 6B
+  0.134274 sec rcv enable on chan 3E sync 63 84
+  0.134272 sec rcv enable on chan 1A sync 63 76
+  0.134274 sec rcv enable on chan 57 sync 63 8F
+  0.134277 sec rcv enable on chan 1C sync 63 77
+  0.134274 sec rcv enable on chan 59 sync 63 90
+  0.134272 sec rcv enable on chan 79 sync 63 9C
+  0.134273 sec rcv enable on chan 3C sync 63 83
+  0.134274 sec rcv enable on chan 1E sync 63 78
+  1.676014 sec sent 16 bytes chan 77 sync 63 9B data    0F 10 FF FF 31 FD 31 FD 08 00 00 04 11 F9 00 00 
+  0.008461 sec rcv enable on chan 77 sync 63 9B
+  0.006892 sec rcvd 11 bytes chan 77 sync 63 9B data 1C 0D 22 FF FF 31 FD 31 FD 00 00 
+  0.000909 sec rcvd  5 bytes chan 77 sync 63 9B data 05 82 52 1F 1A 
+  0.117733 sec rcv enable on chan 77 sync 63 9B
+  0.134275 sec rcv enable on chan 4F sync 63 8B
+  0.134274 sec rcv enable on chan 12 sync 63 72
+  0.134274 sec rcv enable on chan 44 sync 63 86
+  0.134274 sec rcv enable on chan 08 sync 63 6D
+  0.134274 sec rcv enable on chan 6D sync 63 96
+  0.134273 sec rcv enable on chan 30 sync 63 7D
+  0.134273 sec rcv enable on chan 4D sync 63 8A
+  0.134274 sec rcv enable on chan 10 sync 63 71
+  0.134273 sec rcv enable on chan 18 sync 63 75
+  7.790711 sec rcv enable on chan 4F sync 63 8B
+  0.006455 sec rcvd 11 bytes chan 4F sync 63 8B data 1C 15 02 FF FF 31 FD 31 FD 00 00 
+  0.002478 sec rcvd 13 bytes chan 4F sync 63 8B data 0D 8A 51 05 2C 54 05 2C 42 05 2B 3A 13 
+ 15.032167 sec rcv enable on chan 12 sync 63 72
+  0.006456 sec rcvd 10 bytes chan 12 sync 63 72 data 1B 15 02 FF FF 31 FD 31 FD 00 
+  0.002631 sec rcvd 14 bytes chan 12 sync 63 72 data 0E FF 8A 51 06 1C FF 06 1C ED 06 1B DA 21 
+ 15.032258 sec rcv enable on chan 44 sync 63 86
+  0.006456 sec rcvd 11 bytes chan 44 sync 63 86 data 1C 15 02 FF FF 31 FD 31 FD 00 00 
+  0.002538 sec rcvd 13 bytes chan 44 sync 63 86 data 0D 8A 51 07 0D AA 07 0D 98 07 0C 7A 16 
+  6.828356 sec sent 19 bytes chan 3A sync 63 82 data    12 00 FF FF 31 FD 31 FD 08 00 00 07 30 C9 00 43 08 9B 02 
+  0.009044 sec rcv enable on chan 3A sync 63 82
+  0.006786 sec rcvd 10 bytes chan 3A sync 63 82 data 1B 0D 22 FF FF 31 FD 31 FD 00 
+  0.000942 sec rcvd  6 bytes chan 3A sync 63 82 data 06 08 82 52 19 13 
+  8.187222 sec rcv enable on chan 08 sync 63 6D
+  0.006196 sec rcvd 10 bytes chan 08 sync 63 6D data 1B 15 02 FF FF 31 FD 31 FD 00 
+  0.002683 sec rcvd 14 bytes chan 08 sync 63 6D data 0E FF 8A 51 07 FE 55 07 FE 43 07 FD 1A 22 
+  7.741289 sec sent 16 bytes chan 2E sync 63 7C data    0F 10 FF FF 31 FD 31 FD 08 00 00 04 11 F9 00 00 
+  0.008461 sec rcv enable on chan 2E sync 63 7C
+  0.006892 sec rcvd 11 bytes chan 2E sync 63 7C data 1C 0D 22 FF FF 31 FD 31 FD 00 00 
+  0.000909 sec rcvd  5 bytes chan 2E sync 63 7C data 05 82 52 2D 25 
+  0.117733 sec rcv enable on chan 2E sync 63 7C
+  0.134273 sec rcv enable on chan 46 sync 63 87
+  0.134274 sec rcv enable on chan 0A sync 63 6E
+  0.134275 sec rcv enable on chan 61 sync 63 94
+  0.134274 sec rcv enable on chan 2C sync 63 7B
+  0.134273 sec rcv enable on chan 53 sync 63 8D
+  0.134273 sec rcv enable on chan 16 sync 63 74
+  0.134275 sec rcv enable on chan 32 sync 63 7E
+  0.134274 sec rcv enable on chan 6F sync 63 97
+  0.134273 sec rcv enable on chan 3A sync 63 82
+  1.608877 sec sent 16 bytes chan 63 sync 63 95 data    0F 10 FF FF 31 FD 31 FD 08 00 00 04 11 F9 00 00 
+  0.008462 sec rcv enable on chan 63 sync 63 95
+  0.144611 sec sent 16 bytes chan 16 sync 63 74 data    0F 10 FF FF 31 FD 31 FD 08 00 00 04 11 F9 00 00 
+  0.008461 sec rcv enable on chan 16 sync 63 74
+  0.123127 sec sent 16 bytes chan 53 sync 63 8D data    0F 10 FF FF 31 FD 31 FD 08 00 00 04 11 F9 00 00 
+  0.008462 sec rcv enable on chan 53 sync 63 8D
+  0.034505 sec sent 16 bytes chan 36 sync 63 80 data    0F 10 FF FF 31 FD 31 FD 08 00 00 04 11 F9 00 00 
+  0.008462 sec rcv enable on chan 36 sync 63 80
+  2.679699 sec sent 16 bytes chan 73 sync 63 99 data    0F 10 FF FF 31 FD 31 FD 08 00 00 04 11 F9 00 00 
+  0.008461 sec rcv enable on chan 73 sync 63 99
+  0.112385 sec sent 16 bytes chan 4D sync 63 8A data    0F 10 FF FF 31 FD 31 FD 08 00 00 04 11 F9 00 00 
+  0.008462 sec rcv enable on chan 4D sync 63 8A
+  0.128497 sec sent 16 bytes chan 10 sync 63 71 data    0F 10 FF FF 31 FD 31 FD 08 00 00 04 11 F9 00 00 
+  0.008462 sec rcv enable on chan 10 sync 63 71
+  0.018393 sec sent 16 bytes chan 75 sync 63 9A data    0F 10 FF FF 31 FD 31 FD 08 00 00 04 11 F9 00 00 
+  0.008462 sec rcv enable on chan 75 sync 63 9A
+  1.030686 sec rcv enable on chan 6D sync 63 96
+  0.058974 sec rcv enable on chan 30 sync 63 7D
+  0.059080 sec rcv enable on chan 4D sync 63 8A
+  0.059084 sec rcv enable on chan 10 sync 63 71
+ 14.863963 sec rcv enable on chan 30 sync 63 7D
+  0.058973 sec rcv enable on chan 4D sync 63 8A
+  0.059080 sec rcv enable on chan 10 sync 63 71
+  0.059084 sec rcv enable on chan 18 sync 63 75
+ 14.864207 sec rcv enable on chan 4D sync 63 8A
+  0.058974 sec rcv enable on chan 10 sync 63 71
+  0.059079 sec rcv enable on chan 18 sync 63 75
+  0.059085 sec rcv enable on chan 55 sync 63 8E
+  8.540163 sec sent 13 bytes chan 44 sync 63 86 data    0C 33 FF FF 31 FD 31 FD 08 00 00 81 11 
+  0.004582 sec rcv enable on chan 44 sync 63 86
+  0.006735 sec rcvd 10 bytes chan 44 sync 63 86 data 1B 15 2A FF FF 31 FD 31 FD 00 
+  0.002749 sec rcvd 14 bytes chan 44 sync 63 86 data 0E 08 8A 51 02 B6 2F 02 13 55 02 B4 56 15 
+  0.202969 sec sent 64 bytes chan 61 sync 63 94 data    75 10 FF FF 31 FD 31 FD 08 00 00 04 31 20 00 00 00 04 01 FE 40 00 00 15 01 FE 00 51 00 00 34 00 00 00 00 00 00 00 00 01 02 09 36 01 01 00 04 01 F4 00 00 00 1D 01 FF 00 59 81 48 46 4B 06 00 58 
+  0.006697 sec sent 32 bytes chan 61 sync 63 94 data    58 28 5A 32 63 46 4B 11 03 81 80 00 48 00 10 00 07 00 00 04 10 D0 00 00 00 07 30 C9 00 43 08 A0 
+  0.006669 sec sent 22 bytes chan 61 sync 63 94 data    02 00 04 11 F9 00 00 00 0D B1 3F 00 89 00 7F FF FF FF FF FF FF 00 
+  0.013287 sec rcv enable on chan 61 sync 63 94
+  0.006637 sec rcvd 10 bytes chan 61 sync 63 94 data 1B 0D 22 FF FF 31 FD 31 FD 00 
+  0.001047 sec rcvd  6 bytes chan 61 sync 63 94 data 06 08 82 52 26 1F 
+  0.088311 sec rcv enable on chan 61 sync 63 94
+  0.134273 sec rcv enable on chan 2C sync 63 7B
+  0.006343 sec rcvd 10 bytes chan 2C sync 63 7B data 1B 35 28 FF FF 31 FD 31 FD 00 
+  0.006447 sec rcvd 31 bytes chan 2C sync 63 7B data 1F 08 0A 31 20 00 46 74 00 00 00 00 F1 08 15 01 FE 40 51 B7 3F E7 87 49 77 87 90 00 00 00 01 
+  0.002933 sec rcvd 15 bytes chan 2C sync 63 7B data 0F 12 12 FF FF 08 07 01 F4 00 43 F1 F0 12 10 
+  0.001266 sec sent 14 bytes chan 2C sync 63 7B data    0D 22 FF FF 31 FD 31 FD 08 00 00 82 52 10 
+  2.414251 sec sent 21 bytes chan 2C sync 63 7B data    15 10 FF FF 31 FD 31 FD 00 00 04 10 D0 00 00 00 04 11 F9 00 00 
+  0.006644 sec rcv enable on chan 2C sync 63 7B
+  0.006626 sec rcvd 10 bytes chan 2C sync 63 7B data 1B 0D 22 FF FF 31 FD 31 FD 00 
+  0.001048 sec rcvd  6 bytes chan 2C sync 63 7B data 06 08 82 52 1C 13 
+  0.108329 sec rcv enable on chan 2C sync 63 7B
+  0.134273 sec rcv enable on chan 53 sync 63 8D
+  0.134273 sec rcv enable on chan 16 sync 63 74
+  0.134275 sec rcv enable on chan 32 sync 63 7E
+  0.134274 sec rcv enable on chan 6F sync 63 97
+  0.134273 sec rcv enable on chan 3A sync 63 82
+  0.134274 sec rcv enable on chan 77 sync 63 9B
+  0.134275 sec rcv enable on chan 4F sync 63 8B
+  0.134274 sec rcv enable on chan 12 sync 63 72
+  0.134273 sec rcv enable on chan 44 sync 63 86
+  0.628305 sec rcv enable on chan 1C sync 63 77
+  0.014495 sec rcvd 10 bytes chan 1C sync 63 77 data 1B 5A 02 FF FF 31 FD 31 FD 00 
+  0.006464 sec rcvd 31 bytes chan 1C sync 63 77 data 1F FF 8A 51 03 04 12 03 04 00 03 03 D4 FF 15 01 FE 00 51 00 00 34 00 00 00 00 00 00 00 00 01 
+  0.006461 sec rcvd 31 bytes chan 1C sync 63 77 data 1F 09 36 01 01 FF 1D 01 FF 00 59 81 48 46 4B 06 00 58 58 28 5A 32 63 46 4B 11 03 81 80 00 48 
+  0.004184 sec rcvd 21 bytes chan 1C sync 63 77 data 0F 10 00 07 00 FF 0D 71 3F 00 89 00 7F FF FF FF FF FF FF 00 0C 
+  1.070421 sec sent 22 bytes chan 3C sync 63 83 data    15 10 FF FF 31 FD 31 FD 08 00 00 04 10 D0 00 00 00 04 11 F9 00 00 
+  0.006645 sec rcv enable on chan 3C sync 63 83
+  0.006625 sec rcvd 10 bytes chan 3C sync 63 83 data 1B 0D 22 FF FF 31 FD 31 FD 00 
+  0.001050 sec rcvd  6 bytes chan 3C sync 63 83 data 06 08 82 52 22 1B 
+  0.108327 sec rcv enable on chan 3C sync 63 83
+  0.134274 sec rcv enable on chan 1E sync 63 78
+  0.134274 sec rcv enable on chan 5B sync 63 91
+  0.134272 sec rcv enable on chan 5F sync 63 93
+  0.134274 sec rcv enable on chan 22 sync 63 7A
+  0.134274 sec rcv enable on chan 63 sync 63 95
+  0.134274 sec rcv enable on chan 2E sync 63 7C
+  0.134273 sec rcv enable on chan 46 sync 63 87
+  0.134274 sec rcv enable on chan 0A sync 63 6E
+  0.134275 sec rcv enable on chan 61 sync 63 94
+ 12.608209 sec rcv enable on chan 59 sync 63 90
+  0.014494 sec rcvd 10 bytes chan 59 sync 63 90 data 1B 15 02 FF FF 31 FD 31 FD 00 
+  0.002630 sec rcvd 14 bytes chan 59 sync 63 90 data 0E FF 8A 51 03 F4 BD 03 F4 AB 03 F4 74 26 
+ 15.023731 sec rcv enable on chan 79 sync 63 9C
+  0.014983 sec rcvd 11 bytes chan 79 sync 63 9C data 1C 15 02 FF FF 31 FD 31 FD 00 00 
+  0.002529 sec rcvd 13 bytes chan 79 sync 63 9C data 0D 8A 51 04 E5 68 04 E5 56 04 E5 14 29 
+ 13.015715 sec sent 25 bytes chan 79 sync 63 9C data    18 00 FF FF 31 FD 31 FD 08 00 00 0D F1 3F 00 89 00 7F FF FF FF FF FF FF 00 
+  0.010294 sec rcv enable on chan 79 sync 63 9C
+  0.006757 sec rcvd 10 bytes chan 79 sync 63 9C data 1B 0D 22 FF FF 31 FD 31 FD 00 
+  0.000992 sec rcvd  6 bytes chan 79 sync 63 9C data 06 08 82 52 2D 28 
+  1.998618 sec rcv enable on chan 3C sync 63 83
+  0.006195 sec rcvd 10 bytes chan 3C sync 63 83 data 1B 24 02 FF FF 31 FD 31 FD 00 
+  0.005800 sec rcvd 29 bytes chan 3C sync 63 83 data 0F FF 8A 51 05 D6 13 05 D6 01 05 D5 B4 FF 0D B1 3F 00 89 00 7F FF FF FF FF FF FF 00 1D 
+  9.859697 sec sent 19 bytes chan 55 sync 63 8E data    12 00 FF FF 31 FD 31 FD 08 00 00 07 30 C9 00 43 08 A1 02 
+  0.009044 sec rcv enable on chan 55 sync 63 8E
+  0.006786 sec rcvd 10 bytes chan 55 sync 63 8E data 1B 0D 22 FF FF 31 FD 31 FD 00 
+  0.000947 sec rcvd  6 bytes chan 55 sync 63 8E data 06 08 82 52 28 21 
+  5.152630 sec rcv enable on chan 1E sync 63 78
+  0.006457 sec rcvd 11 bytes chan 1E sync 63 78 data 1C 15 02 FF FF 31 FD 31 FD 00 00 
+  0.002571 sec rcvd 13 bytes chan 1E sync 63 78 data 0D 8A 51 06 C6 BE 06 C6 AC 06 C6 54 14 
+  2.875304 sec sent 16 bytes chan 18 sync 63 75 data    0F 10 FF FF 31 FD 31 FD 08 00 00 04 11 F9 00 00 
+  0.008461 sec rcv enable on chan 18 sync 63 75
+  0.006892 sec rcvd 11 bytes chan 18 sync 63 75 data 1C 0D 22 FF FF 31 FD 31 FD 00 00 
+  0.000913 sec rcvd  5 bytes chan 18 sync 63 75 data 05 82 52 1F 17 
+  0.117730 sec rcv enable on chan 18 sync 63 75
+  0.134274 sec rcv enable on chan 55 sync 63 8E
+  0.134271 sec rcv enable on chan 36 sync 63 80
+  0.134274 sec rcv enable on chan 73 sync 63 99
+  0.134275 sec rcv enable on chan 0E sync 63 70
+  0.134274 sec rcv enable on chan 4B sync 63 89
+  0.134276 sec rcv enable on chan 34 sync 63 7F
+  0.134274 sec rcv enable on chan 71 sync 63 98
+  0.134271 sec rcv enable on chan 38 sync 63 81
+  0.134274 sec rcv enable on chan 75 sync 63 9A
+  1.700185 sec sent 16 bytes chan 0A sync 63 6E data    0F 10 FF FF 31 FD 31 FD 08 00 00 04 11 F9 00 00 
+  0.008460 sec rcv enable on chan 0A sync 63 6E
+  0.006892 sec rcvd 11 bytes chan 0A sync 63 6E data 1C 0D 22 FF FF 31 FD 31 FD 00 00 
+  0.000912 sec rcvd  5 bytes chan 0A sync 63 6E data 05 82 52 25 1B 
+  0.117729 sec rcv enable on chan 0A sync 63 6E
+  0.134275 sec rcv enable on chan 61 sync 63 94
+  0.134273 sec rcv enable on chan 2C sync 63 7B
+  0.134274 sec rcv enable on chan 53 sync 63 8D
+  0.134274 sec rcv enable on chan 16 sync 63 74
+  0.134274 sec rcv enable on chan 32 sync 63 7E
+  0.134274 sec rcv enable on chan 6F sync 63 97
+  0.134273 sec rcv enable on chan 3A sync 63 82
+  0.134274 sec rcv enable on chan 77 sync 63 9B
+  0.134275 sec rcv enable on chan 4F sync 63 8B
+  1.608878 sec sent 16 bytes chan 46 sync 63 87 data    0F 10 FF FF 31 FD 31 FD 08 00 00 04 11 F9 00 00 
+  0.008460 sec rcv enable on chan 46 sync 63 87
+  0.006891 sec rcvd 11 bytes chan 46 sync 63 87 data 1C 0D 22 FF FF 31 FD 31 FD 00 00 
+  0.000917 sec rcvd  5 bytes chan 46 sync 63 87 data 05 82 52 32 2A 
+  0.117725 sec rcv enable on chan 46 sync 63 87
+  0.134274 sec rcv enable on chan 0A sync 63 6E
+  0.134275 sec rcv enable on chan 61 sync 63 94
+  0.134274 sec rcv enable on chan 2C sync 63 7B
+  0.134272 sec rcv enable on chan 53 sync 63 8D
+  0.134274 sec rcv enable on chan 16 sync 63 74
+  0.134274 sec rcv enable on chan 32 sync 63 7E
+  0.134275 sec rcv enable on chan 6F sync 63 97
+  0.134273 sec rcv enable on chan 3A sync 63 82
+  0.134274 sec rcv enable on chan 77 sync 63 9B
+  4.820574 sec rcv enable on chan 5B sync 63 91
+  0.006196 sec rcvd 10 bytes chan 5B sync 63 91 data 1B 15 02 FF FF 31 FD 31 FD 00 
+  0.002714 sec rcvd 14 bytes chan 5B sync 63 91 data 0E FF 8A 51 07 B7 69 07 B7 57 07 B6 F4 2C 
+ 15.032189 sec rcv enable on chan 5F sync 63 93
+  0.006468 sec rcvd 11 bytes chan 5F sync 63 93 data 1C 15 02 FF FF 31 FD 31 FD 00 00 
+  0.002601 sec rcvd 13 bytes chan 5F sync 63 93 data 0D 8A 51 08 A8 14 08 A8 02 08 A7 94 23 
+  0.783279 sec sent 25 bytes chan 59 sync 63 90 data    18 00 FF FF 31 FD 31 FD 08 00 00 0D 71 3F 00 89 00 7F FF FF FF FF FF FF 00 
+  0.010294 sec rcv enable on chan 59 sync 63 90
+  0.006756 sec rcvd 10 bytes chan 59 sync 63 90 data 1B 0D 22 FF FF 31 FD 31 FD 00 
+  0.000993 sec rcvd  6 bytes chan 59 sync 63 90 data 06 08 82 52 15 10 
+ 13.943740 sec sent 41 bytes chan 1C sync 63 77 data    28 00 FF FF 31 FD 31 FD 08 00 00 1D 01 FF 00 59 81 48 46 4B 06 00 58 58 28 5A 32 63 46 4B 22 03 81 80 00 48 00 10 00 07 00 
+  0.013820 sec rcv enable on chan 1C sync 63 77
+  0.006648 sec rcvd 10 bytes chan 1C sync 63 77 data 1B 0D 22 FF FF 31 FD 31 FD 00 
+  0.001077 sec rcvd  6 bytes chan 1C sync 63 77 data 06 08 82 52 2D 25 
+  0.265667 sec rcv enable on chan 22 sync 63 7A
+  0.006458 sec rcvd 11 bytes chan 22 sync 63 7A data 1C 24 02 FF FF 31 FD 31 FD 00 00 
+  0.005623 sec rcvd 28 bytes chan 22 sync 63 7A data 0F 8A 51 09 98 BF 09 98 AD 09 98 34 FF 0D F1 3F 00 89 00 7F FF FF FF FF FF FF 00 21 
+  6.736651 sec sent 41 bytes chan 4F sync 63 8B data    28 00 FF FF 31 FD 31 FD 08 00 00 1D 01 FF 00 59 81 48 46 4B 06 00 58 58 28 5A 32 63 46 4B 11 03 81 80 00 48 00 10 00 07 00 
+  0.013819 sec rcv enable on chan 4F sync 63 8B
+  0.006648 sec rcvd 10 bytes chan 4F sync 63 8B data 1B 0D 22 FF FF 31 FD 31 FD 00 
+  0.001081 sec rcvd  6 bytes chan 4F sync 63 8B data 06 08 82 52 19 13 
+  2.935159 sec sent 19 bytes chan 12 sync 63 72 data    12 00 FF FF 31 FD 31 FD 08 00 00 07 30 C9 00 43 08 A2 02 
+  0.009044 sec rcv enable on chan 12 sync 63 72
+  0.006786 sec rcvd 10 bytes chan 12 sync 63 72 data 1B 0D 22 FF FF 31 FD 31 FD 00 
+  0.000947 sec rcvd  6 bytes chan 12 sync 63 72 data 06 08 82 52 2A 21 
+  5.319129 sec rcv enable on chan 63 sync 63 95
+  0.006196 sec rcvd 10 bytes chan 63 sync 63 95 data 1B 34 02 FF FF 31 FD 31 FD 00 
+  0.006393 sec rcvd 31 bytes chan 63 sync 63 95 data 1F FF 8A 51 0A 89 6A 0A 89 58 0A 88 D4 FF 1D 01 FF 00 59 81 48 46 4B 06 00 58 58 28 5A 32 63 
+  0.002725 sec rcvd 14 bytes chan 63 sync 63 95 data 0E 4B 11 03 81 80 00 48 00 10 00 07 00 23 
+ 10.723788 sec sent 16 bytes chan 22 sync 63 7A data    0F 10 FF FF 31 FD 31 FD 08 00 00 04 11 F9 00 00 
+  0.008460 sec rcv enable on chan 22 sync 63 7A
+  0.006892 sec rcvd 11 bytes chan 22 sync 63 7A data 1C 0D 22 FF FF 31 FD 31 FD 00 00 
+  0.000913 sec rcvd  5 bytes chan 22 sync 63 7A data 05 82 52 29 20 
+  0.117729 sec rcv enable on chan 22 sync 63 7A
+  0.134274 sec rcv enable on chan 63 sync 63 95
+  0.134273 sec rcv enable on chan 2E sync 63 7C
+  0.134274 sec rcv enable on chan 46 sync 63 87
+  0.134273 sec rcv enable on chan 0A sync 63 6E
+  0.134275 sec rcv enable on chan 61 sync 63 94
+  0.134274 sec rcv enable on chan 2C sync 63 7B
+  0.134273 sec rcv enable on chan 53 sync 63 8D
+  0.134274 sec rcv enable on chan 16 sync 63 74
+  0.134274 sec rcv enable on chan 32 sync 63 7E
+  1.608878 sec sent 16 bytes chan 5F sync 63 93 data    0F 10 FF FF 31 FD 31 FD 08 00 00 04 11 F9 00 00 
+  0.008461 sec rcv enable on chan 5F sync 63 93
+  0.006891 sec rcvd 11 bytes chan 5F sync 63 93 data 1C 0D 22 FF FF 31 FD 31 FD 00 00 
+  0.000913 sec rcvd  5 bytes chan 5F sync 63 93 data 05 82 52 29 22 
+  0.117729 sec rcv enable on chan 5F sync 63 93
+  0.134274 sec rcv enable on chan 22 sync 63 7A
+  0.134274 sec rcv enable on chan 63 sync 63 95
+  0.134274 sec rcv enable on chan 2E sync 63 7C
+  0.134273 sec rcv enable on chan 46 sync 63 87
+  0.134274 sec rcv enable on chan 0A sync 63 6E
+  0.134275 sec rcv enable on chan 61 sync 63 94
+  0.134274 sec rcv enable on chan 2C sync 63 7B
+  0.134273 sec rcv enable on chan 53 sync 63 8D
+  0.142476 sec rcv enable on chan 2E sync 63 7C
+  0.006457 sec rcvd 11 bytes chan 2E sync 63 7C data 1C 15 02 FF FF 31 FD 31 FD 00 00 
+  0.002558 sec rcvd 13 bytes chan 2E sync 63 7C data 0D 8A 51 0B 7A 15 0B 7A 03 0B 79 74 1E 
+  1.621201 sec sent 16 bytes chan 32 sync 63 7E data    0F 10 FF FF 31 FD 31 FD 08 00 00 04 11 F9 00 00 
+  0.008461 sec rcv enable on chan 32 sync 63 7E
+  0.006891 sec rcvd 11 bytes chan 32 sync 63 7E data 1C 0D 22 FF FF 31 FD 31 FD 00 00 
+  0.000913 sec rcvd  5 bytes chan 32 sync 63 7E data 05 82 52 29 1F 
+  0.117730 sec rcv enable on chan 32 sync 63 7E
+  0.134274 sec rcv enable on chan 6F sync 63 97
+  0.134273 sec rcv enable on chan 3A sync 63 82
+  0.134274 sec rcv enable on chan 77 sync 63 9B
+  0.134275 sec rcv enable on chan 4F sync 63 8B
+  0.134273 sec rcv enable on chan 12 sync 63 72
+  0.134275 sec rcv enable on chan 44 sync 63 86
+  0.134273 sec rcv enable on chan 08 sync 63 6D
+  0.134274 sec rcv enable on chan 6D sync 63 96
+  0.134274 sec rcv enable on chan 30 sync 63 7D
+  0.674331 sec sent 25 bytes chan 6F sync 63 97 data    18 00 FF FF 31 FD 31 FD 08 00 00 0D B1 3F 00 89 00 7F FF FF FF FF FF FF 00 
+  0.010295 sec rcv enable on chan 6F sync 63 97
+  0.006756 sec rcvd 10 bytes chan 6F sync 63 97 data 1B 0D 22 FF FF 31 FD 31 FD 00 
+  0.000990 sec rcvd  6 bytes chan 6F sync 63 97 data 06 08 82 52 36 31 
+  7.960504 sec sent 41 bytes chan 49 sync 63 88 data    28 00 FF FF 31 FD 31 FD 08 00 00 1D 01 FF 00 59 81 48 46 4B 06 00 58 58 28 5A 32 63 46 4B 22 03 81 80 00 48 00 10 00 07 00 
+  0.013820 sec rcv enable on chan 49 sync 63 88
+  0.006649 sec rcvd 10 bytes chan 49 sync 63 88 data 1B 0D 22 FF FF 31 FD 31 FD 00 
+  0.001081 sec rcvd  6 bytes chan 49 sync 63 88 data 06 08 82 52 2F 29 
+  3.394242 sec rcv enable on chan 46 sync 63 87
+  0.006197 sec rcvd 10 bytes chan 46 sync 63 87 data 1B 43 02 FF FF 31 FD 31 FD 00 
+  0.006434 sec rcvd 31 bytes chan 46 sync 63 87 data 1F FF 8A 51 0C 6A C0 0C 6A AE 0C 6A 14 FF 1D 01 FF 00 59 81 48 46 4B 06 00 58 58 28 5A 32 63 
+  0.005851 sec rcvd 29 bytes chan 46 sync 63 87 data 0F 4B 22 03 81 80 00 48 00 10 00 07 00 FF 0D 71 3F 00 89 00 7F FF FF FF FF FF FF 00 28 
