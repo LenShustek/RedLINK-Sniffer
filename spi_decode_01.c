@@ -63,11 +63,11 @@ a block of recorded data to the PC.
 *    - implement burst write to the power table, which the thermostat does
 * 20 Jun 2015, L. Shustek, V1.3
 *    - switch to new input format, enhance error recovery
+* 28 Jun 2015, L. Shustek, V1.4
+*    - add option to control putting "receive enable" in the packet file
 */
 
-#define VERSION "1.3"
-
-#define SHOW_RCV_ENB_AS_PACKET 1	 // useful for investigating the frequency-hopping algorithm
+#define VERSION "1.4"
 
 #define DATFILENAME "spi.dat"        // input in file mode, output in serial mode
 #define OUTFILENAME "spi.cmds.txt"   // output for detailed decodes
@@ -86,6 +86,7 @@ typedef unsigned char byte;
 FILE  *outfile, *datfile, *pktfile=NULL;
 int comport = 5;
 bool fileread = false;
+bool receive_enable_packet = false;  // useful for investigating the frequency-hopping algorithm
 
 HANDLE handle_serial = INVALID_HANDLE_VALUE;
 DCB dcbSerialParams = {
@@ -117,6 +118,7 @@ void SayUsage(char *programName){
         "Usage: spi_decode [-cn] [-f]",
         "  -cn  inputs from COM port n (default 5) and appends to " DATFILENAME,
         "  -f   inputs from file "DATFILENAME" instead",
+        "  -r   record 'receive enable' in the packet file",
         ""
     };
     int i=0;
@@ -142,6 +144,9 @@ int HandleOptions(int argc,char *argv[]) {
                 break;
             case 'F':
                 fileread = true;
+                break;
+            case 'R':
+                receive_enable_packet = true;
                 break;
                 /* add more  option switches here */
 opterror:
@@ -608,7 +613,7 @@ void command_strobe(void) {
         if (packet.length != 0) exit_msg("reset with packet length not zero", packet.length);
         // not interesting, because it happens too often:  packet_decode();
     }
-    if (SHOW_RCV_ENB_AS_PACKET && regnum == 0x34) { // enable RX: create pseudo-packet entry in the log
+    if (receive_enable_packet && regnum == 0x34) { // enable RX: create pseudo-packet entry in the log
         fprintf(pktfile, "%3ld.%06d sec ", packet.delta_time_usec/1000000, (packet.delta_time_usec%1000000));
         fprintf(pktfile, "rcv enable on chan %02X sync %02X %02X\n",
             current_config_regs[0x0A], current_config_regs[0x04], current_config_regs[0x05]);
@@ -643,19 +648,18 @@ bool skip_timestamp(void) {
 }
 
 
-
 bool skip_to_next_data(void) {
     while(1) {
         if (!skip_timestamp()) return false;
         if (*lineptr == 'w') { // buffer write marker
-            int numbytes;
-            if (sscanf(++lineptr, " %d %n", &numbytes, &num_chars) != 1) {
-                recover_after_bad_data("bad buffer write numbytes format");
+            int numevents;
+            if (sscanf(++lineptr, " %d %n", &numevents, &num_chars) != 1) {
+                recover_after_bad_data("bad buffer write numevents format");
                 return false;
             }
             else {
                 lineptr += num_chars;
-                output("received buffer with %d bytes\n", numbytes);
+                output("received a buffer with %d events\n", numevents);
             }
 
         }
@@ -700,10 +704,11 @@ void packet_decode(void) {
         fprintf(pktfile, "rset");
     }
     else {
-        fprintf (pktfile, "%s %2d bytes chan %02X sync %02X %02X data ",
-            packet.xmit ? "sent" : "rcvd", packet.length-1,
+        fprintf(pktfile, "%s %2d bytes chan %02X sync %02X %02X data ",
+            packet.xmit ? "sent" : "rcvd", packet.length,
             current_config_regs[0x0A], current_config_regs[0x04], current_config_regs[0x05]);
-        for (int i=1; i<packet.length; ++i)
+        if (packet.xmit) fprintf(pktfile, "   "); // align send and received data??
+        for (int i=0; i<packet.length; ++i)
             fprintf(pktfile, "%02X ", packet.data[i]);
     }
     fprintf(pktfile, "\n");
@@ -771,7 +776,7 @@ more_data:
             }
             ++linecnt;
             bytes_read = strlen(line);
-            output("got %d bytes from file\n", bytes_read);
+            output("got %d bytes from the file\n", bytes_read);
         }
         else {  // read from serial port
             // printf("reading serial port com%d...\n", comport);
@@ -779,7 +784,7 @@ more_data:
             line[bytes_read]='\0';
             if (bytes_read != 0) {
                 output("got %d bytes from serial port\n", bytes_read);
-                fprintf(stderr, "got %d bytes from serial port\n", bytes_read);
+                fprintf(stderr, "got %d bytes from the serial port\n", bytes_read);
                 fprintf(datfile, "%s\n", line);
             }
         }
@@ -886,7 +891,7 @@ next_command:
                         bytes_changed = 0;
                         start_reg = regnum;
                         // output("burst config write\n");
-                        if (!chip_selected) exit_msg("burst mode without chip selected", regnum);
+                        if (!chip_selected) output("burst write without chip selected at reg %02X", regnum);
                         while (1) { // read all the burst write data
                             if (!skip_timestamp()) goto next_command;
                             if (*lineptr == ']') break; // ends with chip unselect
